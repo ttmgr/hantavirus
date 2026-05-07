@@ -7,7 +7,7 @@
   <meta name="description" content="Live tracker for the 2026 hantavirus outbreak. Case data, MV Hondius cluster, historical surveillance from WHO, CDC, ECDC, and RKI.">
   <meta name="theme-color" content="#1a1a2e">
   <meta property="og:title" content="Hantavirus 2026 Outbreak Tracker">
-  <meta property="og:description" content="Real-time case data, interactive map, MV Hondius cluster analysis, and historical surveillance for the 2026 hantavirus outbreak.">
+  <meta property="og:description" content="Real-time case data, interactive map, and surveillance for the 2026 hantavirus outbreak.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,10 +15,15 @@
 <body>
   <header>
     <div class="container">
-      <h1>Hantavirus 2026 Outbreak Tracker</h1>
+      <div class="header-left">
+        <h1>Hantavirus 2026 Outbreak Tracker</h1>
+        <div class="header-subtitle">Real-time case data, outbreak map, and surveillance from WHO, CDC, ECDC, and RKI</div>
+      </div>
       <div class="header-meta">
-        <a href="de/" class="lang-switch">DE</a>
-        <span class="risk-badge risk-low" id="risk-badge">WHO: LOW</span>
+        <div class="header-meta-row">
+          <a href="de/" class="lang-switch">DE</a>
+          <span class="risk-badge risk-low" id="risk-badge">WHO: LOW</span>
+        </div>
         <span class="updated" id="last-updated">Loading...</span>
       </div>
     </div>
@@ -33,18 +38,16 @@
 
   <main class="container">
 
-    <!-- Situation summary -->
     <div class="situation-summary" id="situation-summary">
-      <strong>Current status:</strong> Cluster linked to MV Hondius cruise ship (Andes virus, ANDV). 108 total cases reported globally in 2026, 3 deaths, 8 countries involved in surveillance or contact tracing. Most recent confirmed case: crew member aboard MV Hondius, 2026-05-02. No evidence of sustained community-level human-to-human transmission. WHO global risk assessment: LOW.
+      <strong>Current status:</strong> The 2026 outbreak is centered on an Andes virus (ANDV) cluster aboard the MV Hondius cruise ship, with 3 of 7 ship cases fatal. Argentina continues to report elevated ANDV activity at roughly twice the baseline rate. No evidence of sustained community-level human-to-human transmission has been reported. WHO assesses global population risk as LOW.
     </div>
 
-    <!-- KPI Cards -->
     <div class="kpi-row">
       <div class="kpi-card cases">
         <div class="value" id="kpi-cases">--</div>
         <div class="delta" id="kpi-cases-delta"></div>
         <div class="label">Total reported cases</div>
-        <div class="sublabel" id="kpi-cases-sub">Confirmed + probable + suspected</div>
+        <div class="sublabel">Confirmed + probable + suspected</div>
       </div>
       <div class="kpi-card deaths">
         <div class="value" id="kpi-deaths">--</div>
@@ -64,28 +67,25 @@
       </div>
     </div>
 
-    <!-- Epi stats bar -->
-    <div class="epi-stats" id="epi-stats">
+    <div class="epi-stats">
       <span>CFR: <strong id="epi-cfr">--</strong></span>
       <span>WHO global risk: <strong id="epi-risk">--</strong></span>
       <span>Data confidence: <strong>Provisional</strong></span>
       <span>Data lag: <strong id="epi-lag">--</strong></span>
     </div>
 
-    <!-- Map -->
     <section>
       <h2>Outbreak Map</h2>
       <div id="map"></div>
       <div class="map-legend">
-        <span class="map-legend-item"><span class="legend-dot" style="background:#1e40af25;border-color:#1e40af"></span> Confirmed cases</span>
-        <span class="map-legend-item"><span class="legend-dot" style="background:#991b1b25;border-color:#991b1b"></span> Deaths reported</span>
-        <span class="map-legend-item"><span class="legend-dot" style="background:#6b728025;border-color:#6b7280"></span> Contact tracing only</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#1e40af30;border-color:#1e40af"></span> Confirmed cases</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#991b1b30;border-color:#991b1b"></span> Deaths reported</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#6b728030;border-color:#6b7280"></span> Contact tracing only</span>
         <span class="map-legend-item"><span class="legend-line"></span> MV Hondius route</span>
-        <span class="map-legend-item" style="color:#9ca3af">Use +/- to zoom. Scroll wheel disabled so the page scrolls normally.</span>
+        <span class="map-legend-item" style="color:#9ca3af;font-size:11px">Scroll zoom disabled. Use +/- to zoom.</span>
       </div>
     </section>
 
-    <!-- MV Hondius Cluster -->
     <section>
       <h2>MV Hondius Cluster (Andes Virus)</h2>
       <p class="cluster-intro">
@@ -107,51 +107,54 @@
       </div>
     </section>
 
-    <!-- Charts -->
     <section>
       <h2>2026 Case Timeline</h2>
       <div class="chart-grid">
         <div class="chart-container chart-full">
           <h3>Weekly New Cases (Epi Curve)</h3>
-          <p class="chart-caption">New cases per reporting period. The standard epidemiological view for assessing outbreak trajectory.</p>
+          <p class="chart-caption">New cases per reporting period. Peak activity in mid-April coincided with the MV Hondius cluster identification.</p>
           <div style="height:200px"><canvas id="chart-epicurve"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Cumulative Cases and Deaths</h3>
-          <p class="chart-caption">Running total since January 2026. Steepening curve indicates acceleration.</p>
+          <p class="chart-caption">Cases continue to rise gradually; deaths remain concentrated in the early imported MV Hondius cases.</p>
           <div style="height:260px"><canvas id="chart-timeline"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Cases by Country</h3>
-          <p class="chart-caption">Country-level breakdown with case fatality rate where calculable.</p>
+          <p class="chart-caption">Argentina dominates reported case volume. Ship-linked cases spread across multiple nationalities.</p>
           <div style="height:260px"><canvas id="chart-regional"></canvas></div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Historical Surveillance (2013--2025)</h2>
-      <div class="chart-grid">
-        <div class="chart-container">
-          <h3>EU/EEA and Germany</h3>
-          <p class="chart-caption">Biennial peaks in Germany correlate with beech mast years and bank vole population cycles. Dashed line shows EU/EEA linear trend.</p>
-          <div style="height:260px"><canvas id="chart-historical-eu"></canvas></div>
-        </div>
-        <div class="chart-container">
-          <h3>United States (HPS Cases)</h3>
-          <p class="chart-caption">Hantavirus pulmonary syndrome cases. Predominantly Sin Nombre virus in southwestern states.</p>
-          <div style="height:260px"><canvas id="chart-historical-us"></canvas></div>
+    <!-- Historical — collapsed by default -->
+    <div class="section-collapsible" id="section-historical">
+      <button class="section-collapse-trigger" onclick="this.parentElement.classList.toggle('open')">
+        <span>Historical Surveillance (2013--2025)</span>
+        <span class="arrow">&#9660;</span>
+      </button>
+      <div class="section-collapse-body">
+        <div class="chart-grid">
+          <div class="chart-container">
+            <h3>EU/EEA and Germany</h3>
+            <p class="chart-caption">Biennial peaks in Germany correlate with beech mast years and bank vole population cycles.</p>
+            <div style="height:260px"><canvas id="chart-historical-eu"></canvas></div>
+          </div>
+          <div class="chart-container">
+            <h3>United States (HPS Cases)</h3>
+            <p class="chart-caption">Hantavirus pulmonary syndrome cases, predominantly Sin Nombre virus in southwestern states.</p>
+            <div style="height:260px"><canvas id="chart-historical-us"></canvas></div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- News -->
     <section>
       <h2>News and Situation Reports</h2>
       <ul class="news-list" id="news-list"></ul>
     </section>
 
-    <!-- Methodology -->
     <section>
       <h2>Data Notes and Methodology</h2>
       <div class="methodology">
@@ -161,67 +164,51 @@
           <dt>Update frequency</dt>
           <dd>News feed automated daily (06:00 UTC). Case data updated manually as official sources publish.</dd>
           <dt>Case definition</dt>
-          <dd>WHO 2026: <strong>Confirmed</strong> (RT-PCR positive or IgM seroconversion), <strong>Probable</strong> (clinical presentation + epidemiological link), <strong>Suspected</strong> (clinical presentation only).</dd>
+          <dd>WHO 2026: <strong>Confirmed</strong> (RT-PCR positive or IgM seroconversion), <strong>Probable</strong> (clinical + epidemiological link), <strong>Suspected</strong> (clinical presentation only).</dd>
           <dt>Deduplication</dt>
-          <dd>Country-level aggregates reconciled against official source reports. Individual MV Hondius cases cross-referenced across WHO, ECDC, and national reports.</dd>
-          <dt>Data lag</dt>
-          <dd>Typically 24-48 hours for official source updates. News feed may include unverified reports.</dd>
+          <dd>Country-level aggregates reconciled against official source reports. MV Hondius cases cross-referenced across WHO, ECDC, and national reports.</dd>
           <dt>Last reviewed</dt>
           <dd id="methodology-reviewed">--</dd>
         </dl>
       </div>
     </section>
 
-    <!-- About — accordion -->
     <section>
       <h2>About Hantaviruses</h2>
       <div id="accordion">
         <div class="accordion-item open">
           <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Overview</span>
-            <span class="accordion-arrow">&#9660;</span>
+            <span>Overview</span><span class="accordion-arrow">&#9660;</span>
           </button>
           <div class="accordion-body">
             <p>Hantaviruses are a family of RNA viruses transmitted primarily through inhalation of aerosolized rodent excreta (urine, droppings, saliva). They cause two main clinical syndromes: hantavirus pulmonary syndrome (HPS) in the Americas and hemorrhagic fever with renal syndrome (HFRS) in Europe and Asia.</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Major Serotypes</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Major Serotypes</span><span class="accordion-arrow">&#9660;</span></button>
           <div class="accordion-body">
-            <p><strong>Andes virus (ANDV)</strong> -- South America, primarily Argentina and Chile. Causes HPS. The only hantavirus with documented human-to-human transmission. Case fatality rate approximately 30-40%.</p>
-            <p><strong>Sin Nombre virus (SNV)</strong> -- North America, predominantly southwestern United States. Causes HPS. No documented person-to-person spread. Case fatality rate approximately 36%.</p>
-            <p><strong>Puumala virus (PUUV)</strong> -- Europe, especially Scandinavia, Germany, and the Balkans. Causes a milder form of HFRS (nephropathia epidemica). Carried by bank voles. Case fatality rate below 1%.</p>
-            <p><strong>Hantaan virus (HTNV)</strong> -- East Asia, primarily China and Korea. Causes classical HFRS. Case fatality rate 5-15%.</p>
+            <p><strong>Andes virus (ANDV)</strong> -- South America. The only hantavirus with documented human-to-human transmission. CFR 30-40%.</p>
+            <p><strong>Sin Nombre virus (SNV)</strong> -- North America, southwestern US. CFR ~36%. No person-to-person spread.</p>
+            <p><strong>Puumala virus (PUUV)</strong> -- Europe. Milder HFRS (nephropathia epidemica). Carried by bank voles. CFR below 1%.</p>
+            <p><strong>Hantaan virus (HTNV)</strong> -- East Asia. Classical HFRS. CFR 5-15%.</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Transmission</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Transmission</span><span class="accordion-arrow">&#9660;</span></button>
           <div class="accordion-body">
-            <p>Primary route: inhalation of aerosolized virus from rodent urine, droppings, or nesting materials. Risk factors include cleaning enclosed spaces with rodent infestation, agricultural work, and camping. Andes virus is exceptional in that it can spread between humans through close contact, though this remains rare.</p>
+            <p>Primary route: inhalation of aerosolized virus from rodent excreta. Risk factors include cleaning enclosed spaces with rodent infestation, agricultural work, and camping. Andes virus can exceptionally spread between humans through close contact.</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Symptoms and Prognosis</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Symptoms and Prognosis</span><span class="accordion-arrow">&#9660;</span></button>
           <div class="accordion-body">
-            <p>HPS: fever, myalgia, and gastrointestinal symptoms progressing to cough and rapid respiratory failure. HFRS: fever, hemorrhagic manifestations, and acute kidney injury. Incubation period typically 1-5 weeks. Early supportive care significantly improves survival.</p>
+            <p>HPS: fever, myalgia, gastrointestinal symptoms progressing to respiratory failure. HFRS: fever, hemorrhage, acute kidney injury. Incubation 1-5 weeks. Early supportive care improves survival significantly.</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Prevention</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Prevention</span><span class="accordion-arrow">&#9660;</span></button>
           <div class="accordion-body">
-            <p>No approved vaccine is available for human use. Prevention relies on rodent control, sealing entry points in buildings, safe cleanup of rodent-contaminated areas (wet methods, ventilation, PPE), and avoiding contact with wild rodents. In endemic areas, public health campaigns focus on reducing rodent habitat around human dwellings.</p>
+            <p>No approved vaccine available. Prevention: rodent control, sealing building entry points, safe cleanup of contaminated areas (wet methods, ventilation, PPE), avoiding wild rodent contact.</p>
           </div>
         </div>
       </div>
@@ -233,12 +220,7 @@
     <div class="container">
       <div class="sources">
         <strong>Data sources:</strong>
-        WHO Disease Outbreak News |
-        CDC Hantavirus Surveillance |
-        ECDC Surveillance Atlas |
-        Robert Koch Institute (RKI) |
-        ProMED-mail |
-        PAHO Epidemiological Updates
+        WHO Disease Outbreak News | CDC Hantavirus Surveillance | ECDC Surveillance Atlas | Robert Koch Institute | ProMED-mail | PAHO
       </div>
       <div class="credit">
         <a href="https://github.com/ttmgr/GenomicsForOneHealth">GenomicsForOneHealth</a>
@@ -255,10 +237,7 @@
   <script src="js/charts.js"></script>
   <script src="js/app.js"></script>
   <script>
-  function toggleAccordion(btn) {
-    var item = btn.parentElement;
-    item.classList.toggle('open');
-  }
+  function toggleAccordion(btn) { btn.parentElement.classList.toggle('open'); }
   </script>
 </body>
 </html>

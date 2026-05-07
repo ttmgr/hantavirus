@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hantavirus-Radar 2026 -- Ausbruch-Tracker</title>
-  <meta name="description" content="Live-Tracker fuer den Hantavirus-Ausbruch 2026. Fallzahlen, MV Hondius-Cluster, historische Surveillance von WHO, CDC, ECDC und RKI.">
+  <title>Hantavirus-Radar 2026</title>
+  <meta name="description" content="Live-Tracker fuer den Hantavirus-Ausbruch 2026. Fallzahlen, MV Hondius-Cluster, historische Surveillance.">
   <meta name="theme-color" content="#1a1a2e">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -12,10 +12,15 @@
 <body>
   <header>
     <div class="container">
-      <h1>Hantavirus-Radar 2026</h1>
+      <div class="header-left">
+        <h1>Hantavirus-Radar 2026</h1>
+        <div class="header-subtitle">Echtzeit-Falldaten, Ausbruchskarte und Surveillance von WHO, CDC, ECDC und RKI</div>
+      </div>
       <div class="header-meta">
-        <a href="../" class="lang-switch">EN</a>
-        <span class="risk-badge risk-low" id="risk-badge">WHO: NIEDRIG</span>
+        <div class="header-meta-row">
+          <a href="../" class="lang-switch">EN</a>
+          <span class="risk-badge risk-low" id="risk-badge">WHO: NIEDRIG</span>
+        </div>
         <span class="updated" id="last-updated">Laden...</span>
       </div>
     </div>
@@ -30,8 +35,8 @@
 
   <main class="container">
 
-    <div class="situation-summary" id="situation-summary">
-      <strong>Aktuelle Lage:</strong> Cluster in Verbindung mit dem Kreuzfahrtschiff MV Hondius (Andes-Virus, ANDV). 108 gemeldete Faelle weltweit in 2026, 3 Todesfaelle, 8 Laender in Surveillance oder Kontaktverfolgung beteiligt. Juengster bestaetigter Fall: Besatzungsmitglied an Bord der MV Hondius, 02.05.2026. Kein Nachweis einer anhaltenden Mensch-zu-Mensch-Uebertragung in der Allgemeinbevoelkerung. WHO-Risikobewertung global: NIEDRIG.
+    <div class="situation-summary">
+      <strong>Aktuelle Lage:</strong> Der Ausbruch 2026 ist auf ein Andes-Virus-Cluster (ANDV) an Bord der MV Hondius zentriert, mit 3 von 7 Schiffsfaellen toedlich. Argentinien meldet weiterhin erhoehte ANDV-Aktivitaet bei etwa doppelter Baseline-Rate. Kein Nachweis einer anhaltenden Mensch-zu-Mensch-Uebertragung in der Allgemeinbevoelkerung. WHO-Risikobewertung global: NIEDRIG.
     </div>
 
     <div class="kpi-row">
@@ -70,30 +75,21 @@
       <h2>Ausbruchskarte</h2>
       <div id="map"></div>
       <div class="map-legend">
-        <span class="map-legend-item"><span class="legend-dot" style="background:#1e40af25;border-color:#1e40af"></span> Bestaetigte Faelle</span>
-        <span class="map-legend-item"><span class="legend-dot" style="background:#991b1b25;border-color:#991b1b"></span> Todesfaelle gemeldet</span>
-        <span class="map-legend-item"><span class="legend-dot" style="background:#6b728025;border-color:#6b7280"></span> Nur Kontaktverfolgung</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#1e40af30;border-color:#1e40af"></span> Bestaetigte Faelle</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#991b1b30;border-color:#991b1b"></span> Todesfaelle</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#6b728030;border-color:#6b7280"></span> Nur Kontaktverfolgung</span>
         <span class="map-legend-item"><span class="legend-line"></span> MV Hondius-Route</span>
-        <span class="map-legend-item" style="color:#9ca3af">+/- zum Zoomen. Mausrad deaktiviert fuer normales Scrollen.</span>
+        <span class="map-legend-item" style="color:#9ca3af;font-size:11px">Mausrad-Zoom deaktiviert. +/- zum Zoomen.</span>
       </div>
     </section>
 
     <section>
       <h2>MV Hondius-Cluster (Andes-Virus)</h2>
-      <p class="cluster-intro">
-        Niederlaendisches Expeditionskreuzfahrtschiff, betrieben von Oceanwide Expeditions. Abfahrt Ushuaia, Argentinien am 01.04.2026. Derzeit unter Quarantaene vor Praia, Kap Verde. Andes-Virus (ANDV) bestaetigt -- der einzige Hantavirus-Serotyp mit dokumentierter Mensch-zu-Mensch-Uebertragung.
-      </p>
+      <p class="cluster-intro">Niederlaendisches Expeditionskreuzfahrtschiff, betrieben von Oceanwide Expeditions. Abfahrt Ushuaia, Argentinien am 01.04.2026. Derzeit unter Quarantaene vor Praia, Kap Verde. Andes-Virus (ANDV) bestaetigt -- der einzige Hantavirus-Serotyp mit dokumentierter Mensch-zu-Mensch-Uebertragung.</p>
       <div class="cluster-epi-stats" id="cluster-epi-stats"></div>
       <div class="table-scroll">
         <table class="cluster-table">
-          <thead>
-            <tr>
-              <th>Datum</th>
-              <th>Nationalitaet</th>
-              <th>Beschreibung</th>
-              <th>Verlauf</th>
-            </tr>
-          </thead>
+          <thead><tr><th>Datum</th><th>Nationalitaet</th><th>Beschreibung</th><th>Verlauf</th></tr></thead>
           <tbody id="cluster-tbody"></tbody>
         </table>
       </div>
@@ -104,37 +100,42 @@
       <div class="chart-grid">
         <div class="chart-container chart-full">
           <h3>Woechentliche Neuerkrankungen (Epi-Kurve)</h3>
-          <p class="chart-caption">Neue Faelle pro Berichtszeitraum. Standarddarstellung zur Beurteilung der Ausbruchsdynamik.</p>
+          <p class="chart-caption">Neue Faelle pro Berichtszeitraum. Hoehere Aktivitaet Mitte April fiel mit der Identifizierung des MV Hondius-Clusters zusammen.</p>
           <div style="height:200px"><canvas id="chart-epicurve"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Kumulative Faelle und Todesfaelle</h3>
-          <p class="chart-caption">Laufende Gesamtzahl seit Januar 2026. Eine steilere Kurve deutet auf Beschleunigung hin.</p>
+          <p class="chart-caption">Faelle steigen weiterhin allmaehlich; Todesfaelle konzentrieren sich auf die fruehen importierten MV Hondius-Faelle.</p>
           <div style="height:260px"><canvas id="chart-timeline"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Faelle nach Land</h3>
-          <p class="chart-caption">Laenderaufschluesselung mit Letalitaetsrate wo berechenbar.</p>
+          <p class="chart-caption">Argentinien dominiert das gemeldete Fallvolumen. Schiffsassoziierte Faelle verteilen sich ueber mehrere Nationalitaeten.</p>
           <div style="height:260px"><canvas id="chart-regional"></canvas></div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Historische Surveillance (2013--2025)</h2>
-      <div class="chart-grid">
-        <div class="chart-container">
-          <h3>EU/EWR und Deutschland</h3>
-          <p class="chart-caption">Biannuale Spitzen in Deutschland korrelieren mit Buchenmastjahren und Roetelmaus-Populationszyklen. Gestrichelte Linie zeigt EU/EWR-Trend.</p>
-          <div style="height:260px"><canvas id="chart-historical-eu"></canvas></div>
-        </div>
-        <div class="chart-container">
-          <h3>Vereinigte Staaten (HPS-Faelle)</h3>
-          <p class="chart-caption">Hantavirus-Lungensyndrom-Faelle. Vorwiegend Sin-Nombre-Virus im Suedwesten der USA.</p>
-          <div style="height:260px"><canvas id="chart-historical-us"></canvas></div>
+    <div class="section-collapsible" id="section-historical">
+      <button class="section-collapse-trigger" onclick="this.parentElement.classList.toggle('open')">
+        <span>Historische Surveillance (2013--2025)</span>
+        <span class="arrow">&#9660;</span>
+      </button>
+      <div class="section-collapse-body">
+        <div class="chart-grid">
+          <div class="chart-container">
+            <h3>EU/EWR und Deutschland</h3>
+            <p class="chart-caption">Biannuale Spitzen in Deutschland korrelieren mit Buchenmastjahren und Roetelmaus-Populationszyklen.</p>
+            <div style="height:260px"><canvas id="chart-historical-eu"></canvas></div>
+          </div>
+          <div class="chart-container">
+            <h3>Vereinigte Staaten (HPS-Faelle)</h3>
+            <p class="chart-caption">Hantavirus-Lungensyndrom-Faelle, vorwiegend Sin-Nombre-Virus im Suedwesten der USA.</p>
+            <div style="height:260px"><canvas id="chart-historical-us"></canvas></div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section>
       <h2>Nachrichten und Lageberichte</h2>
@@ -146,15 +147,11 @@
       <div class="methodology">
         <dl>
           <dt>Datenquellen</dt>
-          <dd>WHO Disease Outbreak News, CDC Hantavirus Surveillance, ECDC Surveillance Atlas (TESSy), Robert Koch-Institut (RKI SurvStat), ProMED-mail, PAHO Epidemiological Updates</dd>
+          <dd>WHO Disease Outbreak News, CDC, ECDC Surveillance Atlas (TESSy), Robert Koch-Institut (RKI SurvStat), ProMED-mail, PAHO</dd>
           <dt>Aktualisierung</dt>
-          <dd>Nachrichtenfeed taeglich automatisiert (06:00 UTC). Falldaten manuell aktualisiert nach Veroeffentlichung offizieller Quellen.</dd>
+          <dd>Nachrichtenfeed taeglich automatisiert (06:00 UTC). Falldaten manuell nach Veroeffentlichung offizieller Quellen.</dd>
           <dt>Falldefinition</dt>
-          <dd>WHO 2026: <strong>Bestaetigt</strong> (RT-PCR positiv oder IgM-Serokonversion), <strong>Wahrscheinlich</strong> (klinisches Bild + epidemiologischer Zusammenhang), <strong>Verdacht</strong> (nur klinisches Bild).</dd>
-          <dt>Deduplizierung</dt>
-          <dd>Laenderaggregate abgeglichen mit offiziellen Quellenberichten. MV Hondius-Einzelfaelle ueber WHO, ECDC und nationale Berichte kreuzreferenziert.</dd>
-          <dt>Datenverzoegerung</dt>
-          <dd>Typischerweise 24-48 Stunden fuer offizielle Aktualisierungen. Nachrichtenfeed kann unbestaetigte Meldungen enthalten.</dd>
+          <dd>WHO 2026: <strong>Bestaetigt</strong> (RT-PCR / IgM-Serokonversion), <strong>Wahrscheinlich</strong> (klinisch + epi. Zusammenhang), <strong>Verdacht</strong> (nur klinisch).</dd>
           <dt>Letzte Pruefung</dt>
           <dd id="methodology-reviewed">--</dd>
         </dl>
@@ -165,67 +162,39 @@
       <h2>Ueber Hantaviren</h2>
       <div id="accordion">
         <div class="accordion-item open">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Ueberblick</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
-          <div class="accordion-body">
-            <p>Hantaviren sind eine Familie von RNA-Viren, die primaer durch Einatmen von aerosolisierten Nagerexkrementen uebertragen werden. Sie verursachen zwei Hauptsyndrome: das Hantavirus-Lungensyndrom (HPS) in Amerika und das Haemorrhagische Fieber mit renalem Syndrom (HFRS) in Europa und Asien.</p>
-          </div>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Ueberblick</span><span class="accordion-arrow">&#9660;</span></button>
+          <div class="accordion-body"><p>Hantaviren sind RNA-Viren, die primaer durch Einatmen aerosolisierter Nagerexkremente uebertragen werden. Zwei Hauptsyndrome: Hantavirus-Lungensyndrom (HPS) in Amerika, Haemorrhagisches Fieber mit renalem Syndrom (HFRS) in Europa/Asien.</p></div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Wichtige Serotypen</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Serotypen</span><span class="accordion-arrow">&#9660;</span></button>
           <div class="accordion-body">
-            <p><strong>Andes-Virus (ANDV)</strong> -- Suedamerika. Einziger Hantavirus mit Mensch-zu-Mensch-Uebertragung. Letalitaet 30-40%.</p>
-            <p><strong>Sin-Nombre-Virus (SNV)</strong> -- Nordamerika, SW-USA. Letalitaet ca. 36%. Keine Mensch-zu-Mensch-Uebertragung.</p>
-            <p><strong>Puumala-Virus (PUUV)</strong> -- Europa. Mildere Form (Nephropathia epidemica). Wirt: Roetelmaus. Letalitaet unter 1%.</p>
+            <p><strong>Andes-Virus (ANDV)</strong> -- Suedamerika. Einziger mit Mensch-zu-Mensch-Uebertragung. Letalitaet 30-40%.</p>
+            <p><strong>Sin-Nombre-Virus (SNV)</strong> -- Nordamerika. Letalitaet ~36%.</p>
+            <p><strong>Puumala-Virus (PUUV)</strong> -- Europa. Mild (Nephropathia epidemica). Letalitaet unter 1%.</p>
             <p><strong>Hantaan-Virus (HTNV)</strong> -- Ostasien. Klassisches HFRS. Letalitaet 5-15%.</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Uebertragung</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
-          <div class="accordion-body">
-            <p>Hauptweg: Einatmen von aerosolisiertem Virus aus Nagerurin, Kot oder Nistmaterial. Risikofaktoren: Reinigung geschlossener Raeume mit Nagerbefall, Landwirtschaft, Camping. Andes-Virus kann ausnahmsweise durch engen Kontakt zwischen Menschen uebertragen werden.</p>
-          </div>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Uebertragung</span><span class="accordion-arrow">&#9660;</span></button>
+          <div class="accordion-body"><p>Hauptweg: Einatmen aerosolisierter Nagerexkremente. Risikofaktoren: Reinigung nagerverseuchter Raeume, Landwirtschaft, Camping. Andes-Virus ausnahmsweise durch engen Menschenkontakt uebertragbar.</p></div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Symptome und Prognose</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
-          <div class="accordion-body">
-            <p>HPS: Fieber, Myalgie, gastrointestinale Symptome, Uebergang zu Lungenversagen. HFRS: Fieber, Haemorrhagien, akute Nierenschaedigung. Inkubationszeit 1-5 Wochen. Fruehe Supportivtherapie verbessert die Ueberlebensrate erheblich.</p>
-          </div>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Symptome</span><span class="accordion-arrow">&#9660;</span></button>
+          <div class="accordion-body"><p>HPS: Fieber, Myalgie, Lungenversagen. HFRS: Fieber, Haemorrhagien, Nierenschaedigung. Inkubation 1-5 Wochen.</p></div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-trigger" onclick="toggleAccordion(this)">
-            <span>Praevention</span>
-            <span class="accordion-arrow">&#9660;</span>
-          </button>
-          <div class="accordion-body">
-            <p>Kein zugelassener Impfstoff verfuegbar. Praevention: Nagerbekaempfung, Abdichtung von Gebaeudeoeffnungen, sichere Reinigung (Nassmethoden, Belueftung, PSA), Vermeidung von Wildnagerkontakt.</p>
-          </div>
+          <button class="accordion-trigger" onclick="toggleAccordion(this)"><span>Praevention</span><span class="accordion-arrow">&#9660;</span></button>
+          <div class="accordion-body"><p>Kein Impfstoff verfuegbar. Praevention: Nagerbekaempfung, Gebaeudedichtung, sichere Reinigung mit PSA, Wildnagerkontakt vermeiden.</p></div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
     <div class="container">
-      <div class="sources">
-        <strong>Datenquellen:</strong>
-        WHO Disease Outbreak News | CDC | ECDC Surveillance Atlas | Robert Koch-Institut | ProMED-mail | PAHO
-      </div>
+      <div class="sources"><strong>Datenquellen:</strong> WHO | CDC | ECDC | RKI | ProMED-mail | PAHO</div>
       <div class="credit">
-        <a href="https://github.com/ttmgr/GenomicsForOneHealth">GenomicsForOneHealth</a>
-        <br>
+        <a href="https://github.com/ttmgr/GenomicsForOneHealth">GenomicsForOneHealth</a><br>
         Dieser Tracker aggregiert oeffentlich verfuegbare Daten zu Informationszwecken.
       </div>
     </div>
@@ -239,109 +208,95 @@
   function toggleAccordion(btn) { btn.parentElement.classList.toggle('open'); }
 
   var LANG = {
-    riskMap: { 'LOW': 'NIEDRIG', 'VERY LOW': 'SEHR NIEDRIG', 'ELEVATED': 'ERHOEHT', 'HIGH': 'HOCH' },
-    months: ['', 'Januar', 'Februar', 'Maerz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
-    severity: { alert: 'Warnung', advisory: 'Hinweis', update: 'Aktualisierung', background: 'Hintergrund' }
+    riskMap: {'LOW':'NIEDRIG','VERY LOW':'SEHR NIEDRIG','ELEVATED':'ERHOEHT','HIGH':'HOCH'},
+    severity: {alert:'Warnung',advisory:'Hinweis',update:'Aktualisierung',background:'Hintergrund'}
   };
 
-  async function loadJSON(path) { return (await fetch(path)).json(); }
+  async function loadJSON(p) { return (await fetch(p)).json(); }
 
-  function renderKPIs(data) {
-    document.getElementById('kpi-cases').textContent = data.summary.total_cases_2026.toLocaleString('de-DE');
-    document.getElementById('kpi-deaths').textContent = data.summary.total_deaths_2026.toLocaleString('de-DE');
-    document.getElementById('kpi-countries').textContent = data.summary.countries_affected;
-    document.getElementById('kpi-clusters').textContent = data.summary.active_clusters;
-    document.getElementById('last-updated').textContent = 'Aktualisiert ' + data.last_updated;
-    document.getElementById('kpi-cfr-sub').textContent = 'Letalitaet gesamt: ' + data.summary.cfr_percent + '%';
-    var d = data.summary.weekly_delta;
-    if (d) {
-      renderDelta('kpi-cases-delta', d.cases, 'cases');
-      renderDelta('kpi-deaths-delta', d.deaths, 'deaths');
-    }
+  function renderKPIs(d) {
+    document.getElementById('kpi-cases').textContent = d.summary.total_cases_2026.toLocaleString('de-DE');
+    document.getElementById('kpi-deaths').textContent = d.summary.total_deaths_2026.toLocaleString('de-DE');
+    document.getElementById('kpi-countries').textContent = d.summary.countries_affected;
+    document.getElementById('kpi-clusters').textContent = d.summary.active_clusters;
+    document.getElementById('last-updated').textContent = 'Aktualisiert ' + d.last_updated;
+    document.getElementById('kpi-cfr-sub').textContent = 'Letalitaet gesamt: ' + d.summary.cfr_percent + '%';
+    var w = d.summary.weekly_delta;
+    if (w) { renderDelta('kpi-cases-delta',w.cases,'cases'); renderDelta('kpi-deaths-delta',w.deaths,'deaths'); }
   }
 
-  function renderDelta(id, value, type) {
-    var el = document.getElementById(id);
-    if (!el || value === undefined) return;
-    if (value === 0 && type === 'deaths') { el.className = 'delta delta-flat'; el.textContent = 'Keine neuen Todesfaelle diese Woche'; return; }
-    el.className = 'delta ' + (value > 0 ? 'delta-up' : value < 0 ? 'delta-down' : 'delta-flat');
-    el.textContent = (value > 0 ? '+' : '') + value + ' diese Woche';
+  function renderDelta(id,v,t) {
+    var el = document.getElementById(id); if (!el||v===undefined) return;
+    if (v===0&&t==='deaths') { el.className='delta delta-flat'; el.textContent='Keine neuen Todesfaelle diese Woche'; return; }
+    el.className='delta '+(v>0?'delta-up':v<0?'delta-down':'delta-flat');
+    el.textContent=(v>0?'+':'')+v+' diese Woche';
   }
 
-  function renderEpiStats(data) {
-    var s = data.summary;
-    document.getElementById('epi-cfr').textContent = s.cfr_percent + '%';
-    document.getElementById('epi-risk').textContent = LANG.riskMap[s.who_risk_global] || s.who_risk_global;
-    document.getElementById('epi-lag').textContent = s.data_lag_hours + 'h';
-    var badge = document.getElementById('risk-badge');
-    if (badge) { badge.textContent = 'WHO: ' + (LANG.riskMap[s.who_risk_global] || s.who_risk_global); badge.className = 'risk-badge risk-' + s.who_risk_global.toLowerCase().replace(' ', '-'); }
-    var r = document.getElementById('methodology-reviewed');
-    if (r) r.textContent = data.last_updated;
+  function renderEpiStats(d) {
+    var s=d.summary;
+    document.getElementById('epi-cfr').textContent=s.cfr_percent+'%';
+    document.getElementById('epi-risk').textContent=LANG.riskMap[s.who_risk_global]||s.who_risk_global;
+    document.getElementById('epi-lag').textContent=s.data_lag_hours+'h';
+    var b=document.getElementById('risk-badge');
+    if(b){b.textContent='WHO: '+(LANG.riskMap[s.who_risk_global]||s.who_risk_global);b.className='risk-badge risk-'+s.who_risk_global.toLowerCase().replace(' ','-');}
+    var r=document.getElementById('methodology-reviewed'); if(r)r.textContent=d.last_updated;
   }
 
-  function renderAlertBanner(data, hondius) {
-    if (hondius.total_cases > 0 && hondius.total_deaths > 0) {
-      document.getElementById('alert-banner').style.display = '';
-      document.getElementById('alert-text').textContent = 'MV Hondius-Cluster: ' + hondius.total_cases + ' Faelle, ' + hondius.total_deaths + ' Todesfaelle. ' + hondius.current_status + ' Letalitaet ' + hondius.cfr_percent + '%.';
+  function renderAlertBanner(d,h) {
+    if(h.total_cases>0&&h.total_deaths>0) {
+      document.getElementById('alert-banner').style.display='';
+      document.getElementById('alert-text').textContent='MV Hondius · '+h.total_cases+' Faelle · '+h.total_deaths+' Todesfaelle · Letalitaet '+h.cfr_percent+'% · '+h.current_status;
     }
   }
 
   function renderClusterEpiStats(h) {
-    document.getElementById('cluster-epi-stats').innerHTML = [
+    document.getElementById('cluster-epi-stats').innerHTML=[
       {l:'Faelle',v:h.total_cases},{l:'Todesfaelle',v:h.total_deaths},{l:'Letalitaet',v:h.cfr_percent+'%'},
-      {l:'Befallsrate',v:h.attack_rate_percent+'%'},{l:'R0-Schaetzung',v:h.r0_estimate},{l:'Generationsintervall',v:h.generation_interval_days+' Tage'}
+      {l:'Befallsrate',v:h.attack_rate_percent+'%'},{l:'R0',v:h.r0_estimate},{l:'Generationsintervall',v:h.generation_interval_days+' Tage'}
     ].map(function(s){return '<div class="stat"><span class="stat-value">'+s.v+'</span><span class="stat-label">'+s.l+'</span></div>';}).join('');
   }
 
-  function renderClusterTable(data) {
-    var tbody = document.getElementById('cluster-tbody'); tbody.innerHTML = '';
-    data.cases.forEach(function(c) {
-      var lower = c.outcome.toLowerCase();
-      var cls = lower.indexOf('deceased') !== -1 ? 'status-deceased' : lower.indexOf('hospitalized') !== -1 ? 'status-hospitalized' : 'status-recovering';
-      var sym = lower.indexOf('deceased') !== -1 ? '✖' : lower.indexOf('hospitalized') !== -1 ? '●' : '✔';
-      var link = c.linked_to !== null ? ' [verknuepft mit #' + c.linked_to + ']' : ' [Indexfall]';
-      var tr = document.createElement('tr');
-      tr.innerHTML = '<td>'+c.date+'</td><td>'+c.nationality+'</td><td>'+c.description+'<span style="color:#6b7280;font-size:11px">'+link+'</span></td><td><span class="status-badge '+cls+'"><span class="status-symbol">'+sym+'</span> '+c.outcome+'</span></td>';
+  function renderClusterTable(d) {
+    var tbody=document.getElementById('cluster-tbody'); tbody.innerHTML='';
+    d.cases.forEach(function(c){
+      var lo=c.outcome.toLowerCase();
+      var cls=lo.indexOf('deceased')!==-1?'status-deceased':lo.indexOf('hospitalized')!==-1?'status-hospitalized':'status-recovering';
+      var sym=lo.indexOf('deceased')!==-1?'✖':lo.indexOf('hospitalized')!==-1?'●':'✔';
+      var lnk=c.linked_to!==null?' [verknuepft mit #'+c.linked_to+']':' [Indexfall]';
+      var tr=document.createElement('tr');
+      tr.innerHTML='<td>'+c.date+'</td><td>'+c.nationality+'</td><td class="td-description" title="'+c.description+lnk+'">'+c.description+'<span style="color:#6b7280;font-size:11px">'+lnk+'</span></td><td><span class="status-badge '+cls+'"><span class="status-symbol">'+sym+'</span> '+c.outcome+'</span></td>';
       tbody.appendChild(tr);
     });
   }
 
-  function classifySeverity(a) {
-    var t = (a.title + ' ' + a.summary).toLowerCase();
-    if (t.indexOf('death') !== -1 || t.indexOf('fatali') !== -1 || t.indexOf('risk assessment') !== -1) return 'alert';
-    if (t.indexOf('advisory') !== -1 || t.indexOf('travel') !== -1 || t.indexOf('warning') !== -1) return 'advisory';
-    if (t.indexOf('case') !== -1 || t.indexOf('update') !== -1 || t.indexOf('surveillance') !== -1) return 'update';
-    return 'background';
-  }
+  function classifySeverity(a){var t=(a.title+' '+a.summary).toLowerCase();if(t.indexOf('death')!==-1||t.indexOf('fatali')!==-1||t.indexOf('risk assessment')!==-1)return'alert';if(t.indexOf('advisory')!==-1||t.indexOf('travel')!==-1)return'advisory';if(t.indexOf('case')!==-1||t.indexOf('update')!==-1||t.indexOf('surveillance')!==-1)return'update';return'background';}
 
-  function renderNews(data) {
-    var list = document.getElementById('news-list'); list.innerHTML = '';
-    var curMonth = '';
-    data.articles.forEach(function(a) {
-      var m = a.date.substring(0, 7);
-      if (m !== curMonth) {
-        curMonth = m; var p = m.split('-');
-        var h = document.createElement('li'); h.className = 'news-group-header';
-        h.textContent = LANG.months[parseInt(p[1])] + ' ' + p[0]; list.appendChild(h);
-      }
-      var sev = classifySeverity(a);
-      var li = document.createElement('li'); li.className = 'news-item';
-      li.innerHTML = '<span class="news-date">'+a.date+'</span><span><span class="news-source">'+a.source+'</span><span class="news-severity severity-'+sev+'">'+LANG.severity[sev]+'</span></span><div><a href="'+a.url+'" target="_blank" rel="noopener" class="news-title">'+a.title+'</a><div class="news-summary">'+a.summary+'</div></div>';
+  function renderNews(d) {
+    var list=document.getElementById('news-list'); list.innerHTML='';
+    var VIS=5;
+    d.articles.forEach(function(a,i){
+      var sev=classifySeverity(a);
+      var li=document.createElement('li');
+      li.className='news-item'+(i>=VIS?' news-hidden':'');
+      li.innerHTML='<span class="news-date">'+a.date+'</span><span><span class="news-source">'+a.source+'</span><span class="news-severity severity-'+sev+'">'+LANG.severity[sev]+'</span></span><div><a href="'+a.url+'" target="_blank" rel="noopener" class="news-title">'+a.title+'</a><div class="news-summary">'+a.summary+'</div></div>';
       list.appendChild(li);
     });
+    if(d.articles.length>VIS){
+      var btn=document.createElement('button');btn.className='news-show-more';
+      btn.textContent=(d.articles.length-VIS)+' aeltere Meldungen anzeigen';
+      btn.onclick=function(){var h=list.querySelectorAll('.news-hidden');for(var j=0;j<h.length;j++)h[j].classList.remove('news-hidden');btn.remove();};
+      list.parentElement.appendChild(btn);
+    }
   }
 
   async function init() {
-    var cases = await loadJSON('../data/cases.json');
-    var hondius = await loadJSON('../data/hondius.json');
-    var historical = await loadJSON('../data/historical.json');
-    var news = await loadJSON('../data/news.json');
-    renderKPIs(cases); renderEpiStats(cases); renderAlertBanner(cases, hondius);
-    renderClusterEpiStats(hondius); renderClusterTable(hondius); renderNews(news);
-    initMap(cases, hondius); initCharts(cases, historical);
+    var cases=await loadJSON('../data/cases.json'),hondius=await loadJSON('../data/hondius.json'),
+        historical=await loadJSON('../data/historical.json'),news=await loadJSON('../data/news.json');
+    renderKPIs(cases);renderEpiStats(cases);renderAlertBanner(cases,hondius);
+    renderClusterEpiStats(hondius);renderClusterTable(hondius);renderNews(news);
+    initMap(cases,hondius);initCharts(cases,historical);
   }
-
-  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('DOMContentLoaded',init);
   </script>
 </body>
 </html>

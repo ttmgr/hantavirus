@@ -53,19 +53,19 @@ function epiCurveChart(cases, accent, danger) {
       plugins: {
         legend: {
           position: 'bottom',
-          labels: { font: { family: 'Inter', size: 11 }, boxWidth: 12, padding: 16 }
+          labels: { font: { family: 'Inter', size: 12 }, boxWidth: 12, padding: 16 }
         }
       },
       scales: {
         x: {
-          ticks: { font: { family: 'Inter', size: 10 }, maxRotation: 45 },
+          ticks: { font: { family: 'Inter', size: 12 }, maxRotation: 45 },
           grid: { display: false }
         },
         y: {
           beginAtZero: true,
-          ticks: { font: { family: 'Inter', size: 10 }, stepSize: 5 },
+          ticks: { font: { family: 'Inter', size: 12 }, stepSize: 5 },
           grid: { color: '#e5e7eb' },
-          title: { display: true, text: 'Cases per period', font: { family: 'Inter', size: 11 } }
+          title: { display: true, text: 'Cases per period', font: { family: 'Inter', size: 12 } }
         }
       }
     }
@@ -111,17 +111,17 @@ function timelineChart(cases, accent, danger) {
       plugins: {
         legend: {
           position: 'bottom',
-          labels: { font: { family: 'Inter', size: 11 }, boxWidth: 12, padding: 16 }
+          labels: { font: { family: 'Inter', size: 12 }, boxWidth: 12, padding: 16 }
         }
       },
       scales: {
         x: {
-          ticks: { font: { family: 'Inter', size: 10 }, maxRotation: 45 },
+          ticks: { font: { family: 'Inter', size: 12 }, maxRotation: 45 },
           grid: { display: false }
         },
         y: {
           beginAtZero: true,
-          ticks: { font: { family: 'Inter', size: 10 } },
+          ticks: { font: { family: 'Inter', size: 12 } },
           grid: { color: '#e5e7eb' }
         }
       }
@@ -170,17 +170,17 @@ function regionalChart(cases, accent, danger) {
       plugins: {
         legend: {
           position: 'bottom',
-          labels: { font: { family: 'Inter', size: 11 }, boxWidth: 12, padding: 16 }
+          labels: { font: { family: 'Inter', size: 12 }, boxWidth: 12, padding: 16 }
         }
       },
       scales: {
         x: {
           beginAtZero: true,
-          ticks: { font: { family: 'Inter', size: 10 } },
+          ticks: { font: { family: 'Inter', size: 12 } },
           grid: { color: '#e5e7eb' }
         },
         y: {
-          ticks: { font: { family: 'Inter', size: 11 } },
+          ticks: { font: { family: 'Inter', size: 12 } },
           grid: { display: false }
         }
       }
@@ -247,17 +247,17 @@ function historicalChartEU(historical, accent, grey) {
       plugins: {
         legend: {
           position: 'bottom',
-          labels: { font: { family: 'Inter', size: 11 }, boxWidth: 12, padding: 16 }
+          labels: { font: { family: 'Inter', size: 12 }, boxWidth: 12, padding: 16 }
         }
       },
       scales: {
         x: {
-          ticks: { font: { family: 'Inter', size: 10 } },
+          ticks: { font: { family: 'Inter', size: 12 } },
           grid: { display: false }
         },
         y: {
           beginAtZero: true,
-          ticks: { font: { family: 'Inter', size: 10 } },
+          ticks: { font: { family: 'Inter', size: 12 } },
           grid: { color: '#e5e7eb' }
         }
       }
@@ -289,17 +289,17 @@ function historicalChartUS(historical, accent, grey) {
       plugins: {
         legend: {
           position: 'bottom',
-          labels: { font: { family: 'Inter', size: 11 }, boxWidth: 12, padding: 16 }
+          labels: { font: { family: 'Inter', size: 12 }, boxWidth: 12, padding: 16 }
         }
       },
       scales: {
         x: {
-          ticks: { font: { family: 'Inter', size: 10 } },
+          ticks: { font: { family: 'Inter', size: 12 } },
           grid: { display: false }
         },
         y: {
           beginAtZero: true,
-          ticks: { font: { family: 'Inter', size: 10 } },
+          ticks: { font: { family: 'Inter', size: 12 } },
           grid: { color: '#e5e7eb' }
         }
       }

@@ -28,15 +28,15 @@ function initMap(cases, hondius) {
 
     if (!hasCases && !isMonitoring) return;
 
-    var radius = hasCases ? Math.max(7, Math.sqrt(country.cases_2026) * 4.5) : 5;
+    var radius = hasCases ? Math.max(8, Math.sqrt(country.cases_2026) * 5) : 6;
     var color = hasDeaths ? dangerColor : (isMonitoring ? monitorColor : accentColor);
-    var fillOpacity = hasCases ? 0.2 : 0.1;
+    var fillOpacity = hasCases ? 0.3 : 0.15;
 
     var circle = L.circleMarker([country.lat, country.lon], {
       radius: radius,
       fillColor: color,
       color: color,
-      weight: 1.5,
+      weight: 2,
       opacity: 0.9,
       fillOpacity: fillOpacity
     }).addTo(map);
@@ -81,9 +81,9 @@ function initMap(cases, hondius) {
   var trackCoords = hondius.track.map(function(p) { return [p.lat, p.lon]; });
 
   L.polyline(trackCoords, {
-    color: '#374151',
-    weight: 2.5,
-    dashArray: '8, 5',
+    color: '#1f2937',
+    weight: 3,
+    dashArray: '10, 6',
     opacity: 0.8
   }).addTo(map);
 
