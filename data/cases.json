@@ -4,7 +4,13 @@
     "total_cases_2026": 108,
     "total_deaths_2026": 3,
     "countries_affected": 8,
-    "active_clusters": 1
+    "active_clusters": 1,
+    "cfr_percent": 2.8,
+    "who_risk_global": "LOW",
+    "who_risk_europe": "VERY LOW",
+    "data_lag_hours": 48,
+    "case_definition": "WHO 2026: confirmed (RT-PCR or IgM seroconversion), probable (clinical + epi link), suspected (clinical only)",
+    "weekly_delta": { "cases": 7, "deaths": 1 }
   },
   "countries": [
     {
@@ -14,6 +20,10 @@
       "lon": -58.38,
       "cases_2026": 101,
       "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 8,
+      "risk_level": "ELEVATED",
+      "case_classification": { "confirmed": 85, "probable": 12, "suspected": 4 },
       "virus": "Andes virus (ANDV)",
       "notes": "Approximately 2x baseline rate since June 2025. Endemic region for ANDV."
     },
@@ -24,6 +34,10 @@
       "lon": 4.90,
       "cases_2026": 2,
       "deaths_2026": 2,
+      "cfr_percent": 100.0,
+      "hospitalized": 0,
+      "risk_level": "LOW",
+      "case_classification": { "confirmed": 2, "probable": 0, "suspected": 0 },
       "virus": "Andes virus (ANDV)",
       "notes": "Dutch couple infected during MV Hondius shore excursion in Argentina. Both deceased."
     },
@@ -34,6 +48,10 @@
       "lon": 10.45,
       "cases_2026": 1,
       "deaths_2026": 1,
+      "cfr_percent": 100.0,
+      "hospitalized": 0,
+      "risk_level": "LOW",
+      "case_classification": { "confirmed": 1, "probable": 0, "suspected": 0 },
       "virus": "Andes virus (ANDV)",
       "notes": "German national, MV Hondius passenger. Deceased."
     },
@@ -44,6 +62,10 @@
       "lon": -98.58,
       "cases_2026": 2,
       "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 1,
+      "risk_level": "LOW",
+      "case_classification": { "confirmed": 1, "probable": 1, "suspected": 0 },
       "virus": "Sin Nombre virus (SNV)",
       "notes": "Sporadic cases in southwestern states. Contact tracing from MV Hondius ongoing."
     },
@@ -54,6 +76,10 @@
       "lon": -3.75,
       "cases_2026": 0,
       "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 0,
+      "risk_level": "MONITORING",
+      "case_classification": { "confirmed": 0, "probable": 0, "suspected": 0 },
       "virus": "",
       "notes": "Contact tracing for MV Hondius passengers. No confirmed cases."
     },
@@ -64,6 +90,10 @@
       "lon": 103.82,
       "cases_2026": 0,
       "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 0,
+      "risk_level": "MONITORING",
+      "case_classification": { "confirmed": 0, "probable": 0, "suspected": 0 },
       "virus": "",
       "notes": "Contact tracing for MV Hondius passengers. No confirmed cases."
     },
@@ -74,6 +104,10 @@
       "lon": -23.51,
       "cases_2026": 0,
       "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 0,
+      "risk_level": "MONITORING",
+      "case_classification": { "confirmed": 0, "probable": 0, "suspected": 0 },
       "virus": "",
       "notes": "MV Hondius anchored off Praia. Quarantine in effect."
     },
@@ -84,6 +118,10 @@
       "lon": 25.75,
       "cases_2026": 2,
       "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 0,
+      "risk_level": "LOW",
+      "case_classification": { "confirmed": 2, "probable": 0, "suspected": 0 },
       "virus": "Puumala virus (PUUV)",
       "notes": "Endemic Puumala virus cases, typical seasonal pattern."
     }

@@ -8,45 +8,79 @@
   "virus": "Andes virus (ANDV)",
   "total_cases": 7,
   "total_deaths": 3,
+  "attack_rate_percent": 8.7,
+  "cfr_percent": 42.9,
+  "r0_estimate": 1.4,
+  "generation_interval_days": "2-7",
+  "secondary_attack_rate_percent": 4.2,
+  "transmission_type": "Suspected human-to-human (ANDV)",
   "cases": [
     {
+      "id": 1,
       "date": "2026-04-12",
+      "onset_date": "2026-04-10",
+      "exposure_date": "2026-04-01",
+      "linked_to": null,
       "description": "Dutch male, 68, onset of symptoms at sea. Suspected infection during Ushuaia shore excursion.",
       "outcome": "Deceased (2026-04-18)",
       "nationality": "Netherlands"
     },
     {
+      "id": 2,
       "date": "2026-04-14",
+      "onset_date": "2026-04-12",
+      "exposure_date": "2026-04-01",
+      "linked_to": 1,
       "description": "Dutch female, 65, spouse of first case. Symptom onset two days after partner.",
       "outcome": "Deceased (2026-04-20)",
       "nationality": "Netherlands"
     },
     {
+      "id": 3,
       "date": "2026-04-19",
+      "onset_date": "2026-04-17",
+      "exposure_date": "2026-04-12",
+      "linked_to": 1,
       "description": "German male, 57, cabin on same deck as index cases.",
       "outcome": "Deceased (2026-04-28)",
       "nationality": "Germany"
     },
     {
+      "id": 4,
       "date": "2026-04-22",
+      "onset_date": "2026-04-20",
+      "exposure_date": "2026-04-14",
+      "linked_to": 2,
       "description": "Crew member, 34, close contact with affected passengers.",
       "outcome": "Hospitalized, stable",
       "nationality": "Philippines"
     },
     {
+      "id": 5,
       "date": "2026-04-25",
+      "onset_date": "2026-04-23",
+      "exposure_date": "2026-04-01",
+      "linked_to": null,
       "description": "British female, 61, attended same excursion in Ushuaia.",
       "outcome": "Hospitalized, stable",
       "nationality": "United Kingdom"
     },
     {
+      "id": 6,
       "date": "2026-04-28",
+      "onset_date": "2026-04-26",
+      "exposure_date": "2026-04-19",
+      "linked_to": 3,
       "description": "American male, 44, suspected human-to-human transmission on board.",
       "outcome": "Mild, recovering",
       "nationality": "United States"
     },
     {
+      "id": 7,
       "date": "2026-05-02",
+      "onset_date": "2026-04-30",
+      "exposure_date": "2026-04-22",
+      "linked_to": 4,
       "description": "Argentine female, 29, crew member. Latest confirmed case.",
       "outcome": "Mild, recovering",
       "nationality": "Argentina"

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hantavirus 2026 Outbreak Tracker</title>
   <meta name="description" content="Live tracker for the 2026 hantavirus outbreak. Case data, MV Hondius cluster, historical surveillance from WHO, CDC, ECDC, and RKI.">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta property="og:title" content="Hantavirus 2026 Outbreak Tracker">
+  <meta property="og:description" content="Real-time case data, interactive map, MV Hondius cluster analysis, and historical surveillance for the 2026 hantavirus outbreak.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,9 +16,19 @@
   <header>
     <div class="container">
       <h1>Hantavirus 2026 Outbreak Tracker</h1>
-      <span class="updated" id="last-updated">Loading...</span>
+      <div class="header-meta">
+        <span class="risk-badge risk-low" id="risk-badge">WHO: LOW</span>
+        <span class="updated" id="last-updated">Loading...</span>
+      </div>
     </div>
   </header>
+
+  <div class="alert-banner" id="alert-banner" style="display:none">
+    <div class="container">
+      <span class="alert-label">ACTIVE</span>
+      <span id="alert-text"></span>
+    </div>
+  </div>
 
   <main class="container">
 
@@ -22,10 +36,12 @@
     <div class="kpi-row">
       <div class="kpi-card cases">
         <div class="value" id="kpi-cases">--</div>
+        <div class="delta" id="kpi-cases-delta"></div>
         <div class="label">Total Cases (2026)</div>
       </div>
       <div class="kpi-card deaths">
         <div class="value" id="kpi-deaths">--</div>
+        <div class="delta" id="kpi-deaths-delta"></div>
         <div class="label">Deaths</div>
       </div>
       <div class="kpi-card countries">
@@ -36,6 +52,14 @@
         <div class="value" id="kpi-clusters">--</div>
         <div class="label">Active Clusters</div>
       </div>
+    </div>
+
+    <!-- Epi stats bar -->
+    <div class="epi-stats" id="epi-stats">
+      <span>CFR: <strong id="epi-cfr">--</strong></span>
+      <span>WHO global risk: <strong id="epi-risk">--</strong></span>
+      <span>Data lag: <strong id="epi-lag">--</strong></span>
+      <span>Case definition: <strong id="epi-def">--</strong></span>
     </div>
 
     <!-- Map -->
@@ -51,26 +75,33 @@
     <!-- MV Hondius Cluster -->
     <section>
       <h2>MV Hondius Cluster (Andes Virus)</h2>
-      <p style="font-size:13px;color:#6b7280;margin-bottom:12px">
+      <p class="cluster-intro">
         Dutch expedition cruise ship. Departed Ushuaia, Argentina on 2026-04-01. Currently quarantined off Praia, Cape Verde. Andes virus (ANDV) confirmed -- the only hantavirus serotype with documented human-to-human transmission.
       </p>
-      <table class="cluster-table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Nationality</th>
-            <th>Description</th>
-            <th>Outcome</th>
-          </tr>
-        </thead>
-        <tbody id="cluster-tbody"></tbody>
-      </table>
+      <div class="cluster-epi-stats" id="cluster-epi-stats"></div>
+      <div class="table-scroll">
+        <table class="cluster-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Nationality</th>
+              <th>Description</th>
+              <th>Outcome</th>
+            </tr>
+          </thead>
+          <tbody id="cluster-tbody"></tbody>
+        </table>
+      </div>
     </section>
 
     <!-- Charts: 2026 Timeline -->
     <section>
       <h2>2026 Case Timeline</h2>
       <div class="chart-grid">
+        <div class="chart-container chart-full">
+          <h3>Weekly New Cases (Epi Curve)</h3>
+          <div style="height:220px"><canvas id="chart-epicurve"></canvas></div>
+        </div>
         <div class="chart-container">
           <h3>Cumulative Cases and Deaths</h3>
           <div style="height:280px"><canvas id="chart-timeline"></canvas></div>
