@@ -33,25 +33,34 @@
 
   <main class="container">
 
+    <!-- Situation summary -->
+    <div class="situation-summary" id="situation-summary">
+      <strong>Current status:</strong> Cluster linked to MV Hondius cruise ship (Andes virus, ANDV). 108 total cases reported globally in 2026, 3 deaths, 8 countries involved in surveillance or contact tracing. Most recent confirmed case: crew member aboard MV Hondius, 2026-05-02. No evidence of sustained community-level human-to-human transmission. WHO global risk assessment: LOW.
+    </div>
+
     <!-- KPI Cards -->
     <div class="kpi-row">
       <div class="kpi-card cases">
         <div class="value" id="kpi-cases">--</div>
         <div class="delta" id="kpi-cases-delta"></div>
-        <div class="label">Total Cases (2026)</div>
+        <div class="label">Total reported cases</div>
+        <div class="sublabel" id="kpi-cases-sub">Confirmed + probable + suspected</div>
       </div>
       <div class="kpi-card deaths">
         <div class="value" id="kpi-deaths">--</div>
         <div class="delta" id="kpi-deaths-delta"></div>
         <div class="label">Deaths</div>
+        <div class="sublabel" id="kpi-cfr-sub"></div>
       </div>
       <div class="kpi-card countries">
         <div class="value" id="kpi-countries">--</div>
-        <div class="label">Countries Affected</div>
+        <div class="label">Countries affected</div>
+        <div class="sublabel">Cases or active contact tracing</div>
       </div>
       <div class="kpi-card clusters">
         <div class="value" id="kpi-clusters">--</div>
-        <div class="label">Active Clusters</div>
+        <div class="label">Active clusters</div>
+        <div class="sublabel">MV Hondius (ANDV)</div>
       </div>
     </div>
 
@@ -59,17 +68,19 @@
     <div class="epi-stats" id="epi-stats">
       <span>CFR: <strong id="epi-cfr">--</strong></span>
       <span>WHO global risk: <strong id="epi-risk">--</strong></span>
+      <span>Data confidence: <strong>Provisional</strong></span>
       <span>Data lag: <strong id="epi-lag">--</strong></span>
-      <span>Case definition: <strong id="epi-def">--</strong></span>
     </div>
 
     <!-- Map -->
     <section>
-      <h2>Global Outbreak Map</h2>
+      <h2>Outbreak Map</h2>
       <div id="map"></div>
-      <div class="ship-legend">
-        <span><span class="line-sample" style="background:#6b7280;border-top:2px dashed #6b7280;height:0"></span> MV Hondius ship track</span>
-        <span>Circle size proportional to case count. Red markers indicate fatalities.</span>
+      <div class="map-legend">
+        <span class="map-legend-item"><span class="legend-dot" style="background:#1e40af25;border-color:#1e40af"></span> Confirmed cases</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#991b1b25;border-color:#991b1b"></span> Deaths reported</span>
+        <span class="map-legend-item"><span class="legend-dot" style="background:#6b728025;border-color:#6b7280"></span> Contact tracing only</span>
+        <span class="map-legend-item"><span class="legend-line"></span> MV Hondius route</span>
       </div>
     </section>
 
@@ -77,7 +88,7 @@
     <section>
       <h2>MV Hondius Cluster (Andes Virus)</h2>
       <p class="cluster-intro">
-        Dutch expedition cruise ship. Departed Ushuaia, Argentina on 2026-04-01. Currently quarantined off Praia, Cape Verde. Andes virus (ANDV) confirmed -- the only hantavirus serotype with documented human-to-human transmission.
+        Dutch expedition cruise ship operated by Oceanwide Expeditions. Departed Ushuaia, Argentina on 2026-04-01. Currently quarantined off Praia, Cape Verde. Andes virus (ANDV) confirmed -- the only hantavirus serotype with documented human-to-human transmission.
       </p>
       <div class="cluster-epi-stats" id="cluster-epi-stats"></div>
       <div class="table-scroll">
@@ -95,67 +106,123 @@
       </div>
     </section>
 
-    <!-- Charts: 2026 Timeline -->
+    <!-- Charts -->
     <section>
       <h2>2026 Case Timeline</h2>
       <div class="chart-grid">
         <div class="chart-container chart-full">
           <h3>Weekly New Cases (Epi Curve)</h3>
-          <div style="height:180px"><canvas id="chart-epicurve"></canvas></div>
+          <p class="chart-caption">New cases per reporting period. The standard epidemiological view for assessing outbreak trajectory.</p>
+          <div style="height:200px"><canvas id="chart-epicurve"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Cumulative Cases and Deaths</h3>
-          <div style="height:240px"><canvas id="chart-timeline"></canvas></div>
+          <p class="chart-caption">Running total since January 2026. Steepening curve indicates acceleration.</p>
+          <div style="height:260px"><canvas id="chart-timeline"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Cases by Country</h3>
-          <div style="height:240px"><canvas id="chart-regional"></canvas></div>
+          <p class="chart-caption">Country-level breakdown with case fatality rate where calculable.</p>
+          <div style="height:260px"><canvas id="chart-regional"></canvas></div>
         </div>
       </div>
     </section>
 
-    <!-- Charts: Historical -->
     <section>
       <h2>Historical Surveillance (2013--2025)</h2>
       <div class="chart-grid">
         <div class="chart-container">
           <h3>EU/EEA and Germany</h3>
-          <div style="height:240px"><canvas id="chart-historical-eu"></canvas></div>
+          <p class="chart-caption">Biennial peaks in Germany correlate with beech mast years and bank vole population cycles. Dashed line shows EU/EEA linear trend.</p>
+          <div style="height:260px"><canvas id="chart-historical-eu"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>United States (HPS Cases)</h3>
-          <div style="height:240px"><canvas id="chart-historical-us"></canvas></div>
+          <p class="chart-caption">Hantavirus pulmonary syndrome cases. Predominantly Sin Nombre virus in southwestern states.</p>
+          <div style="height:260px"><canvas id="chart-historical-us"></canvas></div>
         </div>
       </div>
     </section>
 
-    <!-- News Feed -->
+    <!-- News -->
     <section>
       <h2>News and Situation Reports</h2>
       <ul class="news-list" id="news-list"></ul>
     </section>
 
-    <!-- About -->
+    <!-- Methodology -->
+    <section>
+      <h2>Data Notes and Methodology</h2>
+      <div class="methodology">
+        <dl>
+          <dt>Data sources</dt>
+          <dd>WHO Disease Outbreak News, CDC Hantavirus Surveillance, ECDC Surveillance Atlas (TESSy), Robert Koch Institute (RKI SurvStat), ProMED-mail, PAHO Epidemiological Updates</dd>
+          <dt>Update frequency</dt>
+          <dd>News feed automated daily (06:00 UTC). Case data updated manually as official sources publish.</dd>
+          <dt>Case definition</dt>
+          <dd>WHO 2026: <strong>Confirmed</strong> (RT-PCR positive or IgM seroconversion), <strong>Probable</strong> (clinical presentation + epidemiological link), <strong>Suspected</strong> (clinical presentation only).</dd>
+          <dt>Deduplication</dt>
+          <dd>Country-level aggregates reconciled against official source reports. Individual MV Hondius cases cross-referenced across WHO, ECDC, and national reports.</dd>
+          <dt>Data lag</dt>
+          <dd>Typically 24-48 hours for official source updates. News feed may include unverified reports.</dd>
+          <dt>Last reviewed</dt>
+          <dd id="methodology-reviewed">--</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- About — accordion -->
     <section>
       <h2>About Hantaviruses</h2>
-      <div class="about-content">
-        <h3>Overview</h3>
-        <p>Hantaviruses are a family of RNA viruses transmitted primarily through inhalation of aerosolized rodent excreta (urine, droppings, saliva). They cause two main clinical syndromes: hantavirus pulmonary syndrome (HPS) in the Americas and hemorrhagic fever with renal syndrome (HFRS) in Europe and Asia.</p>
-
-        <h3>Major Serotypes</h3>
-        <p><strong>Andes virus (ANDV)</strong> -- South America, primarily Argentina and Chile. Causes HPS. The only hantavirus with documented human-to-human transmission. Case fatality rate approximately 30-40%.</p>
-        <p><strong>Sin Nombre virus (SNV)</strong> -- North America, predominantly southwestern United States. Causes HPS. No documented person-to-person spread. Case fatality rate approximately 36%.</p>
-        <p><strong>Puumala virus (PUUV)</strong> -- Europe, especially Scandinavia, Germany, and the Balkans. Causes a milder form of HFRS (nephropathia epidemica). Carried by bank voles. Case fatality rate below 1%.</p>
-        <p><strong>Hantaan virus (HTNV)</strong> -- East Asia, primarily China and Korea. Causes classical HFRS. Case fatality rate 5-15%.</p>
-
-        <h3>Transmission</h3>
-        <p>Primary route: inhalation of aerosolized virus from rodent urine, droppings, or nesting materials. Risk factors include cleaning enclosed spaces with rodent infestation, agricultural work, and camping. Andes virus is exceptional in that it can spread between humans through close contact, though this remains rare.</p>
-
-        <h3>Symptoms</h3>
-        <p>HPS: fever, myalgia, and gastrointestinal symptoms progressing to cough and rapid respiratory failure. HFRS: fever, hemorrhagic manifestations, and acute kidney injury. Incubation period typically 1-5 weeks.</p>
-
-        <h3>Prevention</h3>
-        <p>No approved vaccine is available for human use. Prevention relies on rodent control, sealing entry points in buildings, safe cleanup of rodent-contaminated areas (wet methods, ventilation, PPE), and avoiding contact with wild rodents. In endemic areas, public health campaigns focus on reducing rodent habitat around human dwellings.</p>
+      <div id="accordion">
+        <div class="accordion-item open">
+          <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <span>Overview</span>
+            <span class="accordion-arrow">&#9660;</span>
+          </button>
+          <div class="accordion-body">
+            <p>Hantaviruses are a family of RNA viruses transmitted primarily through inhalation of aerosolized rodent excreta (urine, droppings, saliva). They cause two main clinical syndromes: hantavirus pulmonary syndrome (HPS) in the Americas and hemorrhagic fever with renal syndrome (HFRS) in Europe and Asia.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <span>Major Serotypes</span>
+            <span class="accordion-arrow">&#9660;</span>
+          </button>
+          <div class="accordion-body">
+            <p><strong>Andes virus (ANDV)</strong> -- South America, primarily Argentina and Chile. Causes HPS. The only hantavirus with documented human-to-human transmission. Case fatality rate approximately 30-40%.</p>
+            <p><strong>Sin Nombre virus (SNV)</strong> -- North America, predominantly southwestern United States. Causes HPS. No documented person-to-person spread. Case fatality rate approximately 36%.</p>
+            <p><strong>Puumala virus (PUUV)</strong> -- Europe, especially Scandinavia, Germany, and the Balkans. Causes a milder form of HFRS (nephropathia epidemica). Carried by bank voles. Case fatality rate below 1%.</p>
+            <p><strong>Hantaan virus (HTNV)</strong> -- East Asia, primarily China and Korea. Causes classical HFRS. Case fatality rate 5-15%.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <span>Transmission</span>
+            <span class="accordion-arrow">&#9660;</span>
+          </button>
+          <div class="accordion-body">
+            <p>Primary route: inhalation of aerosolized virus from rodent urine, droppings, or nesting materials. Risk factors include cleaning enclosed spaces with rodent infestation, agricultural work, and camping. Andes virus is exceptional in that it can spread between humans through close contact, though this remains rare.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <span>Symptoms and Prognosis</span>
+            <span class="accordion-arrow">&#9660;</span>
+          </button>
+          <div class="accordion-body">
+            <p>HPS: fever, myalgia, and gastrointestinal symptoms progressing to cough and rapid respiratory failure. HFRS: fever, hemorrhagic manifestations, and acute kidney injury. Incubation period typically 1-5 weeks. Early supportive care significantly improves survival.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="toggleAccordion(this)">
+            <span>Prevention</span>
+            <span class="accordion-arrow">&#9660;</span>
+          </button>
+          <div class="accordion-body">
+            <p>No approved vaccine is available for human use. Prevention relies on rodent control, sealing entry points in buildings, safe cleanup of rodent-contaminated areas (wet methods, ventilation, PPE), and avoiding contact with wild rodents. In endemic areas, public health campaigns focus on reducing rodent habitat around human dwellings.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -187,5 +254,11 @@
   <script src="js/map.js"></script>
   <script src="js/charts.js"></script>
   <script src="js/app.js"></script>
+  <script>
+  function toggleAccordion(btn) {
+    var item = btn.parentElement;
+    item.classList.toggle('open');
+  }
+  </script>
 </body>
 </html>
