@@ -1,11 +1,15 @@
 function initMap(cases, hondius) {
   var map = L.map('map', {
-    center: [-10, -25],
-    zoom: 3,
-    scrollWheelZoom: true,
+    scrollWheelZoom: false,
     zoomControl: true,
-    tap: true
+    tap: false,
+    dragging: !L.Browser.mobile,
+    touchZoom: true,
+    maxBounds: [[-70, -120], [70, 60]],
+    maxBoundsViscosity: 1.0
   });
+
+  map.fitBounds([[-55, -75], [55, 20]], { padding: [20, 20], maxZoom: 4 });
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
