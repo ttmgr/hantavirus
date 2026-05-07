@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hantavirus-Radar 2026 -- Ausbruch-Tracker</title>
+  <meta name="description" content="Live-Tracker fuer den Hantavirus-Ausbruch 2026. Fallzahlen, MV Hondius-Cluster, historische Surveillance von WHO, CDC, ECDC und RKI.">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta property="og:title" content="Hantavirus-Radar 2026 -- Ausbruch-Tracker">
+  <meta property="og:description" content="Echtzeit-Falldaten, interaktive Karte, MV Hondius-Clusteranalyse und historische Surveillance fuer den Hantavirus-Ausbruch 2026.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hantavirus-Radar 2026</h1>
+      <div class="header-meta">
+        <a href="../" class="lang-switch">EN</a>
+        <span class="risk-badge risk-low" id="risk-badge">WHO: NIEDRIG</span>
+        <span class="updated" id="last-updated">Laden...</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="alert-banner" id="alert-banner" style="display:none">
+    <div class="container">
+      <span class="alert-label">AKTIV</span>
+      <span id="alert-text"></span>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <div class="kpi-row">
+      <div class="kpi-card cases">
+        <div class="value" id="kpi-cases">--</div>
+        <div class="delta" id="kpi-cases-delta"></div>
+        <div class="label">Faelle gesamt (2026)</div>
+      </div>
+      <div class="kpi-card deaths">
+        <div class="value" id="kpi-deaths">--</div>
+        <div class="delta" id="kpi-deaths-delta"></div>
+        <div class="label">Todesfaelle</div>
+      </div>
+      <div class="kpi-card countries">
+        <div class="value" id="kpi-countries">--</div>
+        <div class="label">Betroffene Laender</div>
+      </div>
+      <div class="kpi-card clusters">
+        <div class="value" id="kpi-clusters">--</div>
+        <div class="label">Aktive Cluster</div>
+      </div>
+    </div>
+
+    <div class="epi-stats" id="epi-stats">
+      <span>Letalitaet: <strong id="epi-cfr">--</strong></span>
+      <span>WHO-Risiko global: <strong id="epi-risk">--</strong></span>
+      <span>Datenverzoegerung: <strong id="epi-lag">--</strong></span>
+      <span>Falldefinition: <strong id="epi-def">--</strong></span>
+    </div>
+
+    <section>
+      <h2>Globale Ausbruchskarte</h2>
+      <div id="map"></div>
+      <div class="ship-legend">
+        <span><span class="line-sample" style="background:#6b7280;border-top:2px dashed #6b7280;height:0"></span> MV Hondius Schiffsroute</span>
+        <span>Kreisgroesse proportional zur Fallzahl. Rote Marker zeigen Todesfaelle.</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>MV Hondius-Cluster (Andes-Virus)</h2>
+      <p class="cluster-intro">
+        Niederlaendisches Expeditionskreuzfahrtschiff. Abfahrt Ushuaia, Argentinien am 01.04.2026. Derzeit unter Quarantaene vor Praia, Kap Verde. Andes-Virus (ANDV) bestaetigt -- der einzige Hantavirus-Serotyp mit dokumentierter Mensch-zu-Mensch-Uebertragung.
+      </p>
+      <div class="cluster-epi-stats" id="cluster-epi-stats"></div>
+      <div class="table-scroll">
+        <table class="cluster-table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Nationalitaet</th>
+              <th>Beschreibung</th>
+              <th>Verlauf</th>
+            </tr>
+          </thead>
+          <tbody id="cluster-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fallzeitverlauf 2026</h2>
+      <div class="chart-grid">
+        <div class="chart-container chart-full">
+          <h3>Woechentliche Neuerkrankungen (Epi-Kurve)</h3>
+          <div style="height:180px"><canvas id="chart-epicurve"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h3>Kumulative Faelle und Todesfaelle</h3>
+          <div style="height:240px"><canvas id="chart-timeline"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h3>Faelle nach Land</h3>
+          <div style="height:240px"><canvas id="chart-regional"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Historische Surveillance (2013--2025)</h2>
+      <div class="chart-grid">
+        <div class="chart-container">
+          <h3>EU/EWR und Deutschland</h3>
+          <div style="height:240px"><canvas id="chart-historical-eu"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h3>Vereinigte Staaten (HPS-Faelle)</h3>
+          <div style="height:240px"><canvas id="chart-historical-us"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Nachrichten und Lageberichte</h2>
+      <ul class="news-list" id="news-list"></ul>
+    </section>
+
+    <section>
+      <h2>Ueber Hantaviren</h2>
+      <div class="about-content">
+        <h3>Ueberblick</h3>
+        <p>Hantaviren sind eine Familie von RNA-Viren, die primaer durch Einatmen von aerosolisierten Nagerexkrementen (Urin, Kot, Speichel) uebertragen werden. Sie verursachen zwei klinische Hauptsyndrome: das Hantavirus-Lungensyndrom (HPS) in Amerika und das Haemorrhagische Fieber mit renalem Syndrom (HFRS) in Europa und Asien.</p>
+
+        <h3>Wichtige Serotypen</h3>
+        <p><strong>Andes-Virus (ANDV)</strong> -- Suedamerika, vorwiegend Argentinien und Chile. Verursacht HPS. Einziger Hantavirus mit dokumentierter Mensch-zu-Mensch-Uebertragung. Letalitaet ca. 30-40%.</p>
+        <p><strong>Sin-Nombre-Virus (SNV)</strong> -- Nordamerika, vorwiegend suedwestliche USA. Verursacht HPS. Keine dokumentierte Mensch-zu-Mensch-Uebertragung. Letalitaet ca. 36%.</p>
+        <p><strong>Puumala-Virus (PUUV)</strong> -- Europa, besonders Skandinavien, Deutschland und Balkan. Verursacht eine mildere Form des HFRS (Nephropathia epidemica). Wirt: Roetelmaus. Letalitaet unter 1%.</p>
+        <p><strong>Hantaan-Virus (HTNV)</strong> -- Ostasien, vorwiegend China und Korea. Verursacht klassisches HFRS. Letalitaet 5-15%.</p>
+
+        <h3>Uebertragung</h3>
+        <p>Hauptuebertragungsweg: Einatmen von aerosolisiertem Virus aus Nagerurin, Kot oder Nistmaterial. Risikofaktoren umfassen das Reinigen geschlossener Raeume mit Nagerbefall, landwirtschaftliche Taetigkeiten und Camping. Das Andes-Virus ist insofern eine Ausnahme, als es durch engen Kontakt zwischen Menschen uebertragen werden kann, was jedoch selten vorkommt.</p>
+
+        <h3>Symptome</h3>
+        <p>HPS: Fieber, Myalgie und gastrointestinale Symptome mit Uebergang zu Husten und raschem Lungenversagen. HFRS: Fieber, haemorrhagische Manifestationen und akute Nierenschaedigung. Inkubationszeit typischerweise 1-5 Wochen.</p>
+
+        <h3>Praevention</h3>
+        <p>Kein zugelassener Impfstoff fuer den Menschen verfuegbar. Praevention beruht auf Nagerbekaempfung, Abdichtung von Gebaeudeoeffnungen, sicherer Reinigung nagerverseuchter Bereiche (Nassmethoden, Belueftung, PSA) und Vermeidung von Kontakt mit Wildnagern. In endemischen Gebieten konzentrieren sich oeffentliche Gesundheitskampagnen auf die Reduzierung von Nagerhabitaten in der Naehe menschlicher Behausungen.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="sources">
+        <strong>Datenquellen:</strong>
+        WHO Disease Outbreak News |
+        CDC Hantavirus Surveillance |
+        ECDC Surveillance Atlas |
+        Robert Koch-Institut (RKI) |
+        ProMED-mail |
+        PAHO Epidemiological Updates
+      </div>
+      <div class="credit">
+        Erstellt von <a href="https://github.com/ttmgr/Tim_Reska">Tim Reska</a>
+        | <a href="https://github.com/ttmgr/GenomicsForOneHealth">GenomicsForOneHealth</a>
+        <br>
+        Dieser Tracker aggregiert oeffentlich verfuegbare Daten zu Informationszwecken.
+        Er ist keine offizielle Gesundheitsbehoerden-Ressource.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="../js/map.js"></script>
+  <script src="../js/charts.js"></script>
+  <script>
+  // German labels for the app logic
+  var LANG = {
+    updated: 'Aktualisiert',
+    thisWeek: 'diese Woche',
+    whoPrefix: 'WHO: ',
+    riskMap: { 'LOW': 'NIEDRIG', 'VERY LOW': 'SEHR NIEDRIG', 'ELEVATED': 'ERHOEHT', 'HIGH': 'HOCH' },
+    alertPrefix: 'MV Hondius-Cluster: ',
+    alertDeaths: ' Todesfaelle. ',
+    alertCases: ' Faelle, ',
+    alertCFR: ' Letalitaet ',
+    clusterLabels: {
+      cases: 'Faelle', deaths: 'Todesfaelle', cfr: 'Letalitaet',
+      attackRate: 'Befallsrate', r0: 'R0-Schaetzung', genInterval: 'Generationsintervall'
+    },
+    linkedTo: 'verknuepft mit #',
+    indexCase: 'Indexfall',
+    days: ' Tage'
+  };
+
+  async function loadJSON(path) {
+    var resp = await fetch(path);
+    return resp.json();
+  }
+
+  function renderKPIs(data) {
+    document.getElementById('kpi-cases').textContent = data.summary.total_cases_2026.toLocaleString('de-DE');
+    document.getElementById('kpi-deaths').textContent = data.summary.total_deaths_2026.toLocaleString('de-DE');
+    document.getElementById('kpi-countries').textContent = data.summary.countries_affected;
+    document.getElementById('kpi-clusters').textContent = data.summary.active_clusters;
+    document.getElementById('last-updated').textContent = LANG.updated + ' ' + data.last_updated;
+
+    var delta = data.summary.weekly_delta;
+    if (delta) {
+      renderDelta('kpi-cases-delta', delta.cases);
+      renderDelta('kpi-deaths-delta', delta.deaths);
+    }
+  }
+
+  function renderDelta(id, value) {
+    var el = document.getElementById(id);
+    if (!el || value === undefined) return;
+    var cls = value > 0 ? 'delta-up' : value < 0 ? 'delta-down' : 'delta-flat';
+    var prefix = value > 0 ? '+' : '';
+    el.className = 'delta ' + cls;
+    el.textContent = prefix + value + ' ' + LANG.thisWeek;
+  }
+
+  function renderEpiStats(data) {
+    var s = data.summary;
+    document.getElementById('epi-cfr').textContent = s.cfr_percent + '%';
+    var riskDE = LANG.riskMap[s.who_risk_global] || s.who_risk_global;
+    document.getElementById('epi-risk').textContent = riskDE;
+    document.getElementById('epi-lag').textContent = s.data_lag_hours + 'h';
+    document.getElementById('epi-def').textContent = 'WHO 2026';
+
+    var badge = document.getElementById('risk-badge');
+    if (badge) {
+      badge.textContent = LANG.whoPrefix + riskDE;
+      badge.className = 'risk-badge risk-' + s.who_risk_global.toLowerCase().replace(' ', '-');
+    }
+  }
+
+  function renderAlertBanner(data, hondius) {
+    if (hondius.total_cases > 0 && hondius.total_deaths > 0) {
+      document.getElementById('alert-banner').style.display = '';
+      document.getElementById('alert-text').textContent =
+        LANG.alertPrefix + hondius.total_cases + LANG.alertCases +
+        hondius.total_deaths + LANG.alertDeaths + hondius.current_status +
+        LANG.alertCFR + hondius.cfr_percent + '%.';
+    }
+  }
+
+  function renderClusterEpiStats(hondius) {
+    var L = LANG.clusterLabels;
+    var stats = [
+      { label: L.cases, value: hondius.total_cases },
+      { label: L.deaths, value: hondius.total_deaths },
+      { label: L.cfr, value: hondius.cfr_percent + '%' },
+      { label: L.attackRate, value: hondius.attack_rate_percent + '%' },
+      { label: L.r0, value: hondius.r0_estimate },
+      { label: L.genInterval, value: hondius.generation_interval_days + LANG.days }
+    ];
+    document.getElementById('cluster-epi-stats').innerHTML = stats.map(function(s) {
+      return '<div class="stat"><span class="stat-value">' + s.value +
+        '</span><span class="stat-label">' + s.label + '</span></div>';
+    }).join('');
+  }
+
+  function renderClusterTable(data) {
+    var tbody = document.getElementById('cluster-tbody');
+    tbody.innerHTML = '';
+    data.cases.forEach(function(c) {
+      var statusClass = 'status-recovering';
+      if (c.outcome.toLowerCase().indexOf('deceased') !== -1) statusClass = 'status-deceased';
+      else if (c.outcome.toLowerCase().indexOf('hospitalized') !== -1) statusClass = 'status-hospitalized';
+      var linkText = c.linked_to !== null
+        ? ' [' + LANG.linkedTo + c.linked_to + ']'
+        : ' [' + LANG.indexCase + ']';
+      var tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td>' + c.date + '</td>' +
+        '<td>' + c.nationality + '</td>' +
+        '<td>' + c.description + '<span style="color:#6b7280;font-size:10px">' + linkText + '</span></td>' +
+        '<td class="' + statusClass + '">' + c.outcome + '</td>';
+      tbody.appendChild(tr);
+    });
+  }
+
+  function renderNews(data) {
+    var list = document.getElementById('news-list');
+    list.innerHTML = '';
+    data.articles.forEach(function(article) {
+      var li = document.createElement('li');
+      li.className = 'news-item';
+      li.innerHTML =
+        '<span class="news-date">' + article.date + '</span>' +
+        '<span class="news-source">' + article.source + '</span>' +
+        '<div>' +
+          '<a href="' + article.url + '" target="_blank" rel="noopener" class="news-title">' + article.title + '</a>' +
+          '<div class="news-summary">' + article.summary + '</div>' +
+        '</div>';
+      list.appendChild(li);
+    });
+  }
+
+  async function init() {
+    var cases = await loadJSON('../data/cases.json');
+    var hondius = await loadJSON('../data/hondius.json');
+    var historical = await loadJSON('../data/historical.json');
+    var news = await loadJSON('../data/news.json');
+
+    renderKPIs(cases);
+    renderEpiStats(cases);
+    renderAlertBanner(cases, hondius);
+    renderClusterEpiStats(hondius);
+    renderClusterTable(hondius);
+    renderNews(news);
+    initMap(cases, hondius);
+    initCharts(cases, historical);
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
