@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f7f8fa;
+  --ink: #1a1a2e;
+  --ink-light: #6b7280;
+  --border: #e5e7eb;
+  --accent: #1e40af;
+  --danger: #991b1b;
+  --success: #166534;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+header .updated {
+  font-size: 12px;
+  color: var(--ink-light);
+  font-variant-numeric: tabular-nums;
+}
+
+/* KPI Cards */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.kpi-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 20px;
+}
+
+.kpi-card .value {
+  font-size: 32px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.kpi-card .label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+}
+
+.kpi-card.cases .value { color: var(--accent); }
+.kpi-card.deaths .value { color: var(--danger); }
+.kpi-card.countries .value { color: var(--ink); }
+.kpi-card.clusters .value { color: var(--ink); }
+
+/* Sections */
+section {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+/* Map */
+#map {
+  width: 100%;
+  height: 480px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.leaflet-popup-content {
+  font-family: 'Inter', -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.leaflet-popup-content strong {
+  font-weight: 600;
+}
+
+.popup-cases { color: var(--accent); font-weight: 700; }
+.popup-deaths { color: var(--danger); font-weight: 700; }
+
+/* Ship track legend */
+.ship-legend {
+  font-size: 12px;
+  color: var(--ink-light);
+  margin-top: 8px;
+}
+
+.ship-legend span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.ship-legend .line-sample {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* Charts */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.chart-container {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.chart-container h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+
+.chart-container canvas {
+  width: 100% !important;
+}
+
+/* News Feed */
+.news-list {
+  list-style: none;
+}
+
+.news-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  font-size: 12px;
+  color: var(--ink-light);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+.news-source {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-light);
+  background: var(--bg-alt);
+  padding: 1px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.news-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.news-summary {
+  font-size: 13px;
+  color: var(--ink-light);
+  margin-top: 2px;
+}
+
+/* About */
+.about-content {
+  column-count: 2;
+  column-gap: 32px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.about-content h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 4px 0;
+  break-after: avoid;
+}
+
+.about-content h3:first-child {
+  margin-top: 0;
+}
+
+.about-content p {
+  margin-bottom: 8px;
+}
+
+/* MV Hondius Cluster Table */
+.cluster-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.cluster-table th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-light);
+  padding: 8px 12px;
+  border-bottom: 2px solid var(--border);
+}
+
+.cluster-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.cluster-table tr:last-child td {
+  border-bottom: none;
+}
+
+.cluster-table tr:nth-child(even) td {
+  background: var(--bg-alt);
+}
+
+.status-deceased {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.status-hospitalized {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.status-recovering {
+  color: var(--success);
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  font-size: 12px;
+  color: var(--ink-light);
+  line-height: 1.6;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+footer .sources {
+  max-width: 700px;
+}
+
+footer .credit {
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kpi-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    column-count: 1;
+  }
+
+  #map {
+    height: 320px;
+  }
+
+  .news-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  header .container {
+    flex-direction: column;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .credit {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kpi-card .value {
+    font-size: 24px;
+  }
+
+  .cluster-table {
+    font-size: 12px;
+  }
+
+  .cluster-table th,
+  .cluster-table td {
+    padding: 6px 8px;
+  }
+}

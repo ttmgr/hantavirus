@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hantavirus 2026 Outbreak Tracker</title>
+  <meta name="description" content="Live tracker for the 2026 hantavirus outbreak. Case data, MV Hondius cluster, historical surveillance from WHO, CDC, ECDC, and RKI.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hantavirus 2026 Outbreak Tracker</h1>
+      <span class="updated" id="last-updated">Loading...</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- KPI Cards -->
+    <div class="kpi-row">
+      <div class="kpi-card cases">
+        <div class="value" id="kpi-cases">--</div>
+        <div class="label">Total Cases (2026)</div>
+      </div>
+      <div class="kpi-card deaths">
+        <div class="value" id="kpi-deaths">--</div>
+        <div class="label">Deaths</div>
+      </div>
+      <div class="kpi-card countries">
+        <div class="value" id="kpi-countries">--</div>
+        <div class="label">Countries Affected</div>
+      </div>
+      <div class="kpi-card clusters">
+        <div class="value" id="kpi-clusters">--</div>
+        <div class="label">Active Clusters</div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <section>
+      <h2>Global Outbreak Map</h2>
+      <div id="map"></div>
+      <div class="ship-legend">
+        <span><span class="line-sample" style="background:#6b7280;border-top:2px dashed #6b7280;height:0"></span> MV Hondius ship track</span>
+        <span>Circle size proportional to case count. Red markers indicate fatalities.</span>
+      </div>
+    </section>
+
+    <!-- MV Hondius Cluster -->
+    <section>
+      <h2>MV Hondius Cluster (Andes Virus)</h2>
+      <p style="font-size:13px;color:#6b7280;margin-bottom:12px">
+        Dutch expedition cruise ship. Departed Ushuaia, Argentina on 2026-04-01. Currently quarantined off Praia, Cape Verde. Andes virus (ANDV) confirmed -- the only hantavirus serotype with documented human-to-human transmission.
+      </p>
+      <table class="cluster-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Nationality</th>
+            <th>Description</th>
+            <th>Outcome</th>
+          </tr>
+        </thead>
+        <tbody id="cluster-tbody"></tbody>
+      </table>
+    </section>
+
+    <!-- Charts: 2026 Timeline -->
+    <section>
+      <h2>2026 Case Timeline</h2>
+      <div class="chart-grid">
+        <div class="chart-container">
+          <h3>Cumulative Cases and Deaths</h3>
+          <div style="height:280px"><canvas id="chart-timeline"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h3>Cases by Country</h3>
+          <div style="height:280px"><canvas id="chart-regional"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Charts: Historical -->
+    <section>
+      <h2>Historical Surveillance (2013--2025)</h2>
+      <div class="chart-grid">
+        <div class="chart-container">
+          <h3>EU/EEA and Germany</h3>
+          <div style="height:280px"><canvas id="chart-historical-eu"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h3>United States (HPS Cases)</h3>
+          <div style="height:280px"><canvas id="chart-historical-us"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Feed -->
+    <section>
+      <h2>News and Situation Reports</h2>
+      <ul class="news-list" id="news-list"></ul>
+    </section>
+
+    <!-- About -->
+    <section>
+      <h2>About Hantaviruses</h2>
+      <div class="about-content">
+        <h3>Overview</h3>
+        <p>Hantaviruses are a family of RNA viruses transmitted primarily through inhalation of aerosolized rodent excreta (urine, droppings, saliva). They cause two main clinical syndromes: hantavirus pulmonary syndrome (HPS) in the Americas and hemorrhagic fever with renal syndrome (HFRS) in Europe and Asia.</p>
+
+        <h3>Major Serotypes</h3>
+        <p><strong>Andes virus (ANDV)</strong> -- South America, primarily Argentina and Chile. Causes HPS. The only hantavirus with documented human-to-human transmission. Case fatality rate approximately 30-40%.</p>
+        <p><strong>Sin Nombre virus (SNV)</strong> -- North America, predominantly southwestern United States. Causes HPS. No documented person-to-person spread. Case fatality rate approximately 36%.</p>
+        <p><strong>Puumala virus (PUUV)</strong> -- Europe, especially Scandinavia, Germany, and the Balkans. Causes a milder form of HFRS (nephropathia epidemica). Carried by bank voles. Case fatality rate below 1%.</p>
+        <p><strong>Hantaan virus (HTNV)</strong> -- East Asia, primarily China and Korea. Causes classical HFRS. Case fatality rate 5-15%.</p>
+
+        <h3>Transmission</h3>
+        <p>Primary route: inhalation of aerosolized virus from rodent urine, droppings, or nesting materials. Risk factors include cleaning enclosed spaces with rodent infestation, agricultural work, and camping. Andes virus is exceptional in that it can spread between humans through close contact, though this remains rare.</p>
+
+        <h3>Symptoms</h3>
+        <p>HPS: fever, myalgia, and gastrointestinal symptoms progressing to cough and rapid respiratory failure. HFRS: fever, hemorrhagic manifestations, and acute kidney injury. Incubation period typically 1-5 weeks.</p>
+
+        <h3>Prevention</h3>
+        <p>No approved vaccine is available for human use. Prevention relies on rodent control, sealing entry points in buildings, safe cleanup of rodent-contaminated areas (wet methods, ventilation, PPE), and avoiding contact with wild rodents. In endemic areas, public health campaigns focus on reducing rodent habitat around human dwellings.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="sources">
+        <strong>Data sources:</strong>
+        WHO Disease Outbreak News |
+        CDC Hantavirus Surveillance |
+        ECDC Surveillance Atlas |
+        Robert Koch Institute (RKI) |
+        ProMED-mail |
+        PAHO Epidemiological Updates
+      </div>
+      <div class="credit">
+        Built by <a href="https://github.com/ttmgr/Tim_Reska">Tim Reska</a>
+        | <a href="https://github.com/ttmgr/GenomicsForOneHealth">GenomicsForOneHealth</a>
+        <br>
+        This tracker aggregates publicly available data for informational purposes.
+        It is not an official health authority resource.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

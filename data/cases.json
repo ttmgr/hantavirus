@@ -1,0 +1,105 @@
+{
+  "last_updated": "2026-05-07",
+  "summary": {
+    "total_cases_2026": 108,
+    "total_deaths_2026": 3,
+    "countries_affected": 8,
+    "active_clusters": 1
+  },
+  "countries": [
+    {
+      "name": "Argentina",
+      "iso": "AR",
+      "lat": -34.61,
+      "lon": -58.38,
+      "cases_2026": 101,
+      "deaths_2026": 0,
+      "virus": "Andes virus (ANDV)",
+      "notes": "Approximately 2x baseline rate since June 2025. Endemic region for ANDV."
+    },
+    {
+      "name": "Netherlands",
+      "iso": "NL",
+      "lat": 52.37,
+      "lon": 4.90,
+      "cases_2026": 2,
+      "deaths_2026": 2,
+      "virus": "Andes virus (ANDV)",
+      "notes": "Dutch couple infected during MV Hondius shore excursion in Argentina. Both deceased."
+    },
+    {
+      "name": "Germany",
+      "iso": "DE",
+      "lat": 51.16,
+      "lon": 10.45,
+      "cases_2026": 1,
+      "deaths_2026": 1,
+      "virus": "Andes virus (ANDV)",
+      "notes": "German national, MV Hondius passenger. Deceased."
+    },
+    {
+      "name": "United States",
+      "iso": "US",
+      "lat": 39.83,
+      "lon": -98.58,
+      "cases_2026": 2,
+      "deaths_2026": 0,
+      "virus": "Sin Nombre virus (SNV)",
+      "notes": "Sporadic cases in southwestern states. Contact tracing from MV Hondius ongoing."
+    },
+    {
+      "name": "Spain",
+      "iso": "ES",
+      "lat": 40.46,
+      "lon": -3.75,
+      "cases_2026": 0,
+      "deaths_2026": 0,
+      "virus": "",
+      "notes": "Contact tracing for MV Hondius passengers. No confirmed cases."
+    },
+    {
+      "name": "Singapore",
+      "iso": "SG",
+      "lat": 1.35,
+      "lon": 103.82,
+      "cases_2026": 0,
+      "deaths_2026": 0,
+      "virus": "",
+      "notes": "Contact tracing for MV Hondius passengers. No confirmed cases."
+    },
+    {
+      "name": "Cape Verde",
+      "iso": "CV",
+      "lat": 14.93,
+      "lon": -23.51,
+      "cases_2026": 0,
+      "deaths_2026": 0,
+      "virus": "",
+      "notes": "MV Hondius anchored off Praia. Quarantine in effect."
+    },
+    {
+      "name": "Finland",
+      "iso": "FI",
+      "lat": 61.92,
+      "lon": 25.75,
+      "cases_2026": 2,
+      "deaths_2026": 0,
+      "virus": "Puumala virus (PUUV)",
+      "notes": "Endemic Puumala virus cases, typical seasonal pattern."
+    }
+  ],
+  "timeline": [
+    { "date": "2026-01-01", "cumulative_cases": 12, "cumulative_deaths": 0 },
+    { "date": "2026-01-15", "cumulative_cases": 19, "cumulative_deaths": 0 },
+    { "date": "2026-02-01", "cumulative_cases": 28, "cumulative_deaths": 0 },
+    { "date": "2026-02-15", "cumulative_cases": 35, "cumulative_deaths": 0 },
+    { "date": "2026-03-01", "cumulative_cases": 48, "cumulative_deaths": 0 },
+    { "date": "2026-03-15", "cumulative_cases": 61, "cumulative_deaths": 0 },
+    { "date": "2026-04-01", "cumulative_cases": 78, "cumulative_deaths": 0 },
+    { "date": "2026-04-15", "cumulative_cases": 89, "cumulative_deaths": 1 },
+    { "date": "2026-04-22", "cumulative_cases": 95, "cumulative_deaths": 2 },
+    { "date": "2026-04-29", "cumulative_cases": 101, "cumulative_deaths": 2 },
+    { "date": "2026-05-03", "cumulative_cases": 105, "cumulative_deaths": 3 },
+    { "date": "2026-05-07", "cumulative_cases": 108, "cumulative_deaths": 3 }
+  ]
+}

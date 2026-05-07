@@ -1,0 +1,66 @@
+{
+  "vessel": "MV Hondius",
+  "operator": "Oceanwide Expeditions",
+  "flag": "Netherlands",
+  "departure": "2026-04-01",
+  "departure_port": "Ushuaia, Argentina",
+  "current_status": "Anchored off Praia, Cape Verde (as of 2026-05-07)",
+  "virus": "Andes virus (ANDV)",
+  "total_cases": 7,
+  "total_deaths": 3,
+  "cases": [
+    {
+      "date": "2026-04-12",
+      "description": "Dutch male, 68, onset of symptoms at sea. Suspected infection during Ushuaia shore excursion.",
+      "outcome": "Deceased (2026-04-18)",
+      "nationality": "Netherlands"
+    },
+    {
+      "date": "2026-04-14",
+      "description": "Dutch female, 65, spouse of first case. Symptom onset two days after partner.",
+      "outcome": "Deceased (2026-04-20)",
+      "nationality": "Netherlands"
+    },
+    {
+      "date": "2026-04-19",
+      "description": "German male, 57, cabin on same deck as index cases.",
+      "outcome": "Deceased (2026-04-28)",
+      "nationality": "Germany"
+    },
+    {
+      "date": "2026-04-22",
+      "description": "Crew member, 34, close contact with affected passengers.",
+      "outcome": "Hospitalized, stable",
+      "nationality": "Philippines"
+    },
+    {
+      "date": "2026-04-25",
+      "description": "British female, 61, attended same excursion in Ushuaia.",
+      "outcome": "Hospitalized, stable",
+      "nationality": "United Kingdom"
+    },
+    {
+      "date": "2026-04-28",
+      "description": "American male, 44, suspected human-to-human transmission on board.",
+      "outcome": "Mild, recovering",
+      "nationality": "United States"
+    },
+    {
+      "date": "2026-05-02",
+      "description": "Argentine female, 29, crew member. Latest confirmed case.",
+      "outcome": "Mild, recovering",
+      "nationality": "Argentina"
+    }
+  ],
+  "track": [
+    { "date": "2026-04-01", "lat": -54.81, "lon": -68.32, "label": "Ushuaia, Argentina (departure)" },
+    { "date": "2026-04-04", "lat": -62.00, "lon": -58.75, "label": "Antarctic Peninsula" },
+    { "date": "2026-04-08", "lat": -60.72, "lon": -45.60, "label": "South Orkney Islands" },
+    { "date": "2026-04-11", "lat": -54.28, "lon": -36.51, "label": "South Georgia" },
+    { "date": "2026-04-12", "lat": -54.28, "lon": -36.51, "label": "First case reported" },
+    { "date": "2026-04-17", "lat": -37.11, "lon": -12.28, "label": "Tristan da Cunha" },
+    { "date": "2026-04-21", "lat": -15.96, "lon": -5.70, "label": "Saint Helena" },
+    { "date": "2026-04-25", "lat": -7.95, "lon": -14.36, "label": "Ascension Island" },
+    { "date": "2026-05-01", "lat": 14.93, "lon": -23.51, "label": "Praia, Cape Verde (quarantined)" }
+  ]
+}

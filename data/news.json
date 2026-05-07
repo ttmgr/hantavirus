@@ -1,0 +1,103 @@
+{
+  "last_updated": "2026-05-07",
+  "articles": [
+    {
+      "date": "2026-05-07",
+      "source": "WHO",
+      "title": "Hantavirus disease — Andes virus infection cluster associated with MV Hondius cruise ship",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON599",
+      "summary": "WHO publishes disease outbreak news on the hantavirus cluster associated with the MV Hondius. Seven confirmed and suspected cases with three deaths. Global population risk assessed as LOW."
+    },
+    {
+      "date": "2026-05-07",
+      "source": "CNN",
+      "title": "Hantavirus outbreak on cruise ship: what we know",
+      "url": "https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl",
+      "summary": "Three deaths confirmed among passengers of the MV Hondius expedition cruise. Ship currently anchored off Cape Verde under quarantine."
+    },
+    {
+      "date": "2026-05-07",
+      "source": "Washington Post",
+      "title": "Health authorities trace hantavirus contacts across multiple countries",
+      "url": "https://www.washingtonpost.com/health/2026/05/07/hantavirus-outbreak-cruise-tracing-contacts/",
+      "summary": "Contact tracing underway in the US, Spain, Singapore, Germany and Argentina for passengers who disembarked at earlier ports of call."
+    },
+    {
+      "date": "2026-05-07",
+      "source": "STAT News",
+      "title": "Hantavirus cruise ship outbreak concerns scientists, but this is not a new pandemic",
+      "url": "https://www.statnews.com/2026/05/07/hantavirus-cruise-ship-outbreak-scientists-say-not-new-pandemic/",
+      "summary": "Infectious disease experts clarify that Andes virus human-to-human transmission is rare and hantaviruses lack the respiratory spread efficiency needed for pandemic potential."
+    },
+    {
+      "date": "2026-05-06",
+      "source": "ECDC",
+      "title": "Rapid risk assessment: hantavirus cluster on expedition cruise ship",
+      "url": "https://www.ecdc.europa.eu/en/publications-data/hantavirus-associated-cluster-illness-cruise-ship-ecdc-assessment-and",
+      "summary": "ECDC assesses risk to European population as VERY LOW. Recommends enhanced surveillance for returning passengers."
+    },
+    {
+      "date": "2026-05-05",
+      "source": "Al Jazeera",
+      "title": "Cruise ship quarantined off Cape Verde after hantavirus deaths",
+      "url": "https://www.aljazeera.com/news/2026/5/5/cruise-ship-quarantined-cape-verde-hantavirus",
+      "summary": "MV Hondius under quarantine at Praia port. Cape Verdean authorities coordinating with WHO and Dutch health authorities."
+    },
+    {
+      "date": "2026-05-03",
+      "source": "The Hill",
+      "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
+      "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
+      "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-04-30",
+      "source": "ProMED",
+      "title": "Hantavirus update: Argentina (Patagonia), cruise ship cluster",
+      "url": "https://www.promedmail.org/",
+      "summary": "ProMED reports third death on MV Hondius. Argentina's national health ministry confirms 101 hantavirus infections since June 2025."
+    },
+    {
+      "date": "2026-04-25",
+      "source": "Reuters",
+      "title": "Dutch cruise company confirms hantavirus cases on expedition vessel",
+      "url": "https://www.reuters.com/world/2026-04-25-hantavirus-cruise-ship-cases/",
+      "summary": "Oceanwide Expeditions confirms five suspected hantavirus cases aboard MV Hondius. Two Dutch passengers have died."
+    },
+    {
+      "date": "2026-04-18",
+      "source": "RKI",
+      "title": "Hantavirus-Infektionen 2026: Aktuelle Situation",
+      "url": "https://www.rki.de/DE/Themen/Infektionskrankheiten/Infektionskrankheiten-A-Z/H/Hantavirus/Hantavirus.html",
+      "summary": "Robert Koch Institute reports on hantavirus situation in Germany. One German national among cruise ship fatalities. Domestic Puumala virus season tracking at expected levels."
+    },
+    {
+      "date": "2026-04-10",
+      "source": "PAHO",
+      "title": "Epidemiological update: hantavirus disease in the Americas",
+      "url": "https://www.paho.org/en/documents/epidemiological-update-hantavirus-disease-americas-2026",
+      "summary": "Pan American Health Organization reports elevated Andes virus activity in southern Argentina. Recommends rodent exposure prevention measures."
+    },
+    {
+      "date": "2026-03-15",
+      "source": "Argentina MOH",
+      "title": "Alerta epidemiologica: sindrome pulmonar por hantavirus",
+      "url": "https://www.argentina.gob.ar/salud/hantavirus",
+      "summary": "Argentina's Ministry of Health issues epidemiological alert for hantavirus pulmonary syndrome. Case counts running at twice the rate of the same period in 2024-2025."
+    },
+    {
+      "date": "2026-01-22",
+      "source": "CDC",
+      "title": "Hantavirus surveillance summary, United States, 2025",
+      "url": "https://www.cdc.gov/hantavirus/data-research/cases/index.html",
+      "summary": "CDC publishes annual hantavirus surveillance summary. 31 HPS cases reported in 2025, consistent with long-term average."
+    },
+    {
+      "date": "2025-11-15",
+      "source": "ECDC",
+      "title": "Annual epidemiological report: hantavirus infection, 2024",
+      "url": "https://www.ecdc.europa.eu/en/hantavirus-infection/surveillance-and-disease-data",
+      "summary": "ECDC publishes 2024 annual report. 2,340 confirmed cases across EU/EEA. Germany (423), Finland (312), and Sweden (198) account for majority of cases."
+    }
+  ]
+}
