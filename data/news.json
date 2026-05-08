@@ -3,6 +3,48 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "NPR",
+      "title": "Spain readies for evacuations as a hantavirus-hit cruise ship heads for Canary Islands",
+      "url": "https://www.npr.org/2026/05/08/g-s1-121055/spain-readies-for-evacuations",
+      "summary": "NPR reports Spain is preparing to receive the 146 remaining passengers and crew of MV Hondius at Tenerife. Spanish authorities confirm an isolated, cordoned-off arrival area. All non-Spanish nationals will be repatriated directly; 14 Spanish nationals transferred to Gómez Ulla UATAN. The KLM flight attendant has tested negative for hantavirus. UKHSA confirms a third British national is a suspected case on Tristan da Cunha."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "NPR / Short Wave",
+      "title": "Hantavirus: the risks, the science and what you need to know",
+      "url": "https://www.npr.org/2026/05/08/nx-s1-5811917/hantavirus-andres-mvhondius-ship-rodents",
+      "summary": "NPR Short Wave science podcast episode covering hantavirus biology and the MV Hondius outbreak. Explains rodent-to-human and Andes virus human-to-human transmission mechanisms, why no licensed vaccine or antiviral exists, and the public health significance of the ship cluster. Aimed at general audiences."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Outlook India",
+      "title": "Hantavirus Outbreak On Luxury Cruise Ship: 2 Indian Crew Members Onboard",
+      "url": "https://www.outlookindia.com/international/hantavirus-outbreak-on-luxury-cruise-ship-2-indian-crew-members-onboard",
+      "summary": "Two Indian nationals are part of the crew aboard MV Hondius. Neither has been identified as a confirmed or suspected hantavirus case. Oceanwide Expeditions has not disclosed their test status or proximity to infected passengers. Indian media coverage notes a gap in communication protocols between cruise operators, flag states, and workers' home countries during onboard disease outbreaks."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "The Globe and Mail",
+      "title": "Three Canadians isolating at home after hantavirus outbreak on cruise ship",
+      "url": "https://www.theglobeandmail.com/canada/article-hantavirus-outbreak-canadians-isolating/",
+      "summary": "The Globe and Mail reports three Canadians are self-isolating: two Ontario residents who disembarked MV Hondius at Saint Helena on April 24 (asymptomatic, under provincial monitoring), and one Quebec resident with possible contact with an infected traveller but never aboard the ship. Four further Canadians remain aboard MV Hondius; Foreign Affairs Minister Anita Anand confirmed consular staff have been dispatched to Tenerife."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Newsweek",
+      "title": "Map Shows Where Hantavirus Has Spread",
+      "url": "https://www.newsweek.com/map-shows-where-hantavirus-has-spread-11924128",
+      "summary": "Newsweek publishes an interactive map of confirmed and suspected hantavirus cases linked to MV Hondius, covering affected countries across Europe, the Americas, Asia, and remote South Atlantic territories. Notes that 8 ship-linked cases (3 deaths) have been reported across at least 10 countries, with contact tracing active in 12+ nations."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Newsweek",
+      "title": "Deadly Hantavirus Outbreak: 5 Questions Experts are Facing",
+      "url": "https://www.newsweek.com/key-questions-in-bid-to-stop-deadly-hantavirus-outbreak-11924356",
+      "summary": "Newsweek frames five open questions dominating expert discussion: (1) Did human-to-human transmission occur on board? (2) How many additional cases will emerge among the ~40 early-disembarking passengers? (3) Will the Tristan da Cunha suspected case be confirmed? (4) What is the ship's exact attack rate once full passenger testing is complete? (5) Are there unreported cases in countries with limited diagnostic capacity? No new confirmed cases announced."
+    },
+    {
+      "date": "2026-05-08",
       "source": "ECDC",
       "title": "Technical Assessment Brief: Hantavirus-associated cluster of illness on a cruise ship",
       "url": "https://www.ecdc.europa.eu/sites/default/files/documents/TAB-hantavirus-06052026.pdf",
