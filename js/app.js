@@ -1,148 +1,183 @@
-async function loadJSON(path) {
-  return (await fetch(path)).json();
+async function loadJSON(p) { return (await fetch(p)).json(); }
+
+function renderHeroStats(data) {
+  var s = data.summary;
+  var d = s.weekly_delta || {};
+  var chips = [
+    { val: s.total_cases_2026, label: 'Total cases', sub: d.cases ? (d.cases > 0 ? '+' : '') + d.cases + ' this week' : '', cls: 'blue', subCls: d.cases > 0 ? 'up' : '' },
+    { val: s.total_deaths_2026, label: 'Deaths', sub: d.deaths ? (d.deaths > 0 ? '+' : '') + d.deaths + ' this week' : 'No new deaths', cls: 'red', subCls: d.deaths > 0 ? 'up' : '' },
+    { val: s.countries_affected, label: 'Countries', sub: 'Cases or tracing', cls: 'default', subCls: '' },
+    { val: s.active_clusters, label: 'Active clusters', sub: 'MV Hondius', cls: 'default', subCls: '' }
+  ];
+  var el = document.getElementById('hero-stats');
+  if (!el) return;
+  el.innerHTML = chips.map(function(c) {
+    return '<div class="stat-chip ' + c.cls + '">' +
+      '<span class="stat-value">' + c.val.toLocaleString() + '</span>' +
+      '<span class="stat-label">' + c.label + '</span>' +
+      (c.sub ? '<span class="stat-sub ' + c.subCls + '">' + c.sub + '</span>' : '') +
+      '</div>';
+  }).join('');
 }
 
-function renderKPIs(data) {
-  document.getElementById('kpi-cases').textContent = data.summary.total_cases_2026.toLocaleString();
-  document.getElementById('kpi-deaths').textContent = data.summary.total_deaths_2026.toLocaleString();
-  document.getElementById('kpi-countries').textContent = data.summary.countries_affected;
-  document.getElementById('kpi-clusters').textContent = data.summary.active_clusters;
+function renderStatGrid(data) {
+  var s = data.summary;
+  var d = s.weekly_delta || {};
+  var cards = [
+    { val: s.total_cases_2026, label: 'Total cases', sub: 'Confirmed + probable + suspected', delta: d.cases, type: 'cases', cls: 'blue-top' },
+    { val: s.total_deaths_2026, label: 'Deaths', sub: 'CFR: ' + s.cfr_percent + '%', delta: d.deaths, type: 'deaths', cls: 'red-top' },
+    { val: s.countries_affected, label: 'Countries', sub: 'Cases or contact tracing', delta: null, cls: '' },
+    { val: s.active_clusters, label: 'Active clusters', sub: 'MV Hondius (ANDV)', delta: null, cls: 'amber-top' }
+  ];
+  var el = document.getElementById('stat-grid');
+  if (!el) return;
+  el.innerHTML = cards.map(function(c) {
+    var deltaHtml = '';
+    if (c.delta !== null && c.delta !== undefined) {
+      if (c.delta === 0 && c.type === 'deaths') deltaHtml = '<div class="delta delta-flat">No new deaths this week</div>';
+      else {
+        var cls = c.delta > 0 ? 'delta-up' : c.delta < 0 ? 'delta-down' : 'delta-flat';
+        deltaHtml = '<div class="delta ' + cls + '">' + (c.delta > 0 ? '+' : '') + c.delta + ' this week</div>';
+      }
+    }
+    return '<div class="stat-card ' + c.cls + '">' +
+      '<div class="stat-value">' + c.val.toLocaleString() + '</div>' +
+      deltaHtml +
+      '<div class="stat-label">' + c.label + '</div>' +
+      '<div class="stat-sub">' + c.sub + '</div>' +
+      '</div>';
+  }).join('');
+}
+
+function renderMeta(data) {
   document.getElementById('last-updated').textContent = 'Updated ' + data.last_updated;
-  document.getElementById('kpi-cfr-sub').textContent = 'Overall CFR: ' + data.summary.cfr_percent + '%';
-
-  var d = data.summary.weekly_delta;
-  if (d) {
-    renderDelta('kpi-cases-delta', d.cases, 'cases');
-    renderDelta('kpi-deaths-delta', d.deaths, 'deaths');
-  }
-}
-
-function renderDelta(id, v, type) {
-  var el = document.getElementById(id);
-  if (!el || v === undefined) return;
-  if (v === 0 && type === 'deaths') { el.className = 'delta delta-flat'; el.textContent = 'No new deaths this week'; return; }
-  el.className = 'delta ' + (v > 0 ? 'delta-up' : v < 0 ? 'delta-down' : 'delta-flat');
-  el.textContent = (v > 0 ? '+' : '') + v + ' this week';
-}
-
-function renderHeroChange(data, hondius) {
-  var ct = document.getElementById('change-text');
-  var cd = document.getElementById('change-delta');
-  if (!ct) return;
-
-  var lastCase = hondius.cases[hondius.cases.length - 1];
-  ct.textContent = 'Case #' + hondius.total_cases + ': ' + lastCase.description;
-
-  var d = data.summary.weekly_delta;
-  var parts = [];
-  if (d.cases) parts.push((d.cases > 0 ? '+' : '') + d.cases + ' cases');
-  if (d.deaths) parts.push((d.deaths > 0 ? '+' : '') + d.deaths + ' death' + (d.deaths !== 1 ? 's' : ''));
-  if (!d.deaths) parts.push('no new deaths');
-  cd.textContent = parts.join(' · ') + ' this week';
-}
-
-function renderAlertBanner(data, hondius) {
-  if (hondius.total_deaths > 0) {
-    document.getElementById('alert-banner').style.display = '';
-    document.getElementById('alert-text').textContent =
-      'MV Hondius · ' + hondius.total_cases + ' cases · ' + hondius.total_deaths +
-      ' deaths · CFR ' + hondius.cfr_percent + '% · Quarantined off Cape Verde';
-  }
-}
-
-function renderEpiStats(data) {
-  var badge = document.getElementById('risk-badge');
-  if (badge) {
-    badge.textContent = 'WHO: ' + data.summary.who_risk_global;
-    badge.className = 'risk-badge risk-' + data.summary.who_risk_global.toLowerCase().replace(' ', '-');
-  }
   var r = document.getElementById('methodology-reviewed');
   if (r) r.textContent = data.last_updated;
 }
 
-function renderRoutePanel(hondius) {
-  var ul = document.getElementById('route-timeline');
-  if (!ul) return;
-  ul.innerHTML = '';
-  hondius.track.forEach(function(stop) {
-    var isEvent = stop.label.toLowerCase().indexOf('case') !== -1 ||
-                  stop.label.toLowerCase().indexOf('quarantine') !== -1;
-    var li = document.createElement('li');
-    li.className = 'route-stop' + (isEvent ? ' event' : '');
-    var dateShort = stop.date.substring(5);
-    li.innerHTML = '<span class="route-date">' + dateShort + '</span> ' + stop.label;
-    ul.appendChild(li);
-  });
-}
-
-function renderClusterEpiStats(h) {
-  document.getElementById('cluster-epi-stats').innerHTML = [
-    { l: 'Cases', v: h.total_cases },
-    { l: 'Deaths', v: h.total_deaths },
-    { l: 'CFR', v: h.cfr_percent + '%' },
+function renderClusterMetrics(h) {
+  var el = document.getElementById('cluster-metrics');
+  if (!el) return;
+  var stats = [
+    { l: 'Ship cases', v: h.total_cases },
+    { l: 'Ship deaths', v: h.total_deaths },
+    { l: 'Ship CFR', v: h.cfr_percent + '%' },
     { l: 'Attack rate', v: h.attack_rate_percent + '%' },
     { l: 'R₀ estimate', v: h.r0_estimate },
-    { l: 'Gen. interval', v: h.generation_interval_days + ' days' }
-  ].map(function(s) {
-    return '<div class="stat"><span class="stat-value">' + s.v +
-      '</span><span class="stat-label">' + s.l + '</span></div>';
+    { l: 'Status', v: 'Quarantined' }
+  ];
+  el.innerHTML = stats.map(function(s) {
+    return '<div class="metric"><span class="metric-val">' + s.v + '</span><span class="metric-lbl">' + s.l + '</span></div>';
   }).join('');
 }
 
-function renderClusterTable(data) {
-  var tbody = document.getElementById('cluster-tbody');
+function outcomeInfo(outcome) {
+  var lo = outcome.toLowerCase();
+  if (lo.indexOf('deceased') !== -1) return { cls: 'outcome-deceased', sym: '✖' };
+  if (lo.indexOf('hospitalized') !== -1) return { cls: 'outcome-hospitalized', sym: '●' };
+  if (lo.indexOf('recovering') !== -1 || lo.indexOf('mild') !== -1) return { cls: 'outcome-recovering', sym: '✔' };
+  return { cls: 'outcome-unknown', sym: '?' };
+}
+
+function renderCaseTable(h) {
+  var tbody = document.getElementById('case-tbody');
+  if (!tbody) return;
   tbody.innerHTML = '';
-  data.cases.forEach(function(c) {
-    var lo = c.outcome.toLowerCase();
-    var cls = lo.indexOf('deceased') !== -1 ? 'status-deceased' : lo.indexOf('hospitalized') !== -1 ? 'status-hospitalized' : 'status-recovering';
-    var sym = lo.indexOf('deceased') !== -1 ? '✖' : lo.indexOf('hospitalized') !== -1 ? '●' : '✔';
-    var link = c.linked_to !== null ? ' [linked #' + c.linked_to + ']' : ' [index]';
+  h.cases.forEach(function(c) {
+    var oi = outcomeInfo(c.outcome);
     var tr = document.createElement('tr');
     tr.innerHTML =
+      '<td>#' + c.id + '</td>' +
       '<td>' + c.date + '</td>' +
       '<td>' + c.nationality + '</td>' +
-      '<td class="td-description" title="' + c.description + link + '">' + c.description +
-        '<span style="color:#6b7280;font-size:11px">' + link + '</span></td>' +
-      '<td><span class="status-badge ' + cls + '"><span class="status-symbol">' + sym + '</span> ' + c.outcome + '</span></td>';
+      '<td class="td-desc">' + c.description + '</td>' +
+      '<td><span class="outcome-badge ' + oi.cls + '"><span class="outcome-sym">' + oi.sym + '</span> ' + c.outcome + '</span></td>';
     tbody.appendChild(tr);
   });
 }
 
-function classifySeverity(a) {
+function renderCaseCards(h) {
+  var el = document.getElementById('case-cards');
+  if (!el) return;
+  el.innerHTML = '';
+  h.cases.forEach(function(c) {
+    var oi = outcomeInfo(c.outcome);
+    var div = document.createElement('div');
+    div.className = 'case-card-item';
+    div.innerHTML =
+      '<div class="case-card-header"><span class="case-card-id">Case #' + c.id + '</span><span class="case-card-date">' + c.date + '</span></div>' +
+      '<div class="case-card-nation">' + c.nationality + '</div>' +
+      '<div class="case-card-desc">' + c.description + '</div>' +
+      '<span class="outcome-badge ' + oi.cls + '"><span class="outcome-sym">' + oi.sym + '</span> ' + c.outcome + '</span>';
+    el.appendChild(div);
+  });
+}
+
+function renderRoutePanel(h) {
+  var ul = document.getElementById('route-timeline');
+  if (!ul) return;
+  ul.innerHTML = '';
+  h.track.forEach(function(s) {
+    var ev = s.label.toLowerCase().indexOf('case') !== -1 || s.label.toLowerCase().indexOf('quarantine') !== -1 || s.label.toLowerCase().indexOf('evacuation') !== -1;
+    var li = document.createElement('li');
+    li.className = 'route-stop' + (ev ? ' event' : '');
+    li.innerHTML = '<span class="route-date">' + s.date.substring(5) + '</span> ' + s.label;
+    ul.appendChild(li);
+  });
+}
+
+// News
+var officialSources = ['WHO', 'CDC', 'ECDC', 'RKI', 'PAHO', 'Africa CDC'];
+
+function classifySev(a) {
   var t = (a.title + ' ' + a.summary).toLowerCase();
-  if (t.indexOf('death') !== -1 || t.indexOf('fatali') !== -1 || t.indexOf('risk assessment') !== -1) return 'alert';
+  if (t.indexOf('death') !== -1 || t.indexOf('fatali') !== -1 || t.indexOf('risk assessment') !== -1 || t.indexOf('level 3') !== -1) return 'alert';
   if (t.indexOf('advisory') !== -1 || t.indexOf('travel') !== -1 || t.indexOf('warning') !== -1) return 'advisory';
   if (t.indexOf('case') !== -1 || t.indexOf('update') !== -1 || t.indexOf('surveillance') !== -1 || t.indexOf('confirm') !== -1) return 'update';
   return 'background';
 }
 
-var sevLabels = { alert: 'Alert', advisory: 'Advisory', update: 'Update', background: 'Background' };
+var sevLabels = { alert: 'Alert', advisory: 'Advisory', update: 'Update', background: 'Info' };
+var allArticles = [];
 
-function renderTimelineFeed(data) {
-  var feed = document.getElementById('timeline-feed');
+function renderNewsFeed(data, filter) {
+  allArticles = data.articles;
+  var feed = document.getElementById('news-feed');
   if (!feed) return;
   feed.innerHTML = '';
-  var VIS = 5;
 
-  data.articles.forEach(function(a, i) {
-    var sev = classifySeverity(a);
-    var div = document.createElement('div');
-    div.className = 'timeline-item severity-' + sev + (i >= VIS ? ' news-hidden' : '');
-    div.innerHTML =
-      '<div class="timeline-header">' +
-        '<span class="timeline-date">' + a.date + '</span>' +
-        '<span class="timeline-source">' + a.source + '</span>' +
-        '<span class="timeline-severity sev-' + sev + '">' + sevLabels[sev] + '</span>' +
+  var filtered = allArticles;
+  if (filter && filter !== 'all') {
+    if (filter === 'media') {
+      filtered = allArticles.filter(function(a) { return officialSources.indexOf(a.source) === -1; });
+    } else {
+      filtered = allArticles.filter(function(a) { return a.source === filter; });
+    }
+  }
+
+  var VIS = 5;
+  filtered.forEach(function(a, i) {
+    var sev = classifySev(a);
+    var card = document.createElement('div');
+    card.className = 'news-card' + (i >= VIS ? ' news-hidden' : '');
+    card.innerHTML =
+      '<div class="news-card-header">' +
+        '<span class="news-date">' + a.date + '</span>' +
+        '<span class="news-source-badge">' + a.source + '</span>' +
+        '<span class="news-sev-badge sev-' + sev + '">' + sevLabels[sev] + '</span>' +
       '</div>' +
-      '<a href="' + a.url + '" target="_blank" rel="noopener" class="timeline-title">' + a.title + '</a>' +
-      '<div class="timeline-summary">' + a.summary + '</div>';
-    feed.appendChild(div);
+      '<a href="' + a.url + '" target="_blank" rel="noopener" class="news-headline">' + a.title + '</a>' +
+      (a.summary ? '<div class="news-summary-text">' + a.summary + '</div>' : '');
+    feed.appendChild(card);
   });
 
-  if (data.articles.length > VIS) {
+  var existing = feed.parentElement.querySelector('.news-show-more');
+  if (existing) existing.remove();
+
+  if (filtered.length > VIS) {
     var btn = document.createElement('button');
     btn.className = 'news-show-more';
-    btn.textContent = 'Show ' + (data.articles.length - VIS) + ' older updates';
+    btn.textContent = 'Show ' + (filtered.length - VIS) + ' older updates';
     btn.onclick = function() {
       var h = feed.querySelectorAll('.news-hidden');
       for (var j = 0; j < h.length; j++) h[j].classList.remove('news-hidden');
@@ -152,20 +187,32 @@ function renderTimelineFeed(data) {
   }
 }
 
+function initFilterTabs(newsData) {
+  var tabs = document.querySelectorAll('.filter-tab');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      renderNewsFeed(newsData, tab.dataset.filter);
+    });
+  });
+}
+
 async function init() {
   var cases = await loadJSON('data/cases.json');
   var hondius = await loadJSON('data/hondius.json');
   var historical = await loadJSON('data/historical.json');
   var news = await loadJSON('data/news.json');
 
-  renderKPIs(cases);
-  renderEpiStats(cases);
-  renderHeroChange(cases, hondius);
-  renderAlertBanner(cases, hondius);
+  renderMeta(cases);
+  renderHeroStats(cases);
+  renderStatGrid(cases);
+  renderClusterMetrics(hondius);
+  renderCaseTable(hondius);
+  renderCaseCards(hondius);
   renderRoutePanel(hondius);
-  renderClusterEpiStats(hondius);
-  renderClusterTable(hondius);
-  renderTimelineFeed(news);
+  renderNewsFeed(news, 'all');
+  initFilterTabs(news);
   initMap(cases, hondius);
   initCharts(cases, historical);
 }
