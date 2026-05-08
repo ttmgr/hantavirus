@@ -3,6 +3,20 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "ABC News",
+      "title": "CDC classifies hantavirus outbreak as Level 3 emergency response",
+      "url": "https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955",
+      "summary": "CDC has elevated the MV Hondius hantavirus outbreak to a Level 3 emergency response. Live updates on ship heading to Canary Islands, contact tracing across multiple countries."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Africa CDC",
+      "title": "Statement on multi-country hantavirus cluster associated with cruise ship travel",
+      "url": "https://africacdc.org/news-item/statement-on-multi-country-hantavirus-cluster-associated-with-cruise-ship-travel/",
+      "summary": "Africa CDC issues statement on the multi-country hantavirus cluster. Coordinates with WHO and Cape Verdean authorities on ship quarantine and regional surveillance."
+    },
+    {
+      "date": "2026-05-08",
       "source": "WHO",
       "title": "WHO confirms eighth hantavirus case linked to MV Hondius cruise ship",
       "url": "https://www.who.int/news/item/07-05-2026-who-s-response-to-hantavirus-cases-linked-to-a-cruise-ship",
