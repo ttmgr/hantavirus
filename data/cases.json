@@ -3,7 +3,7 @@
   "summary": {
     "total_cases_2026": 109,
     "total_deaths_2026": 3,
-    "countries_affected": 8,
+    "countries_affected": 9,
     "active_clusters": 1,
     "cfr_percent": 2.8,
     "who_risk_global": "LOW",
@@ -124,6 +124,20 @@
       "case_classification": { "confirmed": 2, "probable": 0, "suspected": 0 },
       "virus": "Puumala virus (PUUV)",
       "notes": "Endemic Puumala virus cases, typical seasonal pattern."
+    },
+    {
+      "name": "Switzerland",
+      "iso": "CH",
+      "lat": 46.82,
+      "lon": 8.23,
+      "cases_2026": 1,
+      "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 1,
+      "risk_level": "LOW",
+      "case_classification": { "confirmed": 1, "probable": 0, "suspected": 0 },
+      "virus": "Andes virus (ANDV)",
+      "notes": "Swiss male MV Hondius passenger confirmed by Swiss Federal Office of Public Health on May 6-7. Receiving treatment at University Hospital Zurich."
     }
   ],
   "timeline": [

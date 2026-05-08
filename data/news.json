@@ -3,6 +3,48 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "Inside Medicine",
+      "title": "Dutch flight attendant tests negative for Andes virus",
+      "url": "https://insidemedicine.substack.com/p/scoop-dutch-flight-attendant-tests",
+      "summary": "WHO Director-General Tedros confirms KLM flight attendant who was hospitalized after contact with a deceased MV Hondius passenger on KLM flight KL592 (Johannesburg–Amsterdam, Apr 25) has tested negative for Andes virus by both PCR and antibody testing. No flight-related transmission confirmed."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "NL Times",
+      "title": "KLM flight attendant hospitalized after contact with hantavirus cruise ship passenger",
+      "url": "https://nltimes.nl/2026/05/07/klm-flight-attendant-hospitalized-contact-hantavirus-cruise-ship-passenger",
+      "summary": "Dutch KLM flight attendant from Haarlem hospitalized at Amsterdam UMC with mild symptoms after working on KLM KL592 (Apr 25) on which a fatally ill MV Hondius passenger briefly boarded before being asked to disembark. Passenger subsequently died of Andes virus in Johannesburg. Flight attendant later tested negative."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "CBS News",
+      "title": "3 evacuated from hantavirus cruise ship as Spain says it will dock in Canary Islands despite local opposition",
+      "url": "https://www.cbsnews.com/news/hantavirus-canary-islands-cruise-ship-new-case-switzerland/",
+      "summary": "Three people medically evacuated from MV Hondius on May 6: two sick crew members including the ship's doctor, and one asymptomatic German passenger with close contact history. Switzerland confirms 8th case — a male passenger now being treated at University Hospital Zurich. Spain's interior ministry overrides Canary Islands president's objections and authorises the ship to dock for evacuation from May 11."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Euronews",
+      "title": "WHO says hantavirus cruise outbreak is 'not the next COVID', though more infections could emerge",
+      "url": "https://www.euronews.com/health/2026/05/07/40-passengers-left-hantavirus-hit-cruise-ship",
+      "summary": "Approximately 40 passengers disembarked from MV Hondius at earlier ports of call before quarantine was enforced. WHO chief Tedros states outbreak is serious but hantavirus lacks respiratory spread efficiency for pandemic potential. Health authorities across at least a dozen countries are actively tracing these passengers."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "CBC News",
+      "title": "Deadly hantavirus outbreak on ship poses 'low' risk to wider public, WHO says",
+      "url": "https://www.cbc.ca/news/world/hantavirus-outbreak-cruise-ship-9.7190707",
+      "summary": "WHO assesses global population risk as LOW. Three deaths confirmed among 8 cases linked to MV Hondius. Andes virus human-to-human transmission requires sustained close contact; experts say outbreak will not trigger a COVID-like pandemic scenario."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Washington Post",
+      "title": "A timeline of the cruise ship hantavirus outbreak and when passengers fell sick",
+      "url": "https://www.washingtonpost.com/world/2026/05/07/hantavirus-cruise-ship-timeline-events/1d7b2b8e-4a43-11f1-a119-857cd2bf4fd4_story.html",
+      "summary": "Detailed chronological reconstruction of the MV Hondius outbreak from the index cases' four-month birdwatching road trip through Argentina, Chile, and Uruguay (Nov 2025–Apr 2026) to the current quarantine situation. Argentine health ministry confirmed the travel history of the Dutch couple on May 6."
+    },
+    {
+      "date": "2026-05-08",
       "source": "ABC News",
       "title": "CDC classifies hantavirus outbreak as Level 3 emergency response",
       "url": "https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955",

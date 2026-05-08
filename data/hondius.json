@@ -4,7 +4,7 @@
   "flag": "Netherlands",
   "departure": "2026-04-01",
   "departure_port": "Ushuaia, Argentina",
-  "current_status": "En route to Canary Islands for passenger evacuation from May 11 (as of 2026-05-08)",
+  "current_status": "En route to Canary Islands; passenger evacuation begins May 11. Three passengers medically evacuated May 6. KLM flight attendant exposure scare resolved negative (as of 2026-05-08).",
   "virus": "Andes virus (ANDV)",
   "total_cases": 8,
   "total_deaths": 3,
@@ -93,9 +93,21 @@
       "onset_date": "2026-05-05",
       "exposure_date": "2026-04-28",
       "linked_to": 6,
-      "description": "WHO-confirmed 8th case. Details pending. Ship now heading to Canary Islands.",
-      "outcome": "Under investigation",
-      "nationality": "Unknown"
+      "description": "Swiss male, MV Hondius passenger. Confirmed by Swiss Federal Office of Public Health; receiving treatment at University Hospital Zurich.",
+      "outcome": "Hospitalized, stable",
+      "nationality": "Switzerland"
+    }
+  ],
+  "evacuations": [
+    {
+      "date": "2026-05-06",
+      "description": "Three people medically evacuated from MV Hondius near Cape Verde: two sick crew members (including the ship's doctor) and one asymptomatic German passenger who had close contact with the deceased German national (case 3). Evacuees transported to specialized hospitals in the Netherlands and Germany (Dusseldorf)."
+    }
+  ],
+  "notable_contacts": [
+    {
+      "date": "2026-05-07",
+      "description": "KLM flight attendant from Haarlem hospitalized at Amsterdam UMC with suspected hantavirus after working KLM flight KL592 (Johannesburg–Amsterdam, Apr 25) on which a deceased MV Hondius passenger (Dutch female, 69) had briefly boarded before being asked to disembark due to illness. PCR and antibody tests confirmed NEGATIVE for Andes virus. No additional cases linked to the flight."
     }
   ],
   "track": [
