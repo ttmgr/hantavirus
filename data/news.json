@@ -3,6 +3,20 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "The Olive Press",
+      "title": "First suspected hantavirus case detected in Spain: woman isolates with symptoms in Alicante hospital",
+      "url": "https://www.theolivepress.es/spain-news/2026/05/08/first-suspected-hantavirus-case-detected-spain-woman-isolates-symptoms-alicante-hospital/",
+      "summary": "The Olive Press reports the first suspected hantavirus case on mainland Spain: a 32-year-old woman is isolated in a hospital in Alicante with mild respiratory symptoms including coughing and general malaise. She was identified through Europe's health alert system after she travelled on the same flight as a Dutch woman who had been a passenger on MV Hondius and subsequently died from the virus. The Spanish woman was seated two rows behind the deceased passenger; authorities describe the contact as brief. Spain's Secretary of State for Health Javier Padilla announced the suspected case. Results expected within 24–48 hours. Classified as SUSPECTED — not yet confirmed."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "RTE News",
+      "title": "Hantavirus case suspected in Alicante, say officials",
+      "url": "https://www.rte.ie/news/2026/0508/1572287-hantavirus-cruise-ship/",
+      "summary": "RTE (Ireland's national broadcaster) reports Spain has identified a suspected hantavirus case in the Alicante region. A woman has been admitted to hospital in Alicante after developing respiratory symptoms following contact with a deceased MV Hondius passenger on a shared flight. Secretary of State for Health Javier Padilla confirmed the suspected case, noting the woman was sitting two rows behind the cruise ship passenger who later died. PCR testing is ongoing; results are expected within 24–48 hours. The case remains classified as suspected."
+    },
+    {
+      "date": "2026-05-08",
       "source": "Sky News",
       "title": "Hantavirus cruise ship: Six confirmed cases and three suspected as ship sails between Cape Verde and Canary Islands",
       "url": "https://news.sky.com/story/hantavirus-cruise-ship-six-confirmed-cases-three-suspected-ship-between-cape-verde-canary-islands-13367843",
