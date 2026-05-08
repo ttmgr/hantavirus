@@ -1,13 +1,12 @@
 async function loadJSON(p) { return (await fetch(p)).json(); }
 
-function renderHeroStats(data) {
-  var s = data.summary;
-  var d = s.weekly_delta || {};
+function renderHeroStats(data, hondius) {
+  var h = hondius || {};
   var chips = [
-    { val: s.total_cases_2026, label: 'Total cases', sub: d.cases ? (d.cases > 0 ? '+' : '') + d.cases + ' this week' : '', cls: 'blue', subCls: d.cases > 0 ? 'up' : '' },
-    { val: s.total_deaths_2026, label: 'Deaths', sub: d.deaths ? (d.deaths > 0 ? '+' : '') + d.deaths + ' this week' : 'No new deaths', cls: 'red', subCls: d.deaths > 0 ? 'up' : '' },
-    { val: s.countries_affected, label: 'Countries', sub: 'Cases or tracing', cls: 'default', subCls: '' },
-    { val: s.active_clusters, label: 'Active clusters', sub: 'MV Hondius', cls: 'default', subCls: '' }
+    { val: h.total_cases || '--', label: 'Ship cases', sub: 'MV Hondius cluster', cls: 'blue', subCls: '' },
+    { val: h.total_deaths || '--', label: 'Ship deaths', sub: 'All passengers aged 57-68', cls: 'red', subCls: '' },
+    { val: (h.cfr_percent || '--') + '%', label: 'Ship CFR', sub: 'Case fatality rate', cls: 'red', subCls: '' },
+    { val: 'Quarantined', label: 'Status', sub: 'En route Tenerife', cls: 'default', subCls: '' }
   ];
   var el = document.getElementById('hero-stats');
   if (!el) return;
@@ -24,9 +23,9 @@ function renderStatGrid(data) {
   var s = data.summary;
   var d = s.weekly_delta || {};
   var cards = [
-    { val: s.total_cases_2026, label: 'Total cases', sub: 'Confirmed + probable + suspected', delta: d.cases, type: 'cases', cls: 'blue-top' },
-    { val: s.total_deaths_2026, label: 'Deaths', sub: 'CFR: ' + s.cfr_percent + '%', delta: d.deaths, type: 'deaths', cls: 'red-top' },
-    { val: s.countries_affected, label: 'Countries', sub: 'Cases or contact tracing', delta: null, cls: '' },
+    { val: s.total_cases_2026, label: 'Global total cases', sub: 'All 2026 reported cases worldwide', delta: d.cases, type: 'cases', cls: 'blue-top' },
+    { val: s.total_deaths_2026, label: 'Global total deaths', sub: 'Global CFR: ' + s.cfr_percent + '%', delta: d.deaths, type: 'deaths', cls: 'red-top' },
+    { val: s.countries_affected, label: 'Countries affected', sub: 'Cases or contact tracing', delta: null, cls: '' },
     { val: s.active_clusters, label: 'Active clusters', sub: 'MV Hondius (ANDV)', delta: null, cls: 'amber-top' }
   ];
   var el = document.getElementById('stat-grid');
@@ -205,7 +204,7 @@ async function init() {
   var news = await loadJSON('data/news.json');
 
   renderMeta(cases);
-  renderHeroStats(cases);
+  renderHeroStats(cases, hondius);
   renderStatGrid(cases);
   renderClusterMetrics(hondius);
   renderCaseTable(hondius);

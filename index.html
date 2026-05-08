@@ -39,7 +39,7 @@
       </div>
       <h2 class="hero-headline">Cruise-associated Andes virus cluster</h2>
       <p class="hero-summary" id="hero-summary">
-        9 cases confirmed with 3 deaths linked to MV Hondius (as of 8 May 11:00 CEST). Two British nationals now confirmed: Martin Anstee hospitalised in Netherlands (case 5) and a second British national hospitalised in South Africa (case 9). A third British person with SUSPECTED hantavirus has been identified on Tristan da Cunha — the remote South Atlantic island where the ship called — the first suspected case among passengers who disembarked at an intermediate port. UKHSA has ordered 45-day mandatory isolation for all returning British passengers. Ship arrival at Tenerife has slipped to Sunday May 10 (from May 9) per Spanish Health Ministry. Tender-boat evacuation planned from May 11. ~40 passengers who left at earlier ports traced across 12+ countries. KLM flight attendant exposure scare resolved negative. No sustained community transmission. WHO global risk: LOW.
+        Nine ship-associated cases confirmed, three fatal. Ship en route to Tenerife for evacuation. First suspected off-ship case identified on Tristan da Cunha. No sustained community transmission. WHO global risk: LOW.
       </p>
       <div class="hero-stats" id="hero-stats"></div>
     </div>
@@ -55,17 +55,18 @@
         <div class="chart-card chart-full">
           <h3>Weekly reported cases peaked after cluster detection</h3>
           <p class="chart-caption">New cases per reporting period. Mid-April peak coincided with MV Hondius identification.</p>
-          <div style="height:220px"><canvas id="chart-epicurve"></canvas></div>
+          <div style="height:280px"><canvas id="chart-epicurve"></canvas></div>
         </div>
         <div class="chart-card">
           <h3>Deaths concentrated among early ship cases</h3>
           <p class="chart-caption">All three deaths occurred among the first MV Hondius passengers in April.</p>
-          <div style="height:260px"><canvas id="chart-timeline"></canvas></div>
+          <div style="height:300px"><canvas id="chart-timeline"></canvas></div>
         </div>
         <div class="chart-card">
-          <h3>Argentina dominates case volume</h3>
-          <p class="chart-caption">Ship-linked cases span multiple nationalities.</p>
-          <div style="height:260px"><canvas id="chart-regional"></canvas></div>
+          <h3>Ship-linked cases by country (excl. Argentina)</h3>
+          <p class="chart-caption" id="argentina-note" style="display:none;font-weight:500"></p>
+          <p class="chart-caption">Argentina's 101 endemic cases excluded for scale. Remaining countries shown below.</p>
+          <div style="height:300px"><canvas id="chart-regional"></canvas></div>
         </div>
       </div>
     </div>
@@ -178,6 +179,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
   <script src="js/map.js"></script>
   <script src="js/charts.js"></script>

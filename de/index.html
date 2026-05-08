@@ -36,7 +36,7 @@
       </div>
       <h2 class="hero-headline">Kreuzfahrt-assoziiertes Andes-Virus-Cluster</h2>
       <p class="hero-summary">
-        9 bestaetigte Faelle mit 3 Todesfaellen im Zusammenhang mit MV Hondius (Stand: 8. Mai 11:00 MESZ). Zwei britische Staatsangehoerige nun bestaetigt: Martin Anstee in Niederlanden hospitalisiert (Fall 5) und ein zweiter Brite in Suedafrika hospitalisiert (Fall 9). Ein dritter Brite mit VERDACHT auf Hantavirus auf Tristan da Cunha identifiziert — der abgelegenen suedatlantischen Insel, die das Schiff anlief — erster Verdachtsfall unter Passagieren, die vor der Quarantaene von Bord gingen. UKHSA ordnet 45-taegige Pflichtisolation fuer alle zurueckkehrenden britischen Passagiere an. Ankunft in Teneriffa verschoben auf Sonntag 10. Mai (von 9. Mai) laut spanischem Gesundheitsministerium. Tender-Evakuierung geplant ab 11. Mai. ~40 Passagiere, die an frueheren Haefen ausstiegen, in 12+ Laendern nachverfolgt. KLM-Flugbegleiterinnen-Verdacht negativ geloest. Keine anhaltende Uebertragung. WHO-Risiko global: NIEDRIG.
+        Neun schiffsassoziierte Faelle bestaetigt, drei toedlich. Schiff unterwegs nach Teneriffa zur Evakuierung. Erster Verdachtsfall ausserhalb des Schiffs auf Tristan da Cunha identifiziert. Keine anhaltende Uebertragung in der Bevoelkerung. WHO-Risiko global: NIEDRIG.
       </p>
       <div class="hero-stats" id="hero-stats"></div>
     </div>
@@ -46,9 +46,9 @@
       <p class="section-subtitle">Alle weltweit gemeldeten Hantavirus-Faelle 2026, einschliesslich endemischer und ausbruchsassoziierter.</p>
       <div class="stat-grid" id="stat-grid"></div>
       <div class="chart-grid">
-        <div class="chart-card chart-full"><h3>Woechentliche Neuerkrankungen nach Cluster-Erkennung auf Hoechststand</h3><p class="chart-caption">Neue Faelle pro Berichtszeitraum. Mitte-April-Spitze fiel mit MV Hondius-Identifizierung zusammen.</p><div style="height:220px"><canvas id="chart-epicurve"></canvas></div></div>
-        <div class="chart-card"><h3>Todesfaelle auf fruehe Schiffsfaelle konzentriert</h3><p class="chart-caption">Alle drei Todesfaelle unter den ersten MV Hondius-Passagieren im April.</p><div style="height:260px"><canvas id="chart-timeline"></canvas></div></div>
-        <div class="chart-card"><h3>Argentinien dominiert Fallvolumen</h3><p class="chart-caption">Schiffsassoziierte Faelle ueber mehrere Nationalitaeten verteilt.</p><div style="height:260px"><canvas id="chart-regional"></canvas></div></div>
+        <div class="chart-card chart-full"><h3>Woechentliche Neuerkrankungen nach Cluster-Erkennung auf Hoechststand</h3><p class="chart-caption">Neue Faelle pro Berichtszeitraum. Mitte-April-Spitze fiel mit MV Hondius-Identifizierung zusammen.</p><div style="height:280px"><canvas id="chart-epicurve"></canvas></div></div>
+        <div class="chart-card"><h3>Todesfaelle auf fruehe Schiffsfaelle konzentriert</h3><p class="chart-caption">Alle drei Todesfaelle unter den ersten MV Hondius-Passagieren im April.</p><div style="height:300px"><canvas id="chart-timeline"></canvas></div></div>
+        <div class="chart-card"><h3>Schiffsassoziierte Faelle nach Land (ohne Argentinien)</h3><p class="chart-caption" id="argentina-note" style="display:none;font-weight:500"></p><p class="chart-caption">Argentiniens 101 endemische Faelle fuer Skalenklarheit ausgeschlossen.</p><div style="height:300px"><canvas id="chart-regional"></canvas></div></div>
       </div>
     </div>
 
@@ -146,6 +146,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
   <script src="../js/map.js"></script>
   <script src="../js/charts.js"></script>
@@ -155,22 +156,22 @@
   var officialSources=['WHO','CDC','ECDC','RKI','PAHO','Africa CDC'];
   async function loadJSON(p){return(await fetch(p)).json();}
 
-  function renderHeroStats(d){
-    var s=d.summary,w=s.weekly_delta||{};
+  function renderHeroStats(d,h){
+    h=h||{};
     document.getElementById('hero-stats').innerHTML=[
-      {v:s.total_cases_2026,l:'Faelle gesamt',sub:w.cases?(w.cases>0?'+':'')+w.cases+' diese Woche':'',c:'blue',sc:w.cases>0?'up':''},
-      {v:s.total_deaths_2026,l:'Todesfaelle',sub:w.deaths?(w.deaths>0?'+':'')+w.deaths+' diese Woche':'Keine neuen Todesfaelle',c:'red',sc:w.deaths>0?'up':''},
-      {v:s.countries_affected,l:'Laender',sub:'Faelle oder Verfolgung',c:'default',sc:''},
-      {v:s.active_clusters,l:'Aktive Cluster',sub:'MV Hondius',c:'default',sc:''}
+      {v:h.total_cases||'--',l:'Schiffsfaelle',sub:'MV Hondius Cluster',c:'blue',sc:''},
+      {v:h.total_deaths||'--',l:'Schiffstote',sub:'Alle Passagiere 57-68 J.',c:'red',sc:''},
+      {v:(h.cfr_percent||'--')+'%',l:'Schiffs-CFR',sub:'Letalitaetsrate',c:'red',sc:''},
+      {v:'Quarantaene',l:'Status',sub:'Unterwegs Teneriffa',c:'default',sc:''}
     ].map(function(x){return '<div class="stat-chip '+x.c+'"><span class="stat-value">'+x.v.toLocaleString('de-DE')+'</span><span class="stat-label">'+x.l+'</span>'+(x.sub?'<span class="stat-sub '+x.sc+'">'+x.sub+'</span>':'')+'</div>'}).join('');
   }
 
   function renderStatGrid(d){
     var s=d.summary,w=s.weekly_delta||{};
     document.getElementById('stat-grid').innerHTML=[
-      {v:s.total_cases_2026,l:'Faelle gesamt',sub:'Bestaetigt + wahrscheinlich + Verdacht',delta:w.cases,t:'cases',c:'blue-top'},
-      {v:s.total_deaths_2026,l:'Todesfaelle',sub:'Letalitaet: '+s.cfr_percent+'%',delta:w.deaths,t:'deaths',c:'red-top'},
-      {v:s.countries_affected,l:'Laender',sub:'Faelle oder Kontaktverfolgung',delta:null,c:''},
+      {v:s.total_cases_2026,l:'Faelle global gesamt',sub:'Alle 2026 gemeldeten Faelle weltweit',delta:w.cases,t:'cases',c:'blue-top'},
+      {v:s.total_deaths_2026,l:'Todesfaelle global',sub:'Globale CFR: '+s.cfr_percent+'%',delta:w.deaths,t:'deaths',c:'red-top'},
+      {v:s.countries_affected,l:'Betroffene Laender',sub:'Faelle oder Kontaktverfolgung',delta:null,c:''},
       {v:s.active_clusters,l:'Aktive Cluster',sub:'MV Hondius (ANDV)',delta:null,c:'amber-top'}
     ].map(function(x){
       var dh='';
@@ -216,7 +217,7 @@
 
   async function init(){
     var c=await loadJSON('../data/cases.json'),h=await loadJSON('../data/hondius.json'),hi=await loadJSON('../data/historical.json'),n=await loadJSON('../data/news.json');
-    renderMeta(c);renderHeroStats(c);renderStatGrid(c);renderClusterMetrics(h);renderCaseTable(h);renderCaseCards(h);renderRoutePanel(h);renderNewsFeed(n,'all');initFilterTabs(n);initMap(c,h);initCharts(c,hi);
+    renderMeta(c);renderHeroStats(c,h);renderStatGrid(c);renderClusterMetrics(h);renderCaseTable(h);renderCaseCards(h);renderRoutePanel(h);renderNewsFeed(n,'all');initFilterTabs(n);initMap(c,h);initCharts(c,hi);
   }
   document.addEventListener('DOMContentLoaded',init);
   </script>
