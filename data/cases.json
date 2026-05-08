@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-05-07",
+  "last_updated": "2026-05-08",
   "summary": {
-    "total_cases_2026": 108,
+    "total_cases_2026": 109,
     "total_deaths_2026": 3,
     "countries_affected": 8,
     "active_clusters": 1,
     "cfr_percent": 2.8,
     "who_risk_global": "LOW",
     "who_risk_europe": "VERY LOW",
-    "data_lag_hours": 48,
+    "data_lag_hours": 24,
     "case_definition": "WHO 2026: confirmed (RT-PCR or IgM seroconversion), probable (clinical + epi link), suspected (clinical only)",
-    "weekly_delta": { "cases": 7, "deaths": 1 }
+    "weekly_delta": { "cases": 8, "deaths": 0 }
   },
   "countries": [
     {
@@ -138,6 +138,7 @@
     { "date": "2026-04-22", "cumulative_cases": 95, "cumulative_deaths": 2 },
     { "date": "2026-04-29", "cumulative_cases": 101, "cumulative_deaths": 2 },
     { "date": "2026-05-03", "cumulative_cases": 105, "cumulative_deaths": 3 },
-    { "date": "2026-05-07", "cumulative_cases": 108, "cumulative_deaths": 3 }
+    { "date": "2026-05-07", "cumulative_cases": 108, "cumulative_deaths": 3 },
+    { "date": "2026-05-08", "cumulative_cases": 109, "cumulative_deaths": 3 }
   ]
 }

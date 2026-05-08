@@ -4,12 +4,14 @@
   "flag": "Netherlands",
   "departure": "2026-04-01",
   "departure_port": "Ushuaia, Argentina",
-  "current_status": "Anchored off Praia, Cape Verde (as of 2026-05-07)",
+  "current_status": "En route to Canary Islands for passenger evacuation from May 11 (as of 2026-05-08)",
   "virus": "Andes virus (ANDV)",
-  "total_cases": 7,
+  "total_cases": 8,
   "total_deaths": 3,
-  "attack_rate_percent": 8.7,
-  "cfr_percent": 42.9,
+  "passengers_aboard": 146,
+  "countries_represented": 23,
+  "attack_rate_percent": 5.4,
+  "cfr_percent": 37.5,
   "r0_estimate": 1.4,
   "generation_interval_days": "2-7",
   "secondary_attack_rate_percent": 4.2,
@@ -81,9 +83,19 @@
       "onset_date": "2026-04-30",
       "exposure_date": "2026-04-22",
       "linked_to": 4,
-      "description": "Argentine female, 29, crew member. Latest confirmed case.",
+      "description": "Argentine female, 29, crew member.",
       "outcome": "Mild, recovering",
       "nationality": "Argentina"
+    },
+    {
+      "id": 8,
+      "date": "2026-05-07",
+      "onset_date": "2026-05-05",
+      "exposure_date": "2026-04-28",
+      "linked_to": 6,
+      "description": "WHO-confirmed 8th case. Details pending. Ship now heading to Canary Islands.",
+      "outcome": "Under investigation",
+      "nationality": "Unknown"
     }
   ],
   "track": [
@@ -95,6 +107,7 @@
     { "date": "2026-04-17", "lat": -37.11, "lon": -12.28, "label": "Tristan da Cunha" },
     { "date": "2026-04-21", "lat": -15.96, "lon": -5.70, "label": "Saint Helena" },
     { "date": "2026-04-25", "lat": -7.95, "lon": -14.36, "label": "Ascension Island" },
-    { "date": "2026-05-01", "lat": 14.93, "lon": -23.51, "label": "Praia, Cape Verde (quarantined)" }
+    { "date": "2026-05-01", "lat": 14.93, "lon": -23.51, "label": "Praia, Cape Verde (quarantined)" },
+    { "date": "2026-05-08", "lat": 28.47, "lon": -16.25, "label": "En route to Canary Islands (evacuation May 11)" }
   ]
 }

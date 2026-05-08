@@ -1,6 +1,48 @@
 {
-  "last_updated": "2026-05-07",
+  "last_updated": "2026-05-08",
   "articles": [
+    {
+      "date": "2026-05-08",
+      "source": "WHO",
+      "title": "WHO confirms eighth hantavirus case linked to MV Hondius cruise ship",
+      "url": "https://www.who.int/news/item/07-05-2026-who-s-response-to-hantavirus-cases-linked-to-a-cruise-ship",
+      "summary": "WHO confirms 8th case aboard MV Hondius. Ship now heading to Canary Islands for passenger evacuation starting May 11. 146 people from 23 countries still aboard under strict precautionary measures."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "CNN",
+      "title": "Hantavirus cruise ship heads for Spain's Canary Islands as officials race to trace contacts",
+      "url": "https://www.cnn.com/2026/05/05/africa/cruise-ship-hantavirus-who-intl",
+      "summary": "MV Hondius heading to Canary Islands after Cape Verde quarantine. Canary Islands president initially refused entry. Passenger evacuation to begin May 11. Spain's interior ministry coordinating."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "NBC News",
+      "title": "Cruise ship hantavirus outbreak sparks international effort to track passengers",
+      "url": "https://www.nbcnews.com/health/health-news/us-monitoring-hantavirus-cruise-passengers-new-case-flight-attendant-rcna343990",
+      "summary": "US officials in Arizona, California, Georgia, Texas and Virginia monitoring 17 American passengers. Health officials in at least a dozen countries tracking dispersed passengers."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "NPR",
+      "title": "Health officials track dozens who left hantavirus-stricken ship after first fatality",
+      "url": "https://www.npr.org/2026/05/07/nx-s1-5814632/passengers-left-ship-hantavirus-st-helena",
+      "summary": "Passengers who disembarked at Saint Helena before the outbreak was identified are being traced. Some left the ship before the first death was confirmed."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "BMJ",
+      "title": "Hantavirus: What you need to know",
+      "url": "https://www.bmj.com/content/393/bmj.s877",
+      "summary": "BMJ clinical explainer on hantavirus following the MV Hondius outbreak. Covers Andes virus transmission, clinical presentation, and public health response."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Time",
+      "title": "The Hantavirus Outbreak Is Serious. But It's No COVID, Health Officials Say",
+      "url": "https://time.com/article/2026/05/07/hantavirus-outbreak-andes-virus-not-covid/",
+      "summary": "Health officials emphasize hantavirus lacks respiratory spread efficiency for pandemic potential. Andes virus human-to-human transmission requires close, prolonged contact."
+    },
     {
       "date": "2026-05-07",
       "source": "WHO",
