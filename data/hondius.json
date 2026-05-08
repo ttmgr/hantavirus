@@ -4,13 +4,13 @@
   "flag": "Netherlands",
   "departure": "2026-04-01",
   "departure_port": "Ushuaia, Argentina",
-  "current_status": "En route to Tenerife, expected arrival May 9 (as of May 8 10:00 CEST). Ship will anchor offshore — docking refused after Granadilla port worker blockade threat. Tender-boat evacuation planned from May 11. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. Three passengers medically evacuated May 6; one medevac aircraft diverted to Canary Islands (life-support electrical fault), replacement dispatched. Ship's doctor in Johannesburg ICU, condition improving per WHO.",
+  "current_status": "En route to Tenerife, expected arrival now Sunday May 10 (slipped from May 9 per Spanish Health Ministry, as of May 8 11:00 CEST). Ship will anchor offshore — docking refused after Granadilla port worker blockade threat. Tender-boat evacuation planned from May 11. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. Three passengers medically evacuated May 6; one medevac aircraft diverted to Canary Islands (life-support electrical fault), replacement dispatched. Ship's doctor in Johannesburg ICU, condition improving per WHO. UKHSA confirms two British nationals confirmed: one (Martin Anstee) hospitalised in Netherlands, one hospitalised in South Africa. UK 45-day mandatory isolation for all returning British passengers.",
   "virus": "Andes virus (ANDV)",
-  "total_cases": 8,
+  "total_cases": 9,
   "total_deaths": 3,
   "passengers_aboard": 146,
   "countries_represented": 23,
-  "attack_rate_percent": 5.4,
+  "attack_rate_percent": 6.1,
   "cfr_percent": 37.5,
   "r0_estimate": 1.4,
   "generation_interval_days": "2-7",
@@ -96,6 +96,16 @@
       "description": "Swiss male, MV Hondius passenger. Confirmed by Swiss Federal Office of Public Health; receiving treatment at University Hospital Zurich.",
       "outcome": "Hospitalized, stable",
       "nationality": "Switzerland"
+    },
+    {
+      "id": 9,
+      "date": "2026-05-08",
+      "onset_date": null,
+      "exposure_date": "2026-04-01",
+      "linked_to": null,
+      "description": "British national, MV Hondius passenger. Confirmed with hantavirus and hospitalised in South Africa (separate from Martin Anstee, case 5). Second confirmed British case from the outbreak. Sources: UKHSA GOV.UK, Al Jazeera, ITV News (May 8 2026).",
+      "outcome": "Hospitalized, South Africa",
+      "nationality": "United Kingdom"
     }
   ],
   "evacuations": [
@@ -111,7 +121,11 @@
     },
     {
       "date": "2026-05-08",
-      "description": "UKHSA confirms two British former MV Hondius passengers have returned independently to the UK and are self-isolating. Neither is currently reporting symptoms. UKHSA is supporting a small number of additional close contacts also under self-isolation with no reported symptoms. Risk to UK general public assessed as very low."
+      "description": "UKHSA confirms two British nationals from MV Hondius have been confirmed with hantavirus: Martin Anstee (case 5), hospitalised in the Netherlands, and a second British national hospitalised in South Africa. UKHSA has issued a 45-day mandatory isolation directive for all returning British passengers, with active monitoring and testing. Risk to the UK general public assessed as very low. Sources: UKHSA GOV.UK, ITV News."
+    },
+    {
+      "date": "2026-05-08",
+      "description": "Third British national with SUSPECTED hantavirus identified on Tristan da Cunha — the remote South Atlantic island (pop. ~250) where MV Hondius briefly called. This is the first suspected case among passengers who disembarked at an intermediate port rather than remaining aboard. The individual is being assessed by health authorities; Tristan da Cunha has no resident physician and extremely limited medical infrastructure. Sources: UKHSA GOV.UK, RTE, Al Jazeera, ITV News, Xinhua, Medical Xpress."
     },
     {
       "date": "2026-05-08",
@@ -137,6 +151,6 @@
     { "date": "2026-04-25", "lat": -7.95, "lon": -14.36, "label": "Ascension Island" },
     { "date": "2026-05-01", "lat": 14.93, "lon": -23.51, "label": "Praia, Cape Verde (quarantined)" },
     { "date": "2026-05-08", "lat": 28.47, "lon": -16.25, "label": "En route to Tenerife" },
-    { "date": "2026-05-09", "lat": 28.09, "lon": -16.43, "label": "Tenerife, Canary Islands (expected — offshore anchor, tender evacuation)" }
+    { "date": "2026-05-10", "lat": 28.09, "lon": -16.43, "label": "Tenerife, Canary Islands (expected May 10 — offshore anchor, tender evacuation from May 11)" }
   ]
 }

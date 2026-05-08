@@ -160,7 +160,28 @@
       "source": "UKHSA / GOV.UK",
       "title": "UKHSA update on the hantavirus cruise ship outbreak",
       "url": "https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak",
-      "summary": "UK Health Security Agency confirms one British national (expedition guide Martin Anstee) hospitalised with hantavirus and receiving treatment in the Netherlands. Two further UK-based passengers self-isolating with no symptoms. UKHSA standing up monitoring and contact-tracing arrangements for returning British nationals. Risk to the UK general public assessed as very low."
+      "summary": "UK Health Security Agency confirms two British nationals with confirmed hantavirus from MV Hondius: expedition guide Martin Anstee hospitalised in the Netherlands and a second British national hospitalised in South Africa. A third British national on Tristan da Cunha is under investigation as a suspected case — the first among passengers who disembarked at an intermediate port. UKHSA has ordered 45-day mandatory isolation for all returning British passengers, with active monitoring and testing. Risk to the UK general public assessed as very low."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "CNN",
+      "title": "What the numbers tell us about hantavirus",
+      "url": "https://www.cnn.com/2026/05/08/health/hantavirus-numbers-analysis-intl",
+      "summary": "CNN analysis published May 8 examining the epidemiological picture of the MV Hondius outbreak: attack rate, case fatality rate, generation interval, and what the spread pattern reveals about Andes virus human-to-human transmission dynamics. Contextualises the cluster against historical ANDV outbreaks in Argentina and Chile. Notes that while CFR among confirmed ship cases exceeds 30%, this likely reflects ascertainment bias toward severe presentations."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "RTE News",
+      "title": "Third British person with suspected hantavirus found on Tristan da Cunha",
+      "url": "https://www.rte.ie/news/world/2026/0508/hantavirus-tristan-da-cunha/",
+      "summary": "RTE reports a third British national has been identified with suspected hantavirus on Tristan da Cunha, a remote British Overseas Territory in the South Atlantic with a population of approximately 250. The individual was among passengers who disembarked from MV Hondius during its stop at the island in mid-April. The case is the first suspected infection among early-departing passengers and raises questions about secondary exposure in an extremely resource-limited setting."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Xinhua",
+      "title": "Update: British hantavirus cases rise to two confirmed, third suspected on Tristan da Cunha",
+      "url": "https://english.news.cn/2026-05/08/c_1310782345.htm",
+      "summary": "Xinhua English-language report on the latest developments: UKHSA confirms two British MV Hondius passengers with confirmed hantavirus (one in Netherlands, one in South Africa) and a third suspected case on Tristan da Cunha. Report also notes the revised ship arrival date of May 10 at Tenerife and the UK's 45-day mandatory isolation order for British returnees."
     },
     {
       "date": "2026-05-08",
