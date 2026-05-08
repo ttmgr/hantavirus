@@ -3,6 +3,55 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "CIDRAP",
+      "title": "WHO officials on hantavirus cases: 'This is an outbreak on a ship, not another COVID-19'",
+      "url": "https://www.cidrap.umn.edu/misc-emerging-topics/who-officials-hantavirus-cases-outbreak-ship-not-another-covid-19",
+      "summary": "WHO Director-General Tedros and officials explicitly characterise the MV Hondius cluster as a contained ship-linked outbreak, not a pandemic-scale event. Experts note that while the Andes strain can transmit between humans, it requires sustained close contact and does not possess the aerosol spread efficiency seen in SARS-CoV-2. CIDRAP coverage includes key takeaways from the WHO press briefing."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "CIDRAP",
+      "title": "At least 8 sickened in suspected hantavirus outbreak; Andes strain confirmed",
+      "url": "https://www.cidrap.umn.edu/misc-emerging-topics/least-8-sickened-suspected-hantavirus-outbreak-andes-strain-confirmed",
+      "summary": "CIDRAP reports confirmation of at least 8 cases linked to MV Hondius, with the Andes strain positively identified by laboratory testing. Timeline analysis suggests the Dutch index couple was likely infected during Argentine shore excursions prior to boarding, consistent with a 10-20 day incubation period. Three deaths confirmed. Ship evacuees transferred to Netherlands and Germany."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Singapore CDA / Mothership.SG",
+      "title": "2 Singapore residents isolated at NCID after hantavirus exposure on cruise and flight",
+      "url": "https://mothership.sg/2026/05/singapore-residents-isolated-hantavirus/",
+      "summary": "Singapore's Communicable Diseases Agency confirms two residents who were aboard MV Hondius are now isolated at the National Centre for Infectious Diseases. A 67-year-old Singaporean male arrived May 2 (asymptomatic) and a 65-year-old permanent resident male arrived May 6 (mild rhinorrhoea). Both shared an April 25 flight with a confirmed hantavirus case. Negative test followed by 30-day quarantine protocol. Public risk assessed as low."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "CBS News",
+      "title": "5 U.S. states monitoring passengers who departed cruise ship stricken by hantavirus",
+      "url": "https://www.cbsnews.com/news/hantavirus-cruise-ship-mv-hondius-passengers-monitored-us-worldwide/",
+      "summary": "Five US states have confirmed they are monitoring residents with potential MV Hondius exposure: Georgia (2), Texas (2), Arizona (1), Virginia (1), and California (number undisclosed). All are currently asymptomatic. Seventeen US nationals were aboard the vessel. At least 12 countries are simultaneously tracking dispersed passengers."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "STAT News",
+      "title": "Key takeaways from WHO briefing on hantavirus cruise ship outbreak",
+      "url": "https://www.statnews.com/2026/05/07/hantavirus-outbreak-key-takeaways-who-cruise-ship-briefing/",
+      "summary": "STAT News distils the May 7 WHO press briefing: WHO expects more cases may emerge but not a large epidemic; human-to-human Andes virus transmission requires prolonged close contact; the KLM flight attendant tested negative; and approximately 40 passengers who disembarked before quarantine enforcement are being traced across 12+ countries."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "France 24",
+      "title": "Hantavirus on the rise in Argentina, where MV Hondius cruise ship set sail",
+      "url": "https://www.france24.com/en/americas/20260507-hantavirus-on-rise-argentina-where-mv-hondius-cruise-ship-set-sail",
+      "summary": "Argentina's hantavirus burden for 2025–2026 is running at approximately twice the baseline rate, with 101 reported cases since June 2025. The elevated endemic activity in Patagonia preceded the MV Hondius outbreak and provides context for the likely origin of infection during Ushuaia and Argentine shore excursions."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "RNZ / NZ Herald",
+      "title": "Kiwi aboard MV Hondius cruise ship with deadly hantavirus outbreak",
+      "url": "https://www.rnz.co.nz/news/health/594285/kiwi-aboard-mv-hondius-cruise-ship-with-deadly-hantavirus-outbreak",
+      "summary": "New Zealand confirms at least one national remains aboard MV Hondius; another Kiwi passenger had disembarked earlier and returned home before quarantine was imposed. The New Zealand Ministry of Health is monitoring the situation and in contact with WHO. A second RNZ article confirms the on-board Kiwi has not requested consular assistance."
+    },
+    {
+      "date": "2026-05-08",
       "source": "The Olive Press",
       "title": "Hantavirus ship to remain offshore after Tenerife port blockade threat",
       "url": "https://www.theolivepress.es/spain-news/2026/05/07/hantavirus-ship-to-remain-offshore-after-tenerife-port-blockade-threat/",

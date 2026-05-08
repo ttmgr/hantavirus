@@ -112,6 +112,14 @@
     {
       "date": "2026-05-08",
       "description": "UKHSA confirms two British former MV Hondius passengers have returned independently to the UK and are self-isolating. Neither is currently reporting symptoms. UKHSA is supporting a small number of additional close contacts also under self-isolation with no reported symptoms. Risk to UK general public assessed as very low."
+    },
+    {
+      "date": "2026-05-08",
+      "description": "Singapore CDA confirms two residents who were aboard MV Hondius are isolated at the National Centre for Infectious Diseases (NCID) and undergoing hantavirus testing. First: 67-year-old Singaporean male, arrived Singapore May 2, asymptomatic. Second: 65-year-old Singapore Permanent Resident male, arrived May 6, mild rhinorrhoea. Both were also on the same Johannesburg–Singapore flight as a confirmed case on Apr 25. If tests negative, 30-day quarantine from last exposure date with repeat testing before release. Risk to Singapore general public assessed as low."
+    },
+    {
+      "date": "2026-05-08",
+      "description": "Five US states confirmed monitoring residents: Georgia (2), Texas (2), Arizona (1), Virginia (1), and California (number unspecified). All individuals currently asymptomatic. Total US nationals aboard MV Hondius: 17. CDC coordinating state-level surveillance with 12+ countries simultaneously conducting contact tracing for the approximately 40 passengers who disembarked before quarantine was enforced."
     }
   ],
   "track": [
