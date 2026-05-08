@@ -4,7 +4,7 @@
   "flag": "Netherlands",
   "departure": "2026-04-01",
   "departure_port": "Ushuaia, Argentina",
-  "current_status": "En route to Canary Islands; passenger evacuation begins May 11. Three passengers medically evacuated May 6. KLM flight attendant exposure scare resolved negative (as of 2026-05-08).",
+  "current_status": "Arriving Tenerife, Canary Islands on May 9. Ship will anchor offshore; passengers evacuated by tender boat due to port worker blockade threat at Granadilla port. Three passengers medically evacuated May 6. KLM flight attendant exposure scare resolved negative (as of 2026-05-08). UK: 2 former passengers self-isolating, no symptoms.",
   "virus": "Andes virus (ANDV)",
   "total_cases": 8,
   "total_deaths": 3,
@@ -63,8 +63,8 @@
       "onset_date": "2026-04-23",
       "exposure_date": "2026-04-01",
       "linked_to": null,
-      "description": "British female, 61, attended same excursion in Ushuaia.",
-      "outcome": "Hospitalized, stable",
+      "description": "Martin Anstee, 56, British retired police officer serving as expedition guide aboard MV Hondius. Attended same excursion in Ushuaia. Medically evacuated May 6 to the Netherlands for specialist treatment.",
+      "outcome": "Hospitalized, Netherlands, stable",
       "nationality": "United Kingdom"
     },
     {
@@ -108,6 +108,10 @@
     {
       "date": "2026-05-07",
       "description": "KLM flight attendant from Haarlem hospitalized at Amsterdam UMC with suspected hantavirus after working KLM flight KL592 (Johannesburg–Amsterdam, Apr 25) on which a deceased MV Hondius passenger (Dutch female, 69) had briefly boarded before being asked to disembark due to illness. PCR and antibody tests confirmed NEGATIVE for Andes virus. No additional cases linked to the flight."
+    },
+    {
+      "date": "2026-05-08",
+      "description": "UKHSA confirms two British former MV Hondius passengers have returned independently to the UK and are self-isolating. Neither is currently reporting symptoms. UKHSA is supporting a small number of additional close contacts also under self-isolation with no reported symptoms. Risk to UK general public assessed as very low."
     }
   ],
   "track": [
@@ -120,6 +124,6 @@
     { "date": "2026-04-21", "lat": -15.96, "lon": -5.70, "label": "Saint Helena" },
     { "date": "2026-04-25", "lat": -7.95, "lon": -14.36, "label": "Ascension Island" },
     { "date": "2026-05-01", "lat": 14.93, "lon": -23.51, "label": "Praia, Cape Verde (quarantined)" },
-    { "date": "2026-05-08", "lat": 28.47, "lon": -16.25, "label": "En route to Canary Islands (evacuation May 11)" }
+    { "date": "2026-05-08", "lat": 28.47, "lon": -16.25, "label": "En route to Tenerife (arriving May 9, offshore tender evacuation)" }
   ]
 }

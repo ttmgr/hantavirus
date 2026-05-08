@@ -3,6 +3,41 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "The Olive Press",
+      "title": "Hantavirus ship to remain offshore after Tenerife port blockade threat",
+      "url": "https://www.theolivepress.es/spain-news/2026/05/07/hantavirus-ship-to-remain-offshore-after-tenerife-port-blockade-threat/",
+      "summary": "MV Hondius will not dock at Tenerife's Granadilla port after local dockworkers threatened a blockade. Canary Islands president Fernando Clavijo announced passengers will be evacuated using tender boats while the ship remains anchored offshore. The evacuation plan was revised after Spain's health minister coordinated with regional authorities."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "ITV News",
+      "title": "Two British passengers of hantavirus cruise ship self-isolating in the UK",
+      "url": "https://www.itv.com/news/2026-05-06/canary-islands-leader-opposes-hantavirus-cruise-ship-to-docking-there",
+      "summary": "Two British former MV Hondius passengers have returned independently to the UK and are self-isolating under UKHSA guidance. Neither is currently reporting symptoms. UKHSA is also supporting a small number of additional close contacts under self-isolation."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "GB News",
+      "title": "Hantavirus outbreak: Former British police officer evacuated from rat-virus ship named after 'very traumatic few days'",
+      "url": "https://www.gbnews.com/news/hantavirus-outbreak-mv-hondius-former-british-police-officer-evacuated-hantavirus-named",
+      "summary": "Martin Anstee, 56, a retired British police officer serving as expedition guide on MV Hondius, is named as the British hantavirus case (case 5). He was medically evacuated on May 6 near Cape Verde and transferred to a hospital in the Netherlands for specialist treatment."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "LBC",
+      "title": "Brit police officer seriously ill with rat virus pictured as two more self-isolate in UK after potential exposure",
+      "url": "https://www.lbc.co.uk/article/two-brits-self-isolating-uk-hantavirus-cruise-5HjdYnD_2/",
+      "summary": "Martin Anstee, British expedition guide and retired police officer, is pictured and confirmed as the UK national hospitalised with hantavirus from MV Hondius. Two further UK-based former passengers are self-isolating following UKHSA guidance with no current symptoms."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "UKHSA / GOV.UK",
+      "title": "UKHSA update on the hantavirus cruise ship outbreak",
+      "url": "https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak",
+      "summary": "UK Health Security Agency confirms one British national (expedition guide Martin Anstee) hospitalised with hantavirus and receiving treatment in the Netherlands. Two further UK-based passengers self-isolating with no symptoms. UKHSA standing up monitoring and contact-tracing arrangements for returning British nationals. Risk to the UK general public assessed as very low."
+    },
+    {
+      "date": "2026-05-08",
       "source": "Inside Medicine",
       "title": "Dutch flight attendant tests negative for Andes virus",
       "url": "https://insidemedicine.substack.com/p/scoop-dutch-flight-attendant-tests",
