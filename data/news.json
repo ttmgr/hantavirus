@@ -3,6 +3,27 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "Sky News",
+      "title": "Hantavirus cruise ship: Six confirmed cases and three suspected as ship sails between Cape Verde and Canary Islands",
+      "url": "https://news.sky.com/story/hantavirus-cruise-ship-six-confirmed-cases-three-suspected-ship-between-cape-verde-canary-islands-13367843",
+      "summary": "Sky News reports a 6th case has been lab-confirmed, raising the total to 6 confirmed and 3 suspected (9 total) linked to MV Hondius. The ship is sailing between Cape Verde and the Canary Islands en route to Tenerife. The body of the third deceased passenger remains on board. Martin Anstee, the British expedition guide hospitalised in the Netherlands (case 5), tells Sky News he is 'doing ok' but many tests remain pending. The 6th confirmation is noted as an American passenger with mild illness recovering on board."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Argentina Ministry of Health (Argentina.gob.ar)",
+      "title": "Actualización del Boletín Epidemiológico Nacional semana N° 16 — Hantavirus y brote en el MV Hondius",
+      "url": "https://www.argentina.gob.ar/noticias/actualizacion-del-boletin-epidemiologico-nacional-de-la-semana-ndeg-16",
+      "summary": "Argentina's Ministry of Health publishes the week 16 Boletín Epidemiológico Nacional with a special focus section on the MV Hondius hantavirus cluster. The bulletin documents the 4-month road trip of the Dutch index couple: they entered Argentina on November 27, 2025, crossed repeatedly into Chile and Uruguay, visited Neuquén (re-entering Argentina from Chile on January 31) and Misiones in northeastern Argentina, departed for Uruguay by land on March 13, returned to Argentina on March 27, and boarded MV Hondius in Ushuaia on April 1, 2026. The bulletin identifies both Neuquén (Patagonian Sur) and Misiones as established ANDV-endemic zones. Argentine investigators (ANLIS-Malbrán) are conducting rodent capture and testing along the identified travel route. The bulletin records 6 cases and 3 deaths linked to the ship cluster. Tierra del Fuego has no endemic hantavirus. Argentina is providing diagnostic reagents to affected European countries."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Avian Flu Diary",
+      "title": "Argentina MOH: Statement and Special Report on Recent Hantavirus Activity",
+      "url": "https://afludiary.blogspot.com/2026/05/argentina-moh-statement-and-special.html",
+      "summary": "Avian Flu Diary (Michael Coston) translates and summarises Argentina's official Ministry of Health statement and special hantavirus report. The report details the index couple's 4-month overland travel through Chile, Uruguay, and multiple Argentine provinces (Neuquén, Misiones) between November 27, 2025 and April 1, 2026, before boarding MV Hondius at Ushuaia. Argentine epidemiologists are prioritising rodent capture in Neuquén and Misiones given their ANDV endemicity. The MOH confirms 6 cases and 3 deaths in the ship cluster and notes that Tierra del Fuego — the embarkation province — has no recorded hantavirus transmission. The report identifies the sequence of exposure windows to be consistent with Andes virus incubation (7–39 days)."
+    },
+    {
+      "date": "2026-05-08",
       "source": "NPR",
       "title": "Spain readies for evacuations as a hantavirus-hit cruise ship heads for Canary Islands",
       "url": "https://www.npr.org/2026/05/08/g-s1-121055/spain-readies-for-evacuations",

@@ -7,6 +7,7 @@
   "current_status": "En route to Tenerife, expected arrival now Sunday May 10 (slipped from May 9 per Spanish Health Ministry, as of May 8 11:00 CEST). Ship will anchor offshore — docking refused after Granadilla port worker blockade threat. Tender-boat evacuation planned from May 11. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. Three passengers medically evacuated May 6; one medevac aircraft diverted to Canary Islands (life-support electrical fault), replacement dispatched. Ship's doctor in Johannesburg ICU, condition improving per WHO. UKHSA confirms two British nationals confirmed: one (Martin Anstee) hospitalised in Netherlands, one hospitalised in South Africa. UK 45-day mandatory isolation for all returning British passengers.",
   "virus": "Andes virus (ANDV)",
   "total_cases": 9,
+  "case_classification": { "confirmed": 6, "suspected": 3 },
   "total_deaths": 3,
   "passengers_aboard": 146,
   "countries_represented": 23,
@@ -73,7 +74,7 @@
       "onset_date": "2026-04-26",
       "exposure_date": "2026-04-19",
       "linked_to": 3,
-      "description": "American male, 44, suspected human-to-human transmission on board.",
+      "description": "American male, 44, suspected human-to-human transmission on board. Lab-confirmed as 6th case per Argentine MOH Boletín Epidemiológico Nacional week 16 (published ~May 7–8 2026) and Sky News reporting 6 confirmed + 3 suspected.",
       "outcome": "Mild, recovering",
       "nationality": "United States"
     },
