@@ -4,7 +4,7 @@
   "flag": "Netherlands",
   "departure": "2026-04-01",
   "departure_port": "Ushuaia, Argentina",
-  "current_status": "Anchored offshore Tenerife (May 9). Tender-boat evacuation in progress — ship did not dock at Granadilla after port worker blockade threat. Foreign nationals repatriating directly; 14 Spanish nationals transferring to Gómez Ulla UATAN unit, Madrid. Medical aircraft carrying sick patients to Netherlands made emergency diversion to Canary Islands due to life-support electrical fault; replacement plane dispatched. Ship's doctor (evacuated May 6 to Johannesburg) remains in ICU but condition improving per WHO.",
+  "current_status": "En route to Tenerife, expected arrival May 9 (as of May 8 10:00 CEST). Ship will anchor offshore — docking refused after Granadilla port worker blockade threat. Tender-boat evacuation planned from May 11. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. Three passengers medically evacuated May 6; one medevac aircraft diverted to Canary Islands (life-support electrical fault), replacement dispatched. Ship's doctor in Johannesburg ICU, condition improving per WHO.",
   "virus": "Andes virus (ANDV)",
   "total_cases": 8,
   "total_deaths": 3,
@@ -137,6 +137,6 @@
     { "date": "2026-04-25", "lat": -7.95, "lon": -14.36, "label": "Ascension Island" },
     { "date": "2026-05-01", "lat": 14.93, "lon": -23.51, "label": "Praia, Cape Verde (quarantined)" },
     { "date": "2026-05-08", "lat": 28.47, "lon": -16.25, "label": "En route to Tenerife" },
-    { "date": "2026-05-09", "lat": 28.09, "lon": -16.43, "label": "Tenerife, Canary Islands (anchored offshore — tender evacuation begins)" }
+    { "date": "2026-05-09", "lat": 28.09, "lon": -16.43, "label": "Tenerife, Canary Islands (expected — offshore anchor, tender evacuation)" }
   ]
 }
