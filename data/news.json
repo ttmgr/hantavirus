@@ -3,6 +3,34 @@
   "articles": [
     {
       "date": "2026-05-08",
+      "source": "ECDC",
+      "title": "Technical Assessment Brief: Hantavirus-associated cluster of illness on a cruise ship",
+      "url": "https://www.ecdc.europa.eu/sites/default/files/documents/TAB-hantavirus-06052026.pdf",
+      "summary": "ECDC formal risk assessment document on the MV Hondius hantavirus cluster. Covers epidemiological analysis, Andes virus transmission characteristics, risk to EU/EEA population, and recommendations for member states on surveillance and contact tracing."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Tristan da Cunha Government",
+      "title": "Suspected hantavirus on the cruise ship MV Hondius",
+      "url": "https://www.tristandc.com/government/news-2026-05-04-hondius-hantavirus.php",
+      "summary": "Official statement from Tristan da Cunha government. MV Hondius visited the island April 13-15. No cases of hantavirus identified on Tristan da Cunha. One British national who disembarked is a suspected case under UKHSA investigation."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "US News",
+      "title": "New hantavirus case suspected on remote island as contact tracing continues",
+      "url": "https://www.usnews.com/news/world/articles/2026-05-08/new-hantavirus-case-suspected-on-remote-island-as-contact-tracing-continues",
+      "summary": "UKHSA confirms suspected hantavirus case on Tristan da Cunha, a remote British Overseas Territory in the South Atlantic. The individual is a British national who was aboard MV Hondius. Contact tracing continues across 12+ countries."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "UKHSA / GOV.UK",
+      "title": "UKHSA update on the hantavirus cruise ship outbreak",
+      "url": "https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak",
+      "summary": "Two British nationals confirmed with hantavirus (one in Netherlands, one in South Africa). Third British national on Tristan da Cunha under investigation as suspected case. All returning British passengers subject to 45-day mandatory isolation with UKHSA monitoring and testing. Risk to UK general public remains very low."
+    },
+    {
+      "date": "2026-05-08",
       "source": "Première Ligne (YouTube)",
       "title": "Hantavirus : premier cas suspecté hors du bateau, l'évacuation des passagers débute",
       "url": "https://www.youtube.com/watch?v=u37PGat71f4",
