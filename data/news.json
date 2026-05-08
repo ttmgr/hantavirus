@@ -1,6 +1,34 @@
 {
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-05-09",
   "articles": [
+    {
+      "date": "2026-05-08",
+      "source": "Breitbart Health",
+      "title": "Former Hantavirus Cruise Passenger Speaks from Hospital: 'I'm Doing Ok'",
+      "url": "https://www.breitbart.com/health/2026/05/07/former-hantavirus-cruise-ship-passenger-speaks-from-hospital-im-doing-ok/",
+      "summary": "Martin Anstee, the British expedition guide and confirmed hantavirus case 5, speaks via Sky News from his isolation room in the Netherlands. He reports feeling 'not too bad' but says many tests remain pending and his doctors will have a clearer picture later in the week. He is isolated and uncertain of his discharge timeline. First direct patient statement from the MV Hondius outbreak."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Breitbart Europe",
+      "title": "Hantavirus Ship En Route to Spain, Military Hospital Quarantine Awaits",
+      "url": "https://www.breitbart.com/europe/2026/05/07/spain-discloses-health-protocol-details-for-impending-arrival-of-hantavirus-outbreak-ship/",
+      "summary": "Spain discloses the full health protocol for receiving MV Hondius. The 14 Spanish nationals will be transferred to the High-Level Isolation Unit (UATAN) at Hospital Central de la Defensa Gómez Ulla, Madrid — a facility built after the 2014 Ebola response and previously used for COVID-19 Wuhan evacuees. Quarantine duration: up to 45 days, calibrated to last potential exposure date. Admission is voluntary, with a consent form required."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "El Español",
+      "title": "En la planta 22 del Gómez Ulla: así es la unidad UATAN de aislamiento donde irán los 14 españoles del hantavirus",
+      "url": "https://www.elespanol.com/ciencia/20260507/planta-gomez-ulla-unidad-uatan-aislamiento-iran-espanoles-hantavirus/1003744236236_0.html",
+      "summary": "El Español provides an inside description of floor 22 of the Gómez Ulla military hospital, which houses Spain's UATAN high-level isolation unit. The unit features negative-pressure rooms, airlock entries, and dedicated clinical staff trained for BSL-3/4-equivalent pathogens. It will house the 14 Spanish MV Hondius passengers for their quarantine period. The facility is Spain's most advanced biosafety isolation infrastructure."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Murcia Today",
+      "title": "Hantavirus Cruise Ship Set To Dock In Tenerife As Quarantine Plan Moves Ahead",
+      "url": "https://murciatoday.com/hantavirus-cruise-ship-set-to-dock-in-tenerife-as-quarantine-plan-moves-ahead_1000268456-a.html",
+      "summary": "MV Hondius has formally requested permission from the Canary Islands Port Authority to dock at Tenerife on Saturday May 9 at 12:00 CET, though arrival may slip to Sunday. All 146 remaining passengers and crew — none symptomatic — will disembark; foreign nationals will be repatriated directly, while 14 Spanish nationals will be transferred to Gómez Ulla. Evacuation operations are planned from May 11 onwards."
+    },
     {
       "date": "2026-05-08",
       "source": "CIDRAP",
