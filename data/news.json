@@ -94,6 +94,20 @@
     },
     {
       "date": "2026-05-08",
+      "source": "CBC News",
+      "title": "3 Canadians isolating in Ontario, Quebec after hantavirus ship outbreak",
+      "url": "https://www.cbc.ca/news/canada/toronto/hantavirus-cruise-ontario-passengers-isolating-9.7191211",
+      "summary": "Canada confirms three individuals self-isolating in Ontario (2) and Quebec (1) following potential hantavirus exposure. Two are former MV Hondius passengers who disembarked at Saint Helena on April 24; both are asymptomatic and under provincial monitoring. The third, in Quebec, was not aboard the ship but is self-isolating after possible contact with an infected person during international travel — Public Health Agency of Canada assessed their risk as not high. All three are under 30-day monitoring. Foreign Affairs Minister Anita Anand confirmed four further Canadian nationals remain aboard MV Hondius; consular officials dispatched to the Canary Islands."
+    },
+    {
+      "date": "2026-05-08",
+      "source": "Global News",
+      "title": "3 Canadians isolating in 2 provinces over possible hantavirus exposure",
+      "url": "https://globalnews.ca/news/11838723/hantavirus-ontario-isolation/",
+      "summary": "Global News reports on Canada's three self-isolating individuals: two Ontario residents who were MV Hondius passengers disembarking at Saint Helena on April 24, and one Quebec resident who had possible contact with an infected person during international travel but was never aboard the ship. Quebec's health minister confirmed the Quebec individual is not considered high-risk. All three are asymptomatic and under 30-day monitoring with symptom checks by local public health authorities."
+    },
+    {
+      "date": "2026-05-08",
       "source": "STAT News",
       "title": "Key takeaways from WHO briefing on hantavirus cruise ship outbreak",
       "url": "https://www.statnews.com/2026/05/07/hantavirus-outbreak-key-takeaways-who-cruise-ship-briefing/",
