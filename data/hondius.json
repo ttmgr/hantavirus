@@ -4,7 +4,7 @@
   "flag": "Netherlands",
   "departure": "2026-04-01",
   "departure_port": "Ushuaia, Argentina",
-  "current_status": "En route to Tenerife, expected arrival now Sunday May 10 (slipped from May 9 per Spanish Health Ministry, as of May 8 11:00 CEST). Ship will anchor offshore — docking refused after Granadilla port worker blockade threat. Tender-boat evacuation planned from May 11. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. Three passengers medically evacuated May 6; one medevac aircraft diverted to Canary Islands (life-support electrical fault), replacement dispatched. Ship's doctor in Johannesburg ICU, condition improving per WHO. UKHSA confirms two British nationals confirmed: one (Martin Anstee) hospitalised in Netherlands, one hospitalised in South Africa. UK 45-day mandatory isolation for all returning British passengers.",
+  "current_status": "Arriving Tenerife early Sunday May 10 (estimated 03:00–05:00 CEST per Oceanwide May 8 19:00 CET press update). Ship will anchor offshore — docking refused after Granadilla port worker blockade threat. Tender-boat evacuation to begin after first light Sunday; weather window Sunday noon–Monday only (sea state worsens thereafter). WHO Director-General Tedros Adhanom Ghebreyesus arrived Tenerife Saturday May 9 to personally coordinate the evacuation alongside Spain's health and interior ministers at a joint command post. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. UK chartering dedicated evacuation aircraft (~22 British nationals) equipped with oxygen and testing kits. CDC teams positioned at Tenerife and Nebraska NQU for American passengers. Three passengers medically evacuated May 6; one medevac aircraft diverted to Canary Islands (life-support electrical fault), replacement dispatched. Ship's doctor in Johannesburg ICU, condition improving per WHO. UKHSA confirms two British nationals confirmed: one (Martin Anstee) hospitalised in Netherlands, one hospitalised in South Africa. UK 45-day mandatory isolation for all returning British passengers.",
   "virus": "Andes virus (ANDV)",
   "total_cases": 9,
   "case_classification": { "confirmed": 6, "suspected": 3 },
@@ -147,6 +147,14 @@
     {
       "date": "2026-05-08",
       "description": "SUSPECTED mainland European community-linked case: 32-year-old Spanish woman hospitalised in Alicante with mild respiratory symptoms (coughing, general malaise). She was identified through Europe-wide health alert system after travelling on the same flight as a deceased Dutch MV Hondius passenger; she was seated two rows behind the victim, with only brief contact (the passenger had boarded for a short time). Announced by Spain's Secretary of State for Health Javier Padilla on May 8, 2026. This is the first suspected case in mainland Europe linked to a flight contact rather than direct ship contact. PCR results expected within 24–48 hours — classification remains SUSPECTED as of announcement. Sources: RTE, The Olive Press, The Local ES, Xinhua, Devdiscourse (May 8 2026)."
+    },
+    {
+      "date": "2026-05-09",
+      "description": "Second flight-linked contact identified in Spain — woman based in Barcelona. She was initially missed during contact tracing because she switched seats during the same flight as the deceased MV Hondius passenger, making seat-manifest reconstruction inaccurate. Traced and confirmed asymptomatic on May 9. Under monitoring; not hospitalised and not classified as suspected. Source: The Spanish Eye, May 9 2026."
+    },
+    {
+      "date": "2026-05-09",
+      "description": "France confirms a French man is being monitored as a hantavirus 'contact case' after travelling on the same commercial flight (Saint Helena → Johannesburg) as a deceased MV Hondius passenger. The flight carried 82 passengers and six crew. The man is asymptomatic; classified as contact under monitoring, not as a suspected case. Source: France 24, The Peninsula Qatar (reported ~May 6–9 2026)."
     }
   ],
   "track": [

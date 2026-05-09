@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-05-09",
   "summary": {
-    "total_cases_2026": 111,
+    "total_cases_2026": 112,
     "total_deaths_2026": 3,
-    "countries_affected": 10,
+    "countries_affected": 11,
     "active_clusters": 1,
     "cfr_percent": 2.7,
     "who_risk_global": "LOW",
     "who_risk_europe": "VERY LOW",
     "data_lag_hours": 24,
     "case_definition": "WHO 2026: confirmed (RT-PCR or IgM seroconversion), probable (clinical + epi link), suspected (clinical only)",
-    "weekly_delta": { "cases": 10, "deaths": 0 }
+    "weekly_delta": { "cases": 1, "deaths": 0 }
   },
   "countries": [
     {
@@ -154,6 +154,20 @@
       "notes": "Two British nationals confirmed: Martin Anstee (case 5, expedition guide) hospitalised in the Netherlands; second British national hospitalised in South Africa. Third British national with suspected hantavirus identified on Tristan da Cunha (disembarked en route). UKHSA 45-day mandatory isolation for all returning British passengers. Sources: UKHSA GOV.UK, ITV News, Al Jazeera (May 8 2026)."
     },
     {
+      "name": "France",
+      "iso": "FR",
+      "lat": 46.23,
+      "lon": 2.21,
+      "cases_2026": 0,
+      "deaths_2026": 0,
+      "cfr_percent": 0.0,
+      "hospitalized": 0,
+      "risk_level": "MONITORING",
+      "case_classification": { "confirmed": 0, "probable": 0, "suspected": 0 },
+      "virus": "",
+      "notes": "One French man monitored as hantavirus 'contact case' after travelling on the same commercial flight (Saint Helena → Johannesburg) as a deceased MV Hondius passenger. Asymptomatic; classified as contact under monitoring only — not a suspected case. Source: France 24, The Peninsula Qatar (May 2026)."
+    },
+    {
       "name": "South Africa",
       "iso": "ZA",
       "lat": -30.56,
@@ -181,6 +195,7 @@
     { "date": "2026-04-29", "cumulative_cases": 101, "cumulative_deaths": 2 },
     { "date": "2026-05-03", "cumulative_cases": 105, "cumulative_deaths": 3 },
     { "date": "2026-05-07", "cumulative_cases": 108, "cumulative_deaths": 3 },
-    { "date": "2026-05-08", "cumulative_cases": 111, "cumulative_deaths": 3 }
+    { "date": "2026-05-08", "cumulative_cases": 111, "cumulative_deaths": 3 },
+    { "date": "2026-05-09", "cumulative_cases": 112, "cumulative_deaths": 3 }
   ]
 }
