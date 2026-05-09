@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-05-09",
   "articles": [
     {
       "date": "2026-05-08",
@@ -262,13 +262,6 @@
     },
     {
       "date": "2026-05-08",
-      "source": "UKHSA / GOV.UK",
-      "title": "UKHSA update on the hantavirus cruise ship outbreak",
-      "url": "https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak",
-      "summary": "UK Health Security Agency confirms two British nationals with confirmed hantavirus from MV Hondius: expedition guide Martin Anstee hospitalised in the Netherlands and a second British national hospitalised in South Africa. A third British national on Tristan da Cunha is under investigation as a suspected case — the first among passengers who disembarked at an intermediate port. UKHSA has ordered 45-day mandatory isolation for all returning British passengers, with active monitoring and testing. Risk to the UK general public assessed as very low."
-    },
-    {
-      "date": "2026-05-08",
       "source": "CNN",
       "title": "What the numbers tell us about hantavirus",
       "url": "https://www.cnn.com/2026/05/08/health/hantavirus-numbers-analysis-intl",
@@ -476,6 +469,13 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Hantavirus: Third British national has suspected infection as WHO says this is \"not the start of a pandemic\".",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42103363/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
