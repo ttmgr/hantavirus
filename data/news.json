@@ -23,6 +23,62 @@
       "summary": "NBC News and MSN report mass protests in Tenerife as MV Hondius arrived at the Canary Islands. Residents took to the streets opposing the ship's arrival, reflecting widespread anxiety about the hantavirus outbreak despite reassurances from WHO Director-General Tedros and Spanish health authorities that public risk remains low. Protesters voiced concerns that authorities were not being transparent about safety protocols. Police maintained perimeters around the port operation. The Spanish government overrode local objections, citing international humanitarian law obligations to the 147 people aboard."
     },
     {
+      "date": "2026-05-10",
+      "source": "Pravda Spain / News Ukraine RBC",
+      "title": "MV Hondius passengers to be quarantined after hantavirus outbreak — Madrid court authorises mandatory isolation",
+      "url": "https://spain.news-pravda.com/en/world/2026/05/10/17709.html",
+      "summary": "A Madrid court authorised mandatory isolation for 14 Spanish passengers upon the ship's arrival in Tenerife. The passengers will be admitted to Gómez Ulla Hospital's UATAN high-level isolation unit for a minimum of seven days for medical evaluation and monitoring. The hospital prepared to hire 60–80 extra staff for the operation. WHO's Maria Van Kerkhove cautioned that widespread media coverage may be amplifying public perception of danger beyond the actual risk level. The evacuation is expected to require approximately 10 flights to repatriate all passengers."
+    },
+    {
+      "date": "2026-05-09",
+      "source": "STAT News",
+      "title": "CDC playing smaller role in MV Hondius hantavirus outbreak as structural changes limit response",
+      "url": "https://www.statnews.com/2026/05/09/mv-hondius-hantavirus-outbreak-cdc-takes-back-seat-to-who/",
+      "summary": "STAT News reports the CDC's response to the MV Hondius outbreak is constrained by structural changes under the Trump administration. Thousands of CDC scientists and public health professionals have been laid off, including members of the ship sanitation program. The administration's withdrawal from WHO has restricted CDC scientists from communicating with international counterparts. CDC acting director Jay Bhattacharya told Fox News 'please don't worry' but subsequently provided inaccurate details about the outbreak. CDC deployed teams to Spain and Nebraska but WHO is leading the international response. The US is building bilateral health agreements with individual countries instead of working through multilateral organisations."
+    },
+    {
+      "date": "2026-05-09",
+      "source": "NPR",
+      "title": "CDC says threat of widespread outbreak of hantavirus remains low",
+      "url": "https://www.npr.org/2026/05/09/g-s1-121307/cdc-says-threat-of-widespread-outbreak-of-hantavirus-remains-low",
+      "summary": "NPR reports the CDC has deep experience with the Andes strain of hantavirus and assures the American public that the risk for a widespread outbreak remains extremely low. Person-to-person transmission is rare. More than two dozen American passengers were aboard MV Hondius: seven have already returned to the US and are under state monitoring, while 17 remain aboard for repatriation to the National Quarantine Unit at the University of Nebraska Medical Center. The Dutch index couple is thought to have contracted the virus during a birdwatching excursion at an Argentine landfill site."
+    },
+    {
+      "date": "2026-05-09",
+      "source": "CBS News",
+      "title": "WHO director arrives in Canary Islands to oversee hantavirus cruise evacuation: 'This disease is not COVID'",
+      "url": "https://www.cbsnews.com/news/hantavirus-cruise-evacuation-world-health-organization-hondius-canary-islands/",
+      "summary": "CBS News reports WHO Director-General Tedros arrived in Tenerife on Saturday to oversee the evacuation of more than 100 passengers. Tedros emphasised: 'This disease is not COVID. The risk to the local population is low.' He acknowledged pandemic trauma persists — 'That trauma is still in our minds' — but stressed the biological distinction between hantavirus and coronavirus transmission patterns. WHO estimates approximately 10 total evacuation flights: six to EU countries, four to non-EU nations. WHO recommends each country isolate evacuated passengers for 42 days from last exposure. 17 Americans to be taken to the National Quarantine Center at University of Nebraska."
+    },
+    {
+      "date": "2026-05-09",
+      "source": "1 News NZ",
+      "title": "Aboard the hantavirus-hit ship, passengers fear what awaits back home",
+      "url": "https://www.1news.co.nz/2026/05/09/aboard-the-hantavirus-hit-ship-passengers-fear-what-awaits-back-home/",
+      "summary": "1 News NZ reports from aboard MV Hondius, providing rare first-person passenger perspectives. Passengers describe relatively calm daily life: reading, attending talks wearing masks, early morning exercise on upper decks, and wildlife photography. A Spanish passenger expressed alarm at social media hostility: 'You go onto social media — they want to dynamite the boat. They want to sink the boat.' Another described heading toward Tenerife: 'You see what's out there and you realise you're heading into the eye of a hurricane.' Passengers' primary fear is not the virus itself but social stigma and public ostracisation upon arrival."
+    },
+    {
+      "date": "2026-05-09",
+      "source": "The Spanish Eye",
+      "title": "Spain detects third hantavirus 'contact' — 45-year-old Catalonian resident identified via seat-switch tracing",
+      "url": "https://www.thespanisheye.com/2026/05/09/spain-detects-third-hantavirus-contact-as-mv-hondius-cruise-ship-prepares-to-arrive/",
+      "summary": "The Spanish Eye reports a third hantavirus contact has been identified in Spain: a 45-year-old Catalonian resident who was on the same flight as the deceased MV Hondius passenger. She was initially missed during contact tracing because she changed seats during the flight, complicating manifest-based reconstruction. She is asymptomatic and under monitoring — not hospitalised. Spain's total flight-linked contacts now stand at three: (1) 32-year-old Alicante woman hospitalised with mild symptoms, PCR pending; (2) Barcelona-based woman missed due to seat-switch, asymptomatic; (3) 45-year-old Catalonian, asymptomatic."
+    },
+    {
+      "date": "2026-05-09",
+      "source": "The Conversation",
+      "title": "I've investigated a hantavirus outbreak. Here's what I can tell you about the cruise ship cluster",
+      "url": "https://theconversation.com/ive-investigated-a-hantavirus-outbreak-heres-what-i-can-tell-you-about-the-cruise-ship-cluster-282365",
+      "summary": "Craig Dalton, Conjoint Associate Professor at the University of Newcastle's School of Medicine and Public Health, draws on his experience investigating the 1993 Sin Nombre virus outbreak in the southwestern US. He notes the first MV Hondius case had a five-day symptom onset — shorter than the typical incubation period — suggesting pre-boarding exposure in Argentina rather than onboard infection. Later cases create ambiguity: they could represent common environmental source exposure during shore excursions or limited human-to-human transmission, requiring disciplined epidemiological investigation to distinguish between hypotheses. WHO currently assesses global risk as low."
+    },
+    {
+      "date": "2026-05-09",
+      "source": "CDC (HAN-00528)",
+      "title": "CDC Health Advisory Notice HAN-00528: 2026 Multi-country Andes virus cluster linked to cruise ship",
+      "url": "https://www.cdc.gov/han/php/notices/han00528.html",
+      "summary": "CDC Health Advisory formally directed at US physicians and health departments (published May 8, distributed May 9). Instructs clinicians to include hantavirus pulmonary syndrome in differential diagnosis for any patient with compatible symptoms AND epidemiological risk factors within 42 days of symptom onset. Symptoms: early phase (fever, fatigue, myalgia), late phase (coughing, shortness of breath, chest tightness) 4–10 days later. Infection control: airborne isolation room, gown, gloves, eye protection, N95 or higher respirator. As of May 8: 8 cases (6 confirmed, 2 suspected), 3 deaths. Risk to US public 'extremely low'."
+    },
+    {
       "date": "2026-05-09",
       "source": "WHO",
       "title": "Message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
