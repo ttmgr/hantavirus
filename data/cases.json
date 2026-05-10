@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09",
+  "last_updated": "2026-05-10",
   "summary": {
     "total_cases_2026": 112,
     "total_deaths_2026": 3,
@@ -81,7 +81,7 @@
       "risk_level": "MONITORING",
       "case_classification": { "confirmed": 0, "probable": 0, "suspected": 1 },
       "virus": "Andes virus (ANDV) — suspected",
-      "notes": "First suspected mainland European community-linked case: 32-year-old woman hospitalised in Alicante with mild respiratory symptoms (coughing, general malaise). Contacted through Europe-wide health alert after she travelled on the same flight as a deceased Dutch MV Hondius passenger; she was seated two rows behind the victim. Announced by Secretary of State for Health Javier Padilla on May 8, 2026. PCR results expected within 24–48 hours — case not yet confirmed. Sources: RTE, The Olive Press, The Local, Xinhua (May 8 2026)."
+      "notes": "First suspected mainland European community-linked case: 32-year-old woman hospitalised in Alicante with mild respiratory symptoms (coughing, general malaise). Contacted through Europe-wide health alert after she travelled on the same flight as a deceased Dutch MV Hondius passenger; she was seated two rows behind the victim. Announced by Secretary of State for Health Javier Padilla on May 8, 2026. PCR result still not publicly announced as of May 10. Second contact (Barcelona, seat-switch) asymptomatic and under monitoring. Third Spanish contact identified May 10 per The Spanish Eye — under monitoring, not hospitalised. Sources: RTE, The Olive Press, The Local, Xinhua (May 8 2026); The Spanish Eye (May 10 2026)."
     },
     {
       "name": "Singapore",
@@ -196,6 +196,7 @@
     { "date": "2026-05-03", "cumulative_cases": 105, "cumulative_deaths": 3 },
     { "date": "2026-05-07", "cumulative_cases": 108, "cumulative_deaths": 3 },
     { "date": "2026-05-08", "cumulative_cases": 111, "cumulative_deaths": 3 },
-    { "date": "2026-05-09", "cumulative_cases": 112, "cumulative_deaths": 3 }
+    { "date": "2026-05-09", "cumulative_cases": 112, "cumulative_deaths": 3 },
+    { "date": "2026-05-10", "cumulative_cases": 112, "cumulative_deaths": 3 }
   ]
 }

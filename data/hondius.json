@@ -4,12 +4,12 @@
   "flag": "Netherlands",
   "departure": "2026-04-01",
   "departure_port": "Ushuaia, Argentina",
-  "current_status": "Arriving Tenerife early Sunday May 10 (estimated 04:00–06:00 CEST, updated from earlier 03:00–05:00 estimate). Ship will anchor offshore — docking refused after Granadilla port worker blockade threat. Tender-boat/inflatable-boat evacuation by nationality groups, operations scheduled to begin noon Sunday May 10 after ship's early-morning arrival, health checks, and repatriation flight coordination; weather window Sunday noon–Monday only (sea state worsens thereafter). WHO Director-General Tedros Adhanom Ghebreyesus met Spanish PM Pedro Sánchez at Moncloa (15:00 GMT May 9) before flying to Tenerife to personally oversee the disembarkation alongside Spain's health and interior ministers at a joint command post. Tedros published formal message to the people of Tenerife (who.int, May 9), stating 'This is not another COVID' and assuring residents of low public risk. Netherlands Government (government.nl) published first official weblog May 9 — as flag state, the Dutch Ministry of Foreign Affairs is coordinating repatriation with RIVM, Dutch embassy Madrid, and SCOT rapid-deployment consular team on site in Tenerife. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. UK chartering dedicated evacuation aircraft (~22 British nationals) equipped with oxygen and testing kits. CDC teams positioned at Tenerife and Nebraska NQU for American passengers. ECDC published dedicated Q&A page for public/clinicians (May 9). CDC published 'Current Situation' summary page and second press release (May 9). CDC issued HAN advisory alerting US physicians to potential imported cases. Three passengers medically evacuated May 6; one medevac aircraft diverted to Canary Islands (life-support electrical fault), replacement dispatched. Ship's doctor in Johannesburg ICU, condition improving per WHO. UKHSA confirms two British nationals confirmed: one (Martin Anstee) hospitalised in Netherlands, one hospitalised in South Africa. UK 45-day mandatory isolation for all returning British passengers.",
+  "current_status": "Anchored at Tenerife, evacuation underway. Passengers disembarking by nationality in inflatable boats. Ship arrived and anchored at Tenerife port in the early hours of Sunday May 10 — docking inside the port deemed safest by authorities. None of the 147 aboard are symptomatic. Countries sending aircraft: Germany, France, Belgium, Ireland, Netherlands, US (Nebraska NQU), UK, and the EU (2 planes). Tedros personally overseeing from Tenerife following his May 9 meeting with Spanish PM Sánchez at Moncloa. Mass protests in Tenerife against the ship's arrival reported by NBC News and MSN. 3rd Spanish contact detected per The Spanish Eye. Alicante PCR result still not publicly announced. Netherlands Government (flag state) coordinating repatriation via Dutch embassy Madrid and SCOT team on site. 14 Spanish nationals to transfer to Gómez Ulla UATAN unit, Madrid. UK chartering dedicated evacuation aircraft (~22 British nationals) equipped with oxygen and testing kits. ECDC Q&A page published May 9. CDC launched Current Situation page, second press release, and HAN advisory to US physicians. Three passengers medically evacuated May 6; ship's doctor in Johannesburg ICU, condition improving. UKHSA confirms two British nationals confirmed: one (Martin Anstee) hospitalised in Netherlands, one hospitalised in South Africa. UK 45-day mandatory isolation for all returning British passengers.",
   "virus": "Andes virus (ANDV)",
   "total_cases": 9,
   "case_classification": { "confirmed": 6, "suspected": 3 },
   "total_deaths": 3,
-  "passengers_aboard": 146,
+  "passengers_aboard": 147,
   "countries_represented": 23,
   "attack_rate_percent": 6.1,
   "cfr_percent": 37.5,
@@ -155,6 +155,14 @@
     {
       "date": "2026-05-09",
       "description": "France confirms a French man is being monitored as a hantavirus 'contact case' after travelling on the same commercial flight (Saint Helena → Johannesburg) as a deceased MV Hondius passenger. The flight carried 82 passengers and six crew. The man is asymptomatic; classified as contact under monitoring, not as a suspected case. Source: France 24, The Peninsula Qatar (reported ~May 6–9 2026)."
+    },
+    {
+      "date": "2026-05-10",
+      "description": "MV Hondius arrived and anchored at Tenerife port in the early hours of Sunday May 10. Evacuation underway: passengers disembarking by nationality in inflatable boats. None of the 147 aboard are symptomatic. Countries sending aircraft for repatriation: Germany, France, Belgium, Ireland, Netherlands, United States (Nebraska NQU), United Kingdom, and EU (2 planes). WHO Director-General Tedros personally overseeing operations from Tenerife. Mass protests in Tenerife against the ship's arrival reported by NBC News and MSN. Alicante PCR result still not publicly announced. Source: NBC News, MSN, FTN News, CNN (May 10 2026)."
+    },
+    {
+      "date": "2026-05-10",
+      "description": "Third Spanish contact detected: a further individual connected to the flight-linked contact chain identified per The Spanish Eye (May 10 2026). Classification remains contact under monitoring; not hospitalised and not yet classified as suspected case. Alicante PCR result still pending. Source: The Spanish Eye (May 10 2026)."
     }
   ],
   "track": [
@@ -168,6 +176,6 @@
     { "date": "2026-04-25", "lat": -7.95, "lon": -14.36, "label": "Ascension Island" },
     { "date": "2026-05-01", "lat": 14.93, "lon": -23.51, "label": "Praia, Cape Verde (quarantined)" },
     { "date": "2026-05-08", "lat": 28.47, "lon": -16.25, "label": "En route to Tenerife" },
-    { "date": "2026-05-10", "lat": 28.09, "lon": -16.43, "label": "Tenerife, Canary Islands (May 10, est. 04:00–06:00 CEST — offshore anchor, evacuation by nationality groups from noon Sunday)" }
+    { "date": "2026-05-10", "lat": 28.09, "lon": -16.43, "label": "Tenerife, Canary Islands (May 10 — anchored in port, evacuation underway, passengers disembarking by nationality in inflatable boats)" }
   ]
 }
