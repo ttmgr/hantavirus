@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10",
+  "last_updated": "2026-05-11",
   "articles": [
     {
       "date": "2026-05-10",
@@ -693,6 +693,27 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "When Rare Zoonoses Travel: Andes virus, Hantavirus Cardiopulmonary Syndrome, and the Preparedness Gap.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42107872/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Lethal Hantavirus at Sea: Infectious Disease Outbreaks on Cruise Ships and Limits of Preparedness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42107514/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Temporal Dynamics of Viremia in Hemorrhagic Fever With Renal Syndrome Patients.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42104899/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
