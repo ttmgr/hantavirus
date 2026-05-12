@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-05-11",
+  "last_updated": "2026-05-12",
   "articles": [
+    {
+      "date": "2026-05-12",
+      "source": "PubMed",
+      "title": "Characterization of the gut microbiome of wild Peromyscus sonoriensis in New Mexico, USA.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42110957/",
+      "summary": ""
+    },
     {
       "date": "2026-05-10",
       "source": "CNN",
@@ -693,6 +700,34 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Hantavirus outbreak exposes uncertainty about how disease spreads.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42115387/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Hantavirus: people are betting on a pandemic breaking out.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42114898/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Hantavirus: French and US nationals test positive as cruise ship docks in Canary Islands.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42114896/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Identification and genetic characterization of a distinct genotype of Puumala orthohantavirus in Hebei Province, China.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42113832/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
