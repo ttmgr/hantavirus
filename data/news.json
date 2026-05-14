@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-05-13",
+  "last_updated": "2026-05-14",
   "articles": [
+    {
+      "date": "2026-05-14",
+      "source": "PubMed",
+      "title": "Emerging and re-emerging vector-borne and other zoonotic RNA viruses: pathogenesis, climate-driven dynamics, and strategies for global control.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42125402/",
+      "summary": ""
+    },
     {
       "date": "2026-05-12",
       "source": "PubMed",
@@ -700,6 +707,20 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Hantavirus: Army drops in with medic and supplies to remote British island.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42128448/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Andes hantavirus outbreak on a cruise ship - an ESCMID Emerging Infections Subcommittee (EIS) rapid assessment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42128174/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
