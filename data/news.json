@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-05-18",
   "articles": [
     {
       "date": "2026-05-15",
@@ -714,6 +714,20 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "[Hantavirus and pregnancy: what obstetric implications in the face of the emergence of the Andes virus?].",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42142845/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Glucose Dysregulation in Hantavirus Infection: A Signal Worth Watching With Continuous Glucose Monitoring.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42141977/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
