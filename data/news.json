@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22",
+  "last_updated": "2026-05-23",
   "articles": [
     {
       "date": "2026-05-15",
@@ -714,6 +714,20 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Hantavirus outbreak in a cruise departing from Argentina.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42172549/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "[Epidemiological surveillance of Andes virus: have we really learned anything after COVID-19?].",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42170790/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
