@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-05-25",
+  "last_updated": "2026-05-26",
   "articles": [
+    {
+      "date": "2026-12-01",
+      "source": "PubMed",
+      "title": "Hantavirus seroprevalence and associated factors for exposure in south-central Uganda.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42178764/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-26",
+      "source": "PubMed",
+      "title": "Hemorrhagic fever with renal syndrome complicated by reversible secondary hyperparathyroidism during renal recovery: a case report.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42180744/",
+      "summary": ""
+    },
     {
       "date": "2026-05-15",
       "source": "PubMed",
@@ -718,6 +732,20 @@
     {
       "date": "2026-05-01",
       "source": "PubMed",
+      "title": "Human infection with Andes hantavirus: an update for the general physician.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42185150/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Cruise ship hantavirus outbreak in remote island communities.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42184809/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
       "title": "Hantavirus outbreak in a cruise departing from Argentina.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42172549/",
       "summary": ""
@@ -1029,6 +1057,13 @@
       "title": "Hantavirus surveillance summary, United States, 2025",
       "url": "https://www.cdc.gov/hantavirus/data-research/cases/index.html",
       "summary": "CDC publishes annual hantavirus surveillance summary. 31 HPS cases reported in 2025, consistent with long-term average."
+    },
+    {
+      "date": "2026-01-01",
+      "source": "PubMed",
+      "title": "Connecting the region during crisis: a Community of Practice response to the MV Hondius hantavirus outbreak.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42180409/",
+      "summary": ""
     },
     {
       "date": "2025-11-15",
