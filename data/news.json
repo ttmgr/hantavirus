@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26",
+  "last_updated": "2026-05-27",
   "articles": [
     {
       "date": "2026-12-01",
@@ -9,7 +9,7 @@
       "summary": ""
     },
     {
-      "date": "2026-05-26",
+      "date": "2026-05-27",
       "source": "PubMed",
       "title": "Hemorrhagic fever with renal syndrome complicated by reversible secondary hyperparathyroidism during renal recovery: a case report.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42180744/",
@@ -728,6 +728,20 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Hantavirus infection: A narrative review focusing on epidemiology, diagnosis, infection control and treatment in the era of globalisation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42191525/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "The MV Hondius Hantavirus Outbreak-Lessons for Pandemic Preparedness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42189668/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
