@@ -1,11 +1,18 @@
 {
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-05-28",
   "articles": [
     {
       "date": "2026-12-01",
       "source": "PubMed",
       "title": "Hantavirus seroprevalence and associated factors for exposure in south-central Uganda.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42178764/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "Hantavirus disease and the need for pathogenesis-guided therapy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42201373/",
       "summary": ""
     },
     {
@@ -728,6 +735,34 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "NEJM Outbreaks Update - Andes Hantavirus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42202759/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Andes virus, hantavirus infections, and the unresolved question of transfusion transmission.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42202447/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "The Andes virus paradox: high lethality, low transmissibility, and the clinical urgency beyond pandemic risk.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42201510/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "An Unexpected Outbreak at Sea: Revisiting Hantavirus Transmission Dynamics.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42201173/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
