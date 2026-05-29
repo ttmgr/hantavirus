@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28",
+  "last_updated": "2026-05-29",
   "articles": [
     {
       "date": "2026-12-01",
@@ -13,6 +13,13 @@
       "source": "PubMed",
       "title": "Hantavirus disease and the need for pathogenesis-guided therapy.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42201373/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Hantavirus infections: an emerging zoonotic threat in the context of ecological change.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42205873/",
       "summary": ""
     },
     {
