@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-05-29",
+  "last_updated": "2026-05-30",
   "articles": [
+    {
+      "date": "2026-12-01",
+      "source": "PubMed",
+      "title": "Replication and compartmentalization of Dobrava-Belgrade virus in the central nervous system.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42213541/",
+      "summary": ""
+    },
     {
       "date": "2026-12-01",
       "source": "PubMed",
@@ -20,6 +27,13 @@
       "source": "PubMed",
       "title": "Hantavirus infections: an emerging zoonotic threat in the context of ecological change.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42205873/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-30",
+      "source": "PubMed",
+      "title": "Epidemiological Investigation and Analysis of Orthohantavirus hantanense and Orthohantavirus seoulense From Wild Rodents in Liaoning Province, China.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42211729/",
       "summary": ""
     },
     {
@@ -742,6 +756,27 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Outbreak at Sea: The MV Hondius Hantavirus Cluster as a Sentinel for Global Pandemic Readiness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42214659/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Maternal antibody-mediated elimination of a Puumala hantavirus outbreak in a bank vole colony.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42213706/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "When Hantavirus Sickened the Ship's Physician, Stephen Kornfeld, MD, Stepped Up.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42213424/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
