@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31",
+  "last_updated": "2026-06-01",
   "articles": [
     {
       "date": "2026-12-01",
@@ -756,6 +756,20 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "First reported case of Andes hantavirus cardiopulmonary syndrome treated with a combination of favipiravir, ribavirin, icatibant and baricitinib.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42219034/",
+      "summary": ""
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "World Health Organization - Hantavirus cluster linked to cruise ship travel, Multi-country.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42217626/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
