@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02",
+  "last_updated": "2026-06-03",
   "articles": [
     {
       "date": "2026-12-01",
@@ -16,10 +16,31 @@
       "summary": ""
     },
     {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Transmission potential of Andes virus from human to human.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42232640/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "\"Hantavirus at sea: Why cruise ships must be ready for animal-borne disease.\".",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42232639/",
+      "summary": ""
+    },
+    {
       "date": "2026-07-01",
       "source": "PubMed",
       "title": "Hantavirus disease and the need for pathogenesis-guided therapy.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42201373/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Closed Cohorts versus Open Borders: Travel Medicine Lessons from the Ebola and Andes Hantavirus outbreaks.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42231591/",
       "summary": ""
     },
     {
