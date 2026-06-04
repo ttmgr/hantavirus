@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03",
+  "last_updated": "2026-06-04",
   "articles": [
     {
       "date": "2026-12-01",
@@ -34,6 +34,13 @@
       "source": "PubMed",
       "title": "Hantavirus disease and the need for pathogenesis-guided therapy.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42201373/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Use of tocilizumab for severe hantavirus pulmonary syndrome: a MEURI case series with contextual comparisons.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42235569/",
       "summary": ""
     },
     {
