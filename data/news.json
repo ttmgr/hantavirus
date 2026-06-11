@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10",
+  "last_updated": "2026-06-11",
   "articles": [
     {
       "date": "2026-12-01",
@@ -44,10 +44,38 @@
       "summary": ""
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-06-11",
       "source": "PubMed",
       "title": "Wisconsin's First Hantavirus Disease Case: A Reminder for an Index of Suspicion.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42258645/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "[Hantavirus infections: clinical relevance in intensive care and emergency medicine].",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42271080/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Single-dose mRNA vaccines against Andes hantavirus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42269656/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Beyond the Kidney and Lung: Cutaneous and Mucosal Clues to Human Hantavirus Disease.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42265829/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Vaccines and therapeutics for Andes hantavirus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42265193/",
       "summary": ""
     },
     {
