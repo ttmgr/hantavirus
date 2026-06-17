@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16",
+  "last_updated": "2026-06-17",
   "articles": [
     {
       "date": "2026-12-01",
@@ -51,10 +51,31 @@
       "summary": ""
     },
     {
+      "date": "2026-06-17",
+      "source": "PubMed",
+      "title": "Some considerations on hantavirus infections and Andes virus epidemic on the cruise ship Hondius.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42306111/",
+      "summary": ""
+    },
+    {
       "date": "2026-06-12",
       "source": "PubMed",
       "title": "Wisconsin's First Hantavirus Disease Case: A Reminder for an Index of Suspicion.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42258645/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Spatiotemporal dynamics of the capture rate of Rattus tanezumi and its implications for rodent-borne diseases in the Three Gorges Reservoir Area, China.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42303874/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Hantavirus and Pregnancy: What Obstetricians Need to Know.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42300128/",
       "summary": ""
     },
     {
