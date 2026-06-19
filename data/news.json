@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18",
+  "last_updated": "2026-06-19",
   "articles": [
     {
       "date": "2026-12-01",
@@ -46,8 +46,22 @@
     {
       "date": "2026-07-01",
       "source": "PubMed",
+      "title": "Beyond the cruise ship: Andes hantavirus and the neglected one health dimensions of global outbreak preparedness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42318374/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
       "title": "Hantavirus disease and the need for pathogenesis-guided therapy.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42201373/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-19",
+      "source": "PubMed",
+      "title": "Biodiversity and emerging infectious threats: the microbial dark matter of Southwest China.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42311377/",
       "summary": ""
     },
     {
@@ -62,6 +76,27 @@
       "source": "PubMed",
       "title": "Wisconsin's First Hantavirus Disease Case: A Reminder for an Index of Suspicion.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42258645/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Andes virus outbreak linked to expedition cruise ship travel, multi-country investigation and response, April to June 2026.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42318653/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Potent In Vitro Antiviral Activity of 4'-Fluorouridine Against Diverse Orthohantaviruses including Andes Virus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42314844/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Hantavirus: the need for a rapid regional response platform in Latin America.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42314728/",
       "summary": ""
     },
     {
