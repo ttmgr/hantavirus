@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22",
+  "last_updated": "2026-06-23",
   "articles": [
     {
       "date": "2026-12-01",
@@ -46,6 +46,34 @@
     {
       "date": "2026-07-01",
       "source": "PubMed",
+      "title": "Estimating the Potential Burden of Clinically Significant Hantavirus Cases in Argentina.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42327824/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "The MV Hondius Warning: Hantavirus Surveillance Blind Spots.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42327823/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "Hantavirus Infections-Clinical Recognition and Diagnostic Challenges.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42327822/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "From Ebola to Hantavirus: Spain's Preparedness for High-Consequence Infectious Diseases.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42327821/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
       "title": "Beyond the cruise ship: Andes hantavirus and the neglected one health dimensions of global outbreak preparedness.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42318374/",
       "summary": ""
@@ -76,6 +104,13 @@
       "source": "PubMed",
       "title": "Wisconsin's First Hantavirus Disease Case: A Reminder for an Index of Suspicion.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42258645/",
+      "summary": ""
+    },
+    {
+      "date": "2026-06-01",
+      "source": "PubMed",
+      "title": "Hantavirus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42331371/",
       "summary": ""
     },
     {
