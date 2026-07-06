@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "articles": [
     {
       "date": "2026-12-01",
@@ -69,6 +69,13 @@
       "source": "PubMed",
       "title": "\"Hantavirus at sea: Why cruise ships must be ready for animal-borne disease.\".",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42232639/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-06",
+      "source": "PubMed",
+      "title": "Factors associated with laboratory confirmation of suspected hantavirus pulmonary syndrome in southern Argentina: a retrospective observational case-control study.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42404485/",
       "summary": ""
     },
     {
