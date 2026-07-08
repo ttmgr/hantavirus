@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-07",
+  "last_updated": "2026-07-08",
   "articles": [
     {
       "date": "2026-12-01",
@@ -72,7 +72,7 @@
       "summary": ""
     },
     {
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "source": "PubMed",
       "title": "Factors associated with laboratory confirmation of suspected hantavirus pulmonary syndrome in southern Argentina: a retrospective observational case-control study.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42404485/",
@@ -83,6 +83,13 @@
       "source": "PubMed",
       "title": "Magazine 2026/2: Learning from Complexity: Clinical Decisions at Sea.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42387959/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "The Orthohantavirus G(N)/G(C) Spikes: Molecular Determinants of Infection and Targets for Antiviral Immune Interventions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42412999/",
       "summary": ""
     },
     {
