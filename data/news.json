@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-08",
+  "last_updated": "2026-07-09",
   "articles": [
     {
       "date": "2026-12-01",
@@ -72,7 +72,7 @@
       "summary": ""
     },
     {
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "source": "PubMed",
       "title": "Factors associated with laboratory confirmation of suspected hantavirus pulmonary syndrome in southern Argentina: a retrospective observational case-control study.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42404485/",
@@ -83,6 +83,13 @@
       "source": "PubMed",
       "title": "Magazine 2026/2: Learning from Complexity: Clinical Decisions at Sea.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42387959/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "Hantavirus - Once Again in the News.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42419496/",
       "summary": ""
     },
     {
@@ -1701,6 +1708,13 @@
       "title": "Hantavirus surveillance summary, United States, 2025",
       "url": "https://www.cdc.gov/hantavirus/data-research/cases/index.html",
       "summary": "CDC publishes annual hantavirus surveillance summary. 31 HPS cases reported in 2025, consistent with long-term average."
+    },
+    {
+      "date": "2026-01-01",
+      "source": "PubMed",
+      "title": "Hantavirus: A Comprehensive Contemporary Review of Virology, Global Epidemiology, Clinical Variants, Diagnosis, Treatment, and Intensive Care Management.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42415885/",
+      "summary": ""
     },
     {
       "date": "2026-01-01",
