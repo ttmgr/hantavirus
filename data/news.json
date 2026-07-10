@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-07-10",
   "articles": [
+    {
+      "date": "2026-12-01",
+      "source": "PubMed",
+      "title": "The 2026 Andes virus outbreak: What genomic stability reveals about virulence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42423644/",
+      "summary": ""
+    },
     {
       "date": "2026-12-01",
       "source": "PubMed",
@@ -83,6 +90,20 @@
       "source": "PubMed",
       "title": "Magazine 2026/2: Learning from Complexity: Clinical Decisions at Sea.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42387959/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "Serologic Evidence of Hantavirus Exposure in Humans, Italy, 2004-2018.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42426565/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "Hantavirus on a Nature Cruise and the Risk of a Pandemic.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42424042/",
       "summary": ""
     },
     {
@@ -1694,6 +1715,13 @@
       "title": "Epidemiological update: hantavirus disease in the Americas",
       "url": "https://www.paho.org/en/documents/epidemiological-update-hantavirus-disease-americas-2026",
       "summary": "Pan American Health Organization reports elevated Andes virus activity in southern Argentina. Recommends rodent exposure prevention measures."
+    },
+    {
+      "date": "2026-04-01",
+      "source": "PubMed",
+      "title": "Hantavirus Infection: Review of Clinical Management.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42421388/",
+      "summary": ""
     },
     {
       "date": "2026-03-15",
