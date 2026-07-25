@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "articles": [
     {
       "date": "2026-12-01",
@@ -79,7 +79,7 @@
       "summary": ""
     },
     {
-      "date": "2026-07-24",
+      "date": "2026-07-25",
       "source": "PubMed",
       "title": "t-PA/PAI-1 complex expression correlates with the severity in hantaan virus-induced hemorrhagic fever with renal syndrome.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42488409/",
@@ -111,6 +111,13 @@
       "source": "PubMed",
       "title": "Magazine 2026/2: Learning from Complexity: Clinical Decisions at Sea.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42387959/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "Anticoagulant rodenticide poisoning confirmed by vitamin K1 depletion in raptors from Patagonia.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42497723/",
       "summary": ""
     },
     {
