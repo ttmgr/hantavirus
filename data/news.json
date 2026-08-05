@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "articles": [
     {
       "date": "2026-12-01",
@@ -30,10 +30,17 @@
       "summary": ""
     },
     {
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "source": "PubMed",
       "title": "Expedition cruises, island hopping, and zoonotic risk: governance and operational lessons from the MV Hondius Andes hantavirus outbreak.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42535031/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Diagnostic Gaps as a Hidden Barrier to Hantavirus Vaccine Development.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42548184/",
       "summary": ""
     },
     {
