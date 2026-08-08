@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-08",
   "articles": [
     {
       "date": "2026-12-01",
@@ -23,6 +23,13 @@
       "summary": ""
     },
     {
+      "date": "2026-10-01",
+      "source": "PubMed",
+      "title": "Driven magnetic 3D DNA walker coupled with CHA based on light-activatable hairpin: A dual-amplification strategy for ultrasensitive hantavirus RNA sensing.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42567601/",
+      "summary": ""
+    },
+    {
       "date": "2026-09-01",
       "source": "PubMed",
       "title": "The Changing Landscape of Hantavirus Infections: A Narrative Review of Epidemiology, Pathogenesis, and Countermeasures.",
@@ -41,6 +48,27 @@
       "source": "PubMed",
       "title": "Expedition cruises, island hopping, and zoonotic risk: governance and operational lessons from the MV Hondius Andes hantavirus outbreak.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42535031/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Emerging hantavirus risks in mass gatherings: epidemiology, diagnostic challenges, and outbreak preparedness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42567110/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Transient Andes orthohantavirus RNA detection in an asymptomatic healthcare worker following indirect exposure during hospital care of an imported case, the Netherlands, 2026.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42565267/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "[In light of recent events: The most important facts about hantaviruses].",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42563109/",
       "summary": ""
     },
     {
@@ -146,6 +174,13 @@
       "source": "PubMed",
       "title": "Magazine 2026/2: Learning from Complexity: Clinical Decisions at Sea.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42387959/",
+      "summary": ""
+    },
+    {
+      "date": "2026-07-01",
+      "source": "PubMed",
+      "title": "Epidemiology and changes in age distribution of hemorrhagic fever with renal syndrome in Shaanxi, China, from 2004 to 2023.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42566355/",
       "summary": ""
     },
     {
