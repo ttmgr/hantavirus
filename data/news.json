@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11",
+  "last_updated": "2026-08-12",
   "articles": [
     {
       "date": "2026-12-01",
@@ -48,6 +48,13 @@
       "source": "PubMed",
       "title": "Expedition cruises, island hopping, and zoonotic risk: governance and operational lessons from the MV Hondius Andes hantavirus outbreak.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42535031/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Detection of new world hantaviruses by a broadly reactive rRT-PCR assay.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42579986/",
       "summary": ""
     },
     {
@@ -1666,6 +1673,13 @@
       "title": "CDC monitoring hantavirus situation, issues travel advisory for Argentina",
       "url": "https://thehill.com/policy/healthcare/2026-05-03-cdc-hantavirus-travel-advisory-argentina",
       "summary": "CDC issues Level 2 travel health notice for Argentina regarding Andes virus risk. Enhanced screening at US ports of entry."
+    },
+    {
+      "date": "2026-05-01",
+      "source": "PubMed",
+      "title": "Andes Hantavirus at FIFA World Cup 2026: No vaccine, no protocol, no time.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42578775/",
+      "summary": ""
     },
     {
       "date": "2026-05-01",
