@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12",
+  "last_updated": "2026-08-13",
   "articles": [
     {
       "date": "2026-12-01",
@@ -34,6 +34,20 @@
       "source": "PubMed",
       "title": "The Changing Landscape of Hantavirus Infections: A Narrative Review of Epidemiology, Pathogenesis, and Countermeasures.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42536803/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-13",
+      "source": "PubMed",
+      "title": "The role of immune cells in Hantaan-induced hemorrhagic fever with renal syndrome.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42582457/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-13",
+      "source": "PubMed",
+      "title": "Public health risk assessment of rodent-driven hantavirus spillover in Europe using a stochastic delay model.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42582313/",
       "summary": ""
     },
     {
