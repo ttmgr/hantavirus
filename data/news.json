@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-14",
   "articles": [
     {
       "date": "2026-12-01",
@@ -37,14 +37,14 @@
       "summary": ""
     },
     {
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "source": "PubMed",
       "title": "The role of immune cells in Hantaan-induced hemorrhagic fever with renal syndrome.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42582457/",
       "summary": ""
     },
     {
-      "date": "2026-08-13",
+      "date": "2026-08-14",
       "source": "PubMed",
       "title": "Public health risk assessment of rodent-driven hantavirus spillover in Europe using a stochastic delay model.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42582313/",
@@ -62,6 +62,13 @@
       "source": "PubMed",
       "title": "Expedition cruises, island hopping, and zoonotic risk: governance and operational lessons from the MV Hondius Andes hantavirus outbreak.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42535031/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Broad-Spectrum Multi-Epitope Design Targeting Conserved Hantavirus Glycoproteins (Gn/Gc): Chimeric Antigen Engineering and Structural Mapping.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42589673/",
       "summary": ""
     },
     {
