@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20",
+  "last_updated": "2026-08-21",
   "articles": [
     {
       "date": "2026-12-01",
@@ -37,7 +37,14 @@
       "summary": ""
     },
     {
-      "date": "2026-08-20",
+      "date": "2026-08-21",
+      "source": "PubMed",
+      "title": "Rapid response and surveillance for high-risk contacts during May 2026 Andes hantavirus outbreak: a Northern Italy experience.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42620593/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-21",
       "source": "PubMed",
       "title": "What Emergency Medicine Specialists Need to Know about Hantavirus: A Letter to the Editor.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42614814/",
@@ -69,6 +76,13 @@
       "source": "PubMed",
       "title": "Expedition cruises, island hopping, and zoonotic risk: governance and operational lessons from the MV Hondius Andes hantavirus outbreak.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42535031/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Hantavirus outbreak: a model of regional and global cooperation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42624144/",
       "summary": ""
     },
     {
