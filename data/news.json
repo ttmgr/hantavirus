@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01",
+  "last_updated": "2026-09-02",
   "articles": [
     {
       "date": "2026-12-01",
@@ -27,6 +27,13 @@
       "source": "PubMed",
       "title": "Driven magnetic 3D DNA walker coupled with CHA based on light-activatable hairpin: A dual-amplification strategy for ultrasensitive hantavirus RNA sensing.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42567601/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "United Kingdom pandemic preparedness: lessons from hantavirus and Ebola for public health readiness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42664296/",
       "summary": ""
     },
     {
@@ -111,13 +118,6 @@
       "source": "PubMed",
       "title": "Hantavirus: A focused review for the emergency medicine clinician.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42664739/",
-      "summary": ""
-    },
-    {
-      "date": "2026-08-01",
-      "source": "PubMed",
-      "title": "United Kingdom pandemic preparedness: lessons from hantavirus and Ebola for public health readiness.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42664296/",
       "summary": ""
     },
     {
