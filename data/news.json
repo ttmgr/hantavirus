@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02",
+  "last_updated": "2026-09-03",
   "articles": [
     {
       "date": "2026-12-01",
@@ -27,6 +27,13 @@
       "source": "PubMed",
       "title": "Driven magnetic 3D DNA walker coupled with CHA based on light-activatable hairpin: A dual-amplification strategy for ultrasensitive hantavirus RNA sensing.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42567601/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Temporal trends in critical care burden and outcomes of Andes virus-associated hantavirus cardiopulmonary syndrome: a national Chilean cohort.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42684407/",
       "summary": ""
     },
     {
