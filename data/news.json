@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09",
+  "last_updated": "2026-09-10",
   "articles": [
     {
       "date": "2026-12-01",
@@ -30,10 +30,38 @@
       "summary": ""
     },
     {
+      "date": "2026-09-10",
+      "source": "PubMed",
+      "title": "Andes hantavirus aboard an expedition cruise ship: A sentinel event for travel medicine and maritime biosurveillance.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42712788/",
+      "summary": ""
+    },
+    {
       "date": "2026-09-09",
       "source": "PubMed",
       "title": "Increasing spatial scale of analysis weakens and can mask the dilution effect for hantaviruses.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42709750/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "The rationale for ophthalmic vigilance during the 2026 Hantavirus outbreak.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42716972/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Toward medical countermeasures against hantaviruses.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42716004/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Genomic characterization of Lao Mobatvirus strains reveals host-associated clustering in Southeast Asian bats.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42714963/",
       "summary": ""
     },
     {
