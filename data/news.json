@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15",
+  "last_updated": "2026-09-16",
   "articles": [
     {
       "date": "2026-12-01",
@@ -41,6 +41,13 @@
       "source": "PubMed",
       "title": "Increasing spatial scale of analysis weakens and can mask the dilution effect for hantaviruses.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42709750/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Hantavirus Infection as a Mimic of Rheumatic Disease: A Selective Diagnostic Approach.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42744392/",
       "summary": ""
     },
     {
