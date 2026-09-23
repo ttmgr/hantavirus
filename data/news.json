@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-22",
+  "last_updated": "2026-09-23",
   "articles": [
+    {
+      "date": "2026-12-01",
+      "source": "PubMed",
+      "title": "Hantavirus preparedness at human-rodent interfaces: lessons from China's HFRS control and Andes virus transmission in mobile populations.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42773773/",
+      "summary": ""
+    },
     {
       "date": "2026-12-01",
       "source": "PubMed",
@@ -30,6 +37,13 @@
       "summary": ""
     },
     {
+      "date": "2026-09-23",
+      "source": "PubMed",
+      "title": "The MV Hondius Hantavirus Outbreak: Implications for clinical vigilance and regional health security in the GCC countries.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42770102/",
+      "summary": ""
+    },
+    {
       "date": "2026-09-12",
       "source": "PubMed",
       "title": "Andes hantavirus aboard an expedition cruise ship: A sentinel event for travel medicine and maritime biosurveillance.",
@@ -41,6 +55,13 @@
       "source": "PubMed",
       "title": "Increasing spatial scale of analysis weakens and can mask the dilution effect for hantaviruses.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42709750/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Orthohantavirus circulation within rodent communities is important both during outbreak and non-outbreak periods.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42771992/",
       "summary": ""
     },
     {
