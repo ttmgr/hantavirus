@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25",
+  "last_updated": "2026-09-26",
   "articles": [
     {
       "date": "2026-12-01",
@@ -32,6 +32,13 @@
     {
       "date": "2026-10-01",
       "source": "PubMed",
+      "title": "Perspectives for pharmaceutical screening at XFEL sources using the example of Lassa virus endonuclease.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42789322/",
+      "summary": ""
+    },
+    {
+      "date": "2026-10-01",
+      "source": "PubMed",
       "title": "Driven magnetic 3D DNA walker coupled with CHA based on light-activatable hairpin: A dual-amplification strategy for ultrasensitive hantavirus RNA sensing.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42567601/",
       "summary": ""
@@ -55,6 +62,27 @@
       "source": "PubMed",
       "title": "Increasing spatial scale of analysis weakens and can mask the dilution effect for hantaviruses.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42709750/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Habitat-Mediated Spillover Risk of Andes Hantavirus in Oligoryzomys longicaudatus: A Mechanistic Eco-Epidemiological Model.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42797855/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Generation and Characterization of the Human Anti-HTNV Antibody KJJ4.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42794425/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Revisiting Animal Reservoirs of Hantavirus and Other Zoonotic Viruses Associated with Cruise Travel: Impact and Prevention.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42791822/",
       "summary": ""
     },
     {
@@ -286,6 +314,13 @@
       "source": "PubMed",
       "title": "Expedition cruises, island hopping, and zoonotic risk: governance and operational lessons from the MV Hondius Andes hantavirus outbreak.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42535031/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "Integrated Analysis of Human Hemorrhagic Fever with Renal Syndrome Cases and Rodent Hantavirus Surveillance in Zhejiang Province, China, 2025.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42797778/",
       "summary": ""
     },
     {
