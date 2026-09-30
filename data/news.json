@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29",
+  "last_updated": "2026-09-30",
   "articles": [
     {
       "date": "2026-12-01",
@@ -69,6 +69,13 @@
       "source": "PubMed",
       "title": "Increasing spatial scale of analysis weakens and can mask the dilution effect for hantaviruses.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42709750/",
+      "summary": ""
+    },
+    {
+      "date": "2026-09-01",
+      "source": "PubMed",
+      "title": "Expanded protocadherin-1 usage reveals a broader hantavirus entry landscape.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42808727/",
       "summary": ""
     },
     {
@@ -1007,13 +1014,6 @@
       "source": "PubMed",
       "title": "Spectrum of Gastrointestinal, Hepatobiliary, and Pancreatic Involvement in Hantavirus Infection: A Narrative Review.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42441034/",
-      "summary": ""
-    },
-    {
-      "date": "2026-06-01",
-      "source": "PubMed",
-      "title": "Expanded protocadherin-1 usage reveals a broader hantavirus entry landscape.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42395435/",
       "summary": ""
     },
     {
