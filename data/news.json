@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05",
+  "last_updated": "2026-10-06",
   "articles": [
     {
       "date": "2026-12-01",
@@ -30,17 +30,24 @@
       "summary": ""
     },
     {
-      "date": "2026-10-05",
+      "date": "2026-10-06",
       "source": "PubMed",
       "title": "Hantavirus as a persistent zoonotic risk: epidemiology and current pharmacological management.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42827614/",
       "summary": ""
     },
     {
-      "date": "2026-10-05",
+      "date": "2026-10-06",
       "source": "PubMed",
       "title": "Climate change, rodent ecology, and the rising risk of hantavirus outbreaks: an alarming public health concern.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42827522/",
+      "summary": ""
+    },
+    {
+      "date": "2026-10-01",
+      "source": "PubMed",
+      "title": "Hantavirus - Lessons Learned about Security and Solidarity.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42831592/",
       "summary": ""
     },
     {
@@ -356,6 +363,13 @@
       "source": "PubMed",
       "title": "Expedition cruises, island hopping, and zoonotic risk: governance and operational lessons from the MV Hondius Andes hantavirus outbreak.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42535031/",
+      "summary": ""
+    },
+    {
+      "date": "2026-08-01",
+      "source": "PubMed",
+      "title": "[Nucleoside analogues in etiotropic therapy of hantavirus fevers].",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42831803/",
       "summary": ""
     },
     {
