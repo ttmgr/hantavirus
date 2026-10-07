@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "articles": [
     {
       "date": "2026-12-01",
@@ -30,6 +30,13 @@
       "summary": ""
     },
     {
+      "date": "2026-10-07",
+      "source": "PubMed",
+      "title": "Virus Andes à bord du MV Hondius : enjeux transnationaux de santé publique en haute mer.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42838890/",
+      "summary": ""
+    },
+    {
       "date": "2026-10-06",
       "source": "PubMed",
       "title": "Hantavirus as a persistent zoonotic risk: epidemiology and current pharmacological management.",
@@ -41,6 +48,13 @@
       "source": "PubMed",
       "title": "Climate change, rodent ecology, and the rising risk of hantavirus outbreaks: an alarming public health concern.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42827522/",
+      "summary": ""
+    },
+    {
+      "date": "2026-10-01",
+      "source": "PubMed",
+      "title": "Hantavirus in Dentistry: Occupational Exposure Considerations and a Proposed Tiered Infection Prevention and Control Framework-A Narrative Review.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42836678/",
       "summary": ""
     },
     {
