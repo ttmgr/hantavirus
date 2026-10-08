@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "articles": [
     {
       "date": "2026-12-01",
@@ -30,6 +30,13 @@
       "summary": ""
     },
     {
+      "date": "2026-10-08",
+      "source": "PubMed",
+      "title": "[Andes virus aboard the MV Hondius: Transnational public health challenges in ocean-going cruise travel].",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42838890/",
+      "summary": ""
+    },
+    {
       "date": "2026-10-07",
       "source": "PubMed",
       "title": "Virus Andes à bord du MV Hondius : enjeux transnationaux de santé publique en haute mer.",
@@ -48,6 +55,13 @@
       "source": "PubMed",
       "title": "Climate change, rodent ecology, and the rising risk of hantavirus outbreaks: an alarming public health concern.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42827522/",
+      "summary": ""
+    },
+    {
+      "date": "2026-10-01",
+      "source": "PubMed",
+      "title": "Emerging respiratory infectious diseases: Clinical aspects for rapid identification and management.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42842561/",
       "summary": ""
     },
     {
