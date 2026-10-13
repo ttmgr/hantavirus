@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-13",
   "articles": [
     {
       "date": "2026-12-01",
@@ -30,7 +30,14 @@
       "summary": ""
     },
     {
-      "date": "2026-10-12",
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Children in the Changing Landscape of Hantavirus Infection: A Clinical Preparedness Gap.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42861716/",
+      "summary": ""
+    },
+    {
+      "date": "2026-10-13",
       "source": "PubMed",
       "title": "[Preparedness for summer illnesses and emergencies in Chile, 2024-2025: lessons from an innovative policyPreparação para doenças e emergências no verão de 2024-2025 no Chile: lições de uma política inovadora].",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42852422/",
@@ -62,6 +69,13 @@
       "source": "PubMed",
       "title": "Climate change, rodent ecology, and the rising risk of hantavirus outbreaks: an alarming public health concern.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42827522/",
+      "summary": ""
+    },
+    {
+      "date": "2026-10-01",
+      "source": "PubMed",
+      "title": "Design and in silico evaluation of PV-GNProtecta: an mRNA multi-epitope vaccine candidate against Puumala virus using immunoinformatics and structural analysis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42864648/",
       "summary": ""
     },
     {
