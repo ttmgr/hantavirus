@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23",
+  "last_updated": "2026-10-24",
   "articles": [
     {
       "date": "2026-12-01",
@@ -37,6 +37,13 @@
       "summary": ""
     },
     {
+      "date": "2026-10-24",
+      "source": "PubMed",
+      "title": "Can Hantavirus cruise into the next pandemic?",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42912130/",
+      "summary": ""
+    },
+    {
       "date": "2026-10-15",
       "source": "PubMed",
       "title": "[Preparedness for summer illnesses and emergencies in Chile, 2024-2025: lessons from an innovative policyPreparação para doenças e emergências no verão de 2024-2025 no Chile: lições de uma política inovadora].",
@@ -69,6 +76,13 @@
       "source": "PubMed",
       "title": "Climate change, rodent ecology, and the rising risk of hantavirus outbreaks: an alarming public health concern.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42827522/",
+      "summary": ""
+    },
+    {
+      "date": "2026-10-01",
+      "source": "PubMed",
+      "title": "Epigenetics of HFRS: Linking Immunity, Pathogenesis, and Vaccine-Induced Protection.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42914059/",
       "summary": ""
     },
     {
