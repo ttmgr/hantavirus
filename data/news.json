@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-31",
+  "last_updated": "2026-11-01",
   "articles": [
+    {
+      "date": "2026-12-01",
+      "source": "PubMed",
+      "title": "A systematic review of rodent-borne orthohantaviruses: Discovery, epidemiology, evolution, pathogenicity, vaccines, and therapeutics.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42965120/",
+      "summary": ""
+    },
     {
       "date": "2026-12-01",
       "source": "PubMed",
@@ -39,22 +46,29 @@
     {
       "date": "2026-11-01",
       "source": "PubMed",
-      "title": "Children in the Changing Landscape of Hantavirus Infection: A Clinical Preparedness Gap.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42861716/",
+      "title": "Hantaviral therapeutics: life cycle targets and chemotherapeutic interventions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42964717/",
       "summary": ""
     },
     {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "source": "PubMed",
       "title": "A Case Report of Hantavirus Capillary Leak Syndrome in the Southwestern United States.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42953741/",
       "summary": ""
     },
     {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "source": "PubMed",
       "title": "Ornithonyssus bacoti (tropical rat mite): a critical review of biology, vector potential, and integrated management.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42948493/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Children in the Changing Landscape of Hantavirus Infection: A Clinical Preparedness Gap.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42861716/",
       "summary": ""
     },
     {
