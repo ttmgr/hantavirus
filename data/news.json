@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "articles": [
     {
       "date": "2026-12-01",
@@ -62,6 +62,20 @@
       "source": "PubMed",
       "title": "Ornithonyssus bacoti (tropical rat mite): a critical review of biology, vector potential, and integrated management.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42948493/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Andes virus management-balancing infection control with patient safety and autonomy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976892/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Diagnostic accuracy of serological, molecular and rapid tests for human hantavirus disease: a systematic review and meta-analysis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976629/",
       "summary": ""
     },
     {
