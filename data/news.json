@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "articles": [
     {
       "date": "2026-12-01",
@@ -69,6 +69,13 @@
       "source": "PubMed",
       "title": "Ornithonyssus bacoti (tropical rat mite): a critical review of biology, vector potential, and integrated management.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42948493/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Immunogenicity of Hantavirus and evaluation of vaccine protective efficacy: A comparative neutralizing antibody study of vaccine strains and representative epidemic strains from selected provinces in China.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43013581/",
       "summary": ""
     },
     {
