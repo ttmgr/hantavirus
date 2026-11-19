@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "articles": [
+    {
+      "date": "2026-12-01",
+      "source": "PubMed",
+      "title": "Rat Hepatitis E Virus and Seoul Hantavirus in Pet Rats, Germany.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052263/",
+      "summary": ""
+    },
     {
       "date": "2026-12-01",
       "source": "PubMed",
@@ -51,7 +58,7 @@
       "summary": ""
     },
     {
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "source": "PubMed",
       "title": "Hantaviruses at the human-animal-environment interface: a One Health review of rodent reservoirs, surveillance, and preparedness.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43032691/",
@@ -76,6 +83,20 @@
       "source": "PubMed",
       "title": "Ornithonyssus bacoti (tropical rat mite): a critical review of biology, vector potential, and integrated management.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42948493/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Impacts of climate change upon the incidence of zoonotic diseases in Brazil.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43051870/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Severe Puumala virus infection and secondary haemophagocytic syndrome: a retrospective cohort study.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43051531/",
       "summary": ""
     },
     {
