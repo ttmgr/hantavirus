@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21",
+  "last_updated": "2026-11-22",
   "articles": [
     {
       "date": "2026-12-01",
@@ -58,7 +58,7 @@
       "summary": ""
     },
     {
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "source": "PubMed",
       "title": "Anthropogenic drivers of recent ebola and hantavirus outbreaks: A one health perspective.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43054499/",
@@ -90,6 +90,13 @@
       "source": "PubMed",
       "title": "Ornithonyssus bacoti (tropical rat mite): a critical review of biology, vector potential, and integrated management.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42948493/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "Immunoinformatics based design and evaluation of a multi-epitope vaccine candidate targeting the envelopment polyprotein of Andes orthohantavirus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43067155/",
       "summary": ""
     },
     {
