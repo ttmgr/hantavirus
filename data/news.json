@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22",
+  "last_updated": "2026-11-23",
   "articles": [
     {
       "date": "2026-12-01",
@@ -58,7 +58,7 @@
       "summary": ""
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-11-23",
       "source": "PubMed",
       "title": "Anthropogenic drivers of recent ebola and hantavirus outbreaks: A one health perspective.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43054499/",
@@ -90,6 +90,27 @@
       "source": "PubMed",
       "title": "Ornithonyssus bacoti (tropical rat mite): a critical review of biology, vector potential, and integrated management.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42948493/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "DeepMolVir: Learning Virtual Virus Representations for Sequence-Aware Virus-Inhibitor Activity Prediction.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43070938/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "From Forecast to Action: Defining When Ecological Signals Should Trigger Hantavirus Preparedness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43070445/",
+      "summary": ""
+    },
+    {
+      "date": "2026-11-01",
+      "source": "PubMed",
+      "title": "From ecological warning to clinical action: operationalizing hantavirus spillover surveillance.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43070438/",
       "summary": ""
     },
     {
